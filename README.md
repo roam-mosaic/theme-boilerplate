@@ -96,7 +96,7 @@ You can [follow these steps](#getting-started) to get live reload up and running
 
 ### Live reload isn't working
 
-Make sure you have `yarn watch` running in your console
+Make sure you have `yarn dev` running in your console
 
 ### I have `yarn watch` running but live reload isn't working
 
