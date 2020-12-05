@@ -98,7 +98,7 @@ You can [follow these steps](#getting-started) to get live reload up and running
 
 Make sure you have `yarn dev` running in your console
 
-### I have `yarn watch` running but live reload isn't working
+### I have `yarn dev` running but live reload isn't working
 
 You need to have Chrome Dev Tools (`F12` on Windows and `cmd+opt+i` on Mac) open for the file override to work.
 
