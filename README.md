@@ -92,7 +92,7 @@ You're now ready to start customizing your theme!
 
 You can [follow these steps](#getting-started) to get live reload up and running. Renember to [open Chrome DevTools](#i-have-yarn-watch-running-but-live-reload-isnt-working) for live reload to work.
 
-When you're ready to build your theme you can run `yarn build` and your theme's CSS will be built into the 'build' folder
+When you're ready to *build your theme*, run `yarn build`. This will create a complied version of your theme into a new, single css file ready for distribution located in the 'build' folder.
 
 ## Troubleshooting
 
