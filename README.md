@@ -36,7 +36,7 @@ A framework for developing all of your Roam Research CSS themes and UX enhanceme
 - Clone this repository
 - Run `cd roam-mosaic` to navigate into your cloned repository
 - Run `yarn` to install all dependencies
-- Run `yarn watch` to build automatically when source files change.
+- Run `yarn dev` to build automatically when source files change.
 - You are now ready to start building your own theme!
 
 ## How do I use Roam Mosaic?
