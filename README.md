@@ -90,9 +90,9 @@ You're now ready to start customizing your theme!
 
 > We recommend starting with changing some variables in `scss/themes/my-new-theme/_variables.scss`.
 
-When you're ready to build your theme you can run `yarn build` and your theme's CSS will be built into the 'build'folder
-
 You can [follow these steps](#getting-started) to get live reload up and running. Renember to [open Chrome DevTools](#i-have-yarn-watch-running-but-live-reload-isnt-working) for live reload to work.
+
+When you're ready to build your theme you can run `yarn build` and your theme's CSS will be built into the 'build' folder
 
 ## Troubleshooting
 
