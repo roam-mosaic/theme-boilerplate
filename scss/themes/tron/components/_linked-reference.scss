@@ -1,0 +1,29 @@
+.rm-reference-container {
+  margin-bottom: 2em; // A littled extra space between linked and unlinked reference sections
+
+  span[style*='color: red;'] {
+    /* Embed link */
+    color: var(--main-font-color) !important;
+  }
+}
+
+.rm-reference-item {
+  background-color: var(--reference-item-bg);
+  border-radius: 7px;
+  flex: 1 1 100%;
+  margin-right: 8px;
+  margin-top: 8px;
+  padding: 10px;
+  padding-right: 0;
+  word-break: break-word;
+
+  div {
+    font-family: var(--main-font);
+  }
+
+  .controls {
+    .block-expand {
+      margin-top: 0;
+    }
+  }
+}

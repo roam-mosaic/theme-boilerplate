@@ -1,0 +1,15 @@
+div::-webkit-scrollbar {
+  width: 10px;
+}
+div::-webkit-scrollbar-track {
+  background-color: var(--scrollbar-track) !important;
+}
+div::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb) !important;
+}
+
+#right-sidebar {
+  .rm-reference-main {
+    padding-right: 5px;
+  }
+}

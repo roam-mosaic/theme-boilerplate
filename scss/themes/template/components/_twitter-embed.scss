@@ -1,0 +1,12 @@
+/* Twitter embeds */
+
+.twitter-tweet {
+  &.twitter-tweet-rendered {
+    opacity: 0.6;
+    transition: opacity 0.25s ease-in-out;
+  }
+
+  &:hover {
+    opacity: 0.9;
+  }
+}

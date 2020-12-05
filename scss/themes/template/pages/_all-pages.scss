@@ -1,0 +1,132 @@
+/* All Pages */
+
+.rm-pages-row-highlight {
+  background-color: var(--pages-row-highlight);
+}
+.rm-pages-row {
+  .rm-pages-title-col {
+    a {
+      strong {
+        color: var(--page-link-color) !important;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.bp3-icon-export {
+  margin-left: 30px; /*RR change: added some much needed space between export and delete buttons!!! */
+}
+
+/* Custom checkboxes */
+.bp3-control {
+  .bp3-control-indicator {
+    background-color: var(--checkmark-bg);
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(82, 82, 82, 0.8)),
+      to(rgba(0, 0, 0, 0))
+    );
+    border: 0;
+    -webkit-box-shadow: inset 0 0 0 1px rgba(16, 22, 26, 0.2),
+      inset 0 -1px 0 rgba(16, 22, 26, 0.1);
+    box-shadow: inset 0 0 0 1px rgba(16, 22, 26, 0.2),
+      inset 0 -1px 0 rgba(16, 22, 26, 0.1);
+  }
+
+  &:hover {
+    .bp3-control-indicator {
+      background-color: var(--checkmark-color);
+      background-image: none;
+    }
+  }
+}
+
+.rm-all-pages {
+  .table {
+    .rm-pages-row {
+      border-bottom: 1px solid var(--pages-table-border);
+
+      .rm-pages-title-col {
+        color: var(--main-font-color);
+      }
+    }
+
+    .rm-pages-row.rm-pages-row-header {
+      background-color: var(--pages-header-row-bg);
+      color: var(--pages-header-row-font-color);
+    }
+  }
+}
+
+.sorted-header-text {
+  color: var(--pages-sorted-color);
+}
+
+.sorting-button-group {
+  .sort-button {
+    &.focused {
+      color: var(--pages-sorted-color);
+    }
+  }
+}
+
+.rm-clickable-pill {
+  background-color: var(--pages-mentions-color);
+
+  &.empty-pill {
+    background-color: var(--pages-mentions-bg-empty);
+    color: var(--pages-mentions-color-empty);
+  }
+
+  &.level1-pill {
+    background-color: var(--pages-mentions-color);
+  }
+
+  &.level2-pill {
+    background-color: var(--pages-mentions-color);
+  }
+
+  &.level3-pill {
+    background-color: var(--pages-mentions-color);
+  }
+}
+
+.rm-pages-toolbar {
+  .toolbar-search-group {
+    .search-icon {
+      color: var(--search-font-color);
+
+      &.focused {
+        color: var(--search-font-color);
+      }
+    }
+
+    .search-input {
+      background-color: var(--pages-search-bg);
+      border: 1px solid var(--pages-search-bg);
+
+      &.focused {
+        border: 1px solid var(--pages-search-outline);
+      }
+    }
+
+    .bp3-input-group {
+      margin-right: 10px; /* change: added margin to move search field way from the other icons*/
+    }
+  }
+}
+
+.delete-all-dialog-items {
+  border-bottom-color: var(--pages-table-border);
+}
+
+.confirmation-content-dialog {
+  .confirmation-content {
+    background-color: var(--pages-delete-bg);
+  }
+}

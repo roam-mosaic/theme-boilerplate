@@ -1,0 +1,19 @@
+/* EXPERIMENTAL - NOT READY */
+.hoverparent.rm-resize-img .rm-resize-img.react-resizable img:active {
+  cursor: pointer;
+  position: fixed;
+  background-color: rgba(200, 200, 200, 0.75);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  width: 100% !important;
+  pointer-events: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  margin: 10% auto;
+  padding: 2rem;
+  color: #444;
+}

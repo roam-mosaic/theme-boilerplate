@@ -1,0 +1,13 @@
+a {
+  color: var(--external-link-color);
+
+  &:focus {
+    color: var(--external-link-color);
+    text-decoration: underline;
+  }
+
+  &:hover {
+    color: var(--external-link-color);
+    text-decoration: underline;
+  }
+}

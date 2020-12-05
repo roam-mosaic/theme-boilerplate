@@ -1,0 +1,13 @@
+# sass
+.sass-cache/
+*.css.map
+
+# node
+node_modules
+
+# Krita temporary image files
+*~
+
+dev/**
+!dev/**/
+!.gitkeep

@@ -1,0 +1,98 @@
+/* Body styles */
+
+body {
+  background-color: var(--body-bg);
+  caret-color: var(--caret-color);
+  font-family: var(--main-font);
+  font-size: var(--main-font-size);
+}
+
+.roam-block-container {
+  border-radius: 0px;
+}
+
+.rm-block-text {
+  max-width: 100%;
+}
+
+.roam-center {
+  flex-basis: 50% !important;
+}
+
+// #right-sidebar {
+//   flex-basis: 40% !important;
+// }
+
+.rm-block-input {
+  overflow-wrap: break-word;
+  background-color: var(--block-highlight-current);
+  width: 96%;
+  // padding-left: 5px;
+  // padding-right: 5px;
+  // margin-left: -5px;
+  // margin-right: -5px;
+}
+
+/* Bullets */
+.controls {
+  padding-top: 3px; //RR change: slight adjustment for bullet position
+
+  .simple-bullet-outer {
+    margin-top: var(--bullet-position);
+
+    .simple-bullet-inner {
+      background-color: var(--bullet);
+    }
+  }
+}
+
+.roam-bullet-closed {
+  background-color: var(--bullet-closed);
+}
+
+#right-sidebar {
+  .roam-bullet-closed {
+    background-color: var(--bullet-closed);
+  }
+}
+
+/* Outline border */
+.block-border-left {
+  border-left: 1px solid var(--bullet-outline);
+}
+
+/*RR change: SECTION border*/
+.roam-log-container {
+  .roam-log-page {
+    border-top: 1px solid var(--section-border-color);
+  }
+}
+
+.block-highlight-grey {
+  background-color: var(--block-highlight);
+}
+
+.block-highlight-blue {
+  background-color: var(--block-highlight);
+}
+
+.block-highlight-yellow {
+  background-color: var(--block-highlight-bg);
+}
+
+hr {
+  margin-top: 0.785714286em;
+  margin-bottom: 2.5em;
+  border: 0;
+  border-top: 1px solid var(--hr);
+}
+
+/*RR change: DEFAULT TEXT - a small addition to the placeholder text to Daily Notes or Pages to help get you started */
+
+div#block-input-ghost {
+  span {
+    &:before {
+      content: 'Cmd+enter or ';
+    }
+  }
+}
