@@ -16,6 +16,21 @@
   background: var(--popover-bg);
   border-radius: 4px;
   color: var(--popover-font-color);
+  padding-bottom: 10px;
+}
+.bp3-menu-item.menu-item {
+  color: var(--popover-font-color);
+}
+
+.roam-body .roam-app .roam-sidebar-container .rm-graph-dropdown .setting {
+  background-color: var(--reference-item-bg);
+
+  &:hover {
+    background-color: var(--db-title-hover);
+  }
+}
+.roam-body .roam-app .roam-sidebar-container .rm-graph-dropdown a {
+  color: var(--dialog-font-color);
 }
 
 /* Slash menu and inline search */

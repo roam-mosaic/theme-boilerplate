@@ -1218,6 +1218,7 @@ body {
 
 .roam-block-container {
   border-radius: 0px;
+  max-width: 100%;
 }
 
 .rm-block-text {
@@ -1470,7 +1471,6 @@ span[style*='color: rgb(14, 90, 138);'] {
 
 .rm-zoom .parent-path-wrapper {
   max-height: none;
-  padding-right: 10px;
   white-space: normal;
 }
 

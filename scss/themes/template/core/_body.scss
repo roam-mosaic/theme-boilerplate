@@ -37,6 +37,20 @@ body {
     }
   }
 }
+.rm-bullet {
+  .rm-bullet__inner {
+    box-sizing: content-box;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    background-clip: content-box;
+    border: 4px solid transparent;
+    background-color: var(--bullet);
+  }
+}
 
 .roam-bullet-closed {
   background-color: var(--bullet-closed);

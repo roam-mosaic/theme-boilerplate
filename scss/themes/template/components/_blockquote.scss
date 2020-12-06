@@ -1,11 +1,22 @@
 /* Blockquote - requires hiccup e.g., :hiccup [:blockquote [:p "Operational effectiveness is not a strategy"] [:footer [:cite "p61"]]] */
 
+.rm-bq {
+  display: inline-block;
+  background-color: var(--blockquote-bg);
+  border-left: 5px solid var(--blockquote-border-color);
+  font-size: var(--blockquote-font-size);
+  color: var(--blockquote-font-color);
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+// These styles are for hiccup formated blockquotes e.g., :hiccup [:blockquote [:p "Operational effectiveness is not a strategy"] [:footer [:cite "Michael Porter, p61"]]]
 blockquote {
   background-color: var(--blockquote-bg);
   border-left: 5px solid var(--blockquote-border-color);
   box-sizing: border-box;
   color: var(--blockquote-font-color);
-  font-size: 1em;
+  font-size: var(--blockquote-font-size);
   margin: 0 0 20px;
   min-height: 0;
   min-width: 0;

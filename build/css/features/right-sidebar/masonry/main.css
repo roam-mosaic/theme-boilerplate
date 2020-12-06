@@ -27,7 +27,7 @@
   flex-direction: column;
   align-self: flex-start;
   margin-right: 0px !important;
-  margin-left: 15px;
+  margin-left: 10px;
   padding: 10px;
   border-radius: 5px;
   margin-bottom: 16px;
@@ -37,6 +37,12 @@
   border: 1px solid var(--right-sidebar-masonry-outline) !important;
   /* item header */
   /* item content */
+}
+#right-sidebar #roam-right-sidebar-content .sidebar-content > div:nth-child(1) {
+  margin-left: 0px;
+}
+#right-sidebar #roam-right-sidebar-content .sidebar-content > div:before {
+  background: var(--right-sidebar-bg);
 }
 #right-sidebar
   #roam-right-sidebar-content

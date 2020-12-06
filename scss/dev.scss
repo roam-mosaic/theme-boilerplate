@@ -9,18 +9,13 @@
 
 // @import 'global/features/left-sidebar/mosaic/main';
 
-:root {
-  --right-sidebar-masonry-bg: #ffffff;
-  --right-sidebar-masonry-outline: #d8e1e8;
-}
-
 // @import 'global/features/right-sidebar/masonry/main';
-@import 'global/features/right-sidebar/masonry/main';
+// @import 'global/features/right-sidebar/stacked/main';
 
 // @import 'global/features/scrollbars/mosaic/main';
 // @import 'global/features/scrollbars/simple/main';
 
-// @import 'global/features/search/full-width/main';
+@import 'global/features/search/full-width/main';
 
 // @import 'global/features/top-bar/mosaic/main';
 // @import 'global/features/top-bar/hide-top-bar/main';
@@ -31,4 +26,4 @@
 // }
 
 /* Main Theme Include */
-// @import 'themes/railscast/main';
+@import 'themes/railscast/main';
