@@ -346,12 +346,22 @@ span[style^='background-color: rgb(235, 241, 245); border-radius: 4px; cursor: a
 }
 
 /* Blockquote - requires hiccup e.g., :hiccup [:blockquote [:p "Operational effectiveness is not a strategy"] [:footer [:cite "p61"]]] */
+.rm-bq {
+  display: inline-block;
+  background-color: var(--blockquote-bg);
+  border-left: 5px solid var(--blockquote-border-color);
+  font-size: var(--blockquote-font-size);
+  color: var(--blockquote-font-color);
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 blockquote {
   background-color: var(--blockquote-bg);
   border-left: 5px solid var(--blockquote-border-color);
   box-sizing: border-box;
   color: var(--blockquote-font-color);
-  font-size: 1em;
+  font-size: var(--blockquote-font-size);
   margin: 0 0 20px;
   min-height: 0;
   min-width: 0;
@@ -1061,6 +1071,19 @@ body {
   margin-top: var(--bullet-position);
 }
 .controls .simple-bullet-outer .simple-bullet-inner {
+  background-color: var(--bullet);
+}
+
+.rm-bullet .rm-bullet__inner {
+  box-sizing: content-box;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  background-clip: content-box;
+  border: 4px solid transparent;
   background-color: var(--bullet);
 }
 

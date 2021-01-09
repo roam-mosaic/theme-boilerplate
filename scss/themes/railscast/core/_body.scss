@@ -40,6 +40,11 @@ body {
 }
 
 .rm-bullet {
+  position: absolute;
+
+  &:hover {
+    position: absolute;
+  }
   .rm-bullet__inner {
     background-color: var(--bullet);
   }
@@ -49,6 +54,7 @@ body {
   // color: var(--bullet-closed);
   .rm-bullet__inner {
     border: 4px solid var(--bullet-closed);
+    margin-top: 2px;
   }
 }
 

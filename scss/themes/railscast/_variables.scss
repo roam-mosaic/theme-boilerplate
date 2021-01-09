@@ -24,6 +24,7 @@
 
   --alias-bg: transparent;
   --alias-font-color: #fecf2b;
+  --attr-font-color: rgba(17, 137, 189, 0.65);
   --block-ref-bg: none;
   --block-ref-border: rgba(254, 207, 43, 0.6);
   --block-ref-font-size: 1em;
@@ -46,13 +47,16 @@
   --external-link-color: #8dbb40;
   --h1-font: var(--main-font);
   --h1-font-color: #1189bd;
-  --h1-font-size: 1.8rem;
+  --h1-font-size: 2.25em;
+  --h1-font__link--color: var(--page-link-color);
   --h2-font: var(--h1-font);
   --h2-font-color: #1189bd;
-  --h2-font-size: 1.4rem;
+  --h2-font-size: 1.625em;
+  --h2-font__link--color: var(--page-link-color);
   --h3-font: var(--h1-font);
   --h3-font-color: #1189bd;
   --h3-font-size: 1.2rem;
+  --h3-font__link--color: var(--page-link-color);
   --highlight-background-color: #008aff5e;
   --highlight-font-color: #bbb;
   --highlight-link-color: #ff6000;
@@ -65,6 +69,7 @@
   --page-brackets: rgba(228, 124, 67, 0.25);
   --page-link-color: #eb9854;
   --page-link-namespace-color: #ebd454;
+  --page-link-namespace-color: #f57030;
   --popover-font-color: #e98924;
   --popover-bg: #333;
   --ref-count-font-size: 0.8em;
@@ -83,6 +88,7 @@
   --strong: #508bb5;
   --tag-font-color: #777;
   --tag-font-color-hover: #fff;
+  --tag-hashtag: #e9892475;
   --tag-hover-bg: #e98924;
   --tag-padding: 0.071428571em 0.428571429em 0.214285714em;
   --tag-radius: 2em;
@@ -99,6 +105,7 @@
   --bullet-closed-right-sidebar: var(--bullet-closed);
   --bullet-outline: #404040;
   --bullet-outline-highlight: #ff9500;
+  --bullet-outline-hover: #ff9500b3; //recommend this be 70% of --bullet-outline-highlight
   --bullet-position: 4px;
   --bullet-version: #137cbd;
   --checkmark-border: #137cbd;
@@ -114,6 +121,8 @@
   --icon-color: #e78924;
   --icon-color-hover: #e78924;
   --inline-search-bg: #333;
+  --inline-comment-bg: transparent;
+  --inline-comment-bg-hover: var(--reference-item-bg);
   // --left-sidebar-bg: #2b2b2b;
   --left-sidebar-bg: #323232;
   --left-sidebar-hover-bg: #1f1f1f;
@@ -124,6 +133,9 @@
   --select-bg: #232323;
   --topbar-bg: var(--body-bg);
   --topbar-border-color: #333;
+  --yt-play-button-border: rgba(225, 117, 28, 1);
+  --yt-play-button-bg: rgba(108, 109, 36, 0.1);
+  --yt-play-button-bg-hover: rgba(109, 77, 36, 0.25);
 
   /* Misc */
 

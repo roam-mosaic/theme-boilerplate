@@ -1,4 +1,4 @@
-/* @import "../fonts/Inter/inter.css"; */
+@import "../fonts/Inter/inter.css";
 .loading-astrolabe {
   margin: auto;
   position: relative;
@@ -970,17 +970,6 @@ html {
   margin: 8px;
   margin-left: -4px;
   padding-left: 8px;
-}
-.rm-audio-player__hoverparent {
-  position: relative;
-  display: inline-block;
-  margin-right: 24px;
-}
-.rm-audio-player__hoveronly {
-  position: absolute;
-  right: -24px;
-  top: 0;
-  z-index: 10;
 }
 .roam-sidebar-container .rm-db-title-container {
   display: flex;
@@ -1985,7 +1974,6 @@ body {
   padding: 8px 4px;
   flex: 2 0 0 ;
   text-overflow: ellipsis;
-  min-width: 140px;
 }
 .rm-all-pages .table .rm-pages-row .rm-pages-checkbox-col {
   padding: 8px 8px;
@@ -2769,69 +2757,6 @@ body {
   resize: none;
   overflow-y: none;
 }
-.rm-user-settings {
-  min-width: 500px;
-  width: 60vw;
-  padding: 16px 32px 16px 32px;
-}
-.rm-user-settings__title {
-  margin: 0 auto 20px auto;
-}
-.rm-user-settings .rm-brackets-settings__switch {
-  display: flex;
-  flex: 0 0 auto;
-  font-weight: normal;
-}
-.rm-user-settings .rm-brackets-settings__switch > .bp3-control-indicator {
-  margin-top: 2px;
-}
-.rm-user-settings .rm-edit-icons-settings__switch {
-  display: flex;
-  flex: 0 0 auto;
-  font-weight: normal;
-}
-.rm-user-settings .rm-edit-icons-settings__switch > .bp3-control-indicator {
-  margin-top: 2px;
-}
-.rm-user-settings .rm-namespace-settings__option {
-  display: flex;
-  flex: 0 0 auto;
-  font-weight: normal;
-}
-.rm-user-settings .rm-namespace-settings__option > .bp3-control-indicator {
-  margin-top: 2px;
-}
-.rm-user-settings .rm-user-code-settings__switch {
-  display: flex;
-  flex: 0 0 auto;
-  font-weight: normal;
-}
-.rm-user-settings .rm-user-code-settings__switch > .bp3-control-indicator {
-  margin-top: 2px;
-}
-.rm-user-settings .rm-international-settings__switch {
-  display: flex;
-  flex: 0 0 auto;
-  font-weight: normal;
-}
-.rm-user-settings .rm-international-settings__switch > .bp3-control-indicator {
-  margin-top: 2px;
-}
-.rm-user-settings__keyboard-shortcut {
-  margin-left: 20px;
-  color: #738694;
-}
-.rm-user-settings .rm-reset-user-settings {
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  align-items: flex-start;
-}
-.rm-user-settings .rm-reset-user-settings__details {
-  margin-top: 5px;
-  color: #738694;
-  font-size: 13px;
-}
 .rm-edit-view-wrapper {
   min-width: 21px;
 }
@@ -2881,7 +2806,7 @@ body {
   background-color: var(--rm-edited-email-color-darker);
   border: 4px solid var(--rm-edited-email-color-lighter);
 }
-.rm-bullet__inner {
+.rm-bullet .rm-bullet__inner {
   box-sizing: content-box;
   display: flex;
   align-items: center;
@@ -2893,7 +2818,7 @@ body {
   border: 4px solid transparent;
   background-color: #394B59;
 }
-.rm-bullet__inner--user-icon {
+.rm-bullet .rm-bullet__inner--user-icon {
   box-sizing: content-box;
   display: flex;
   align-items: center;
@@ -2922,10 +2847,6 @@ body {
 }
 .rm-bullet:hover::after {
   opacity: 1;
-}
-.rm-bullet--user-settings {
-  margin-right: 4px;
-  padding-top: 3px;
 }
 .rm-block-children {
   display: flex;

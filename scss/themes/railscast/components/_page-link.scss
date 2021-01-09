@@ -1,48 +1,33 @@
 /* Page link */
 
-.rm-page-ref-brackets {
+.rm-page-ref-brackets, // legacy selector
+.rm-page-ref__brackets {
   color: var(--page-brackets);
 }
-.rm-page-ref-link-color {
+
+.rm-page-ref--link {
   color: var(--page-link-color);
 }
-.rm-page-ref-namespace-color {
+
+.rm-page-ref-namespace-color, // legacy selector
+.rm-page-ref--namespace {
   color: var(--page-link-namespace-color);
 }
-h1 {
-  &.level2 {
-    a {
-      color: var(--page-link-color);
-    }
+
+.rm-heading-level-1 {
+  .rm-page-ref--link {
+    color: var(--h1-font__link--color);
   }
 }
 
-h2 {
-  &.level2 {
-    a {
-      color: var(--page-link-color);
-    }
+.rm-heading-level-2 {
+  .rm-page-ref--link {
+    color: var(--h2-font__link--color);
   }
 }
 
-h3 {
-  &.level2 {
-    a {
-      color: var(--page-link-color);
-    }
+.rm-heading-level-3 {
+  .rm-page-ref--link {
+    color: var(--h3-font__link--color);
   }
 }
-
-/* CUSTOM LINKS: Uncomment to use the section below to create custom styles for specific links. Change "Theme" to match some portion of the title of the link you want to customize. Adjust the background-color value ("ff6000") and color value ("fff") to suite your preferences. Duplicate the section for each new link to be customized */
-
-/* 
-span[data-link-title*="Theme"] .rm-page-ref-link-color,
-span[data-link-title*="Theme"] .rm-page-ref-namespace-color {
-  background-color: #ff6000;
-  color: #fff;
-  padding: 3px 7px;
-  line-height: 2em;
-  font-weight: 500;
-  border-radius: 0.1875em;
-}
- */

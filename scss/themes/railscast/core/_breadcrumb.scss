@@ -15,13 +15,13 @@
     // padding-right: 10px;
     white-space: normal;
   }
-}
 
-.zoom-path-view {
-  .rm-zoom-mask {
-    background-color: var(--breadcrumb-bg);
-    flex: 1 1 100%;
-    mix-blend-mode: saturation;
+  &.zoom-path-view {
+    .rm-zoom-mask {
+      background-color: var(--breadcrumb-bg);
+      flex: 1 1 100%;
+      mix-blend-mode: saturation;
+    }
   }
 }
 

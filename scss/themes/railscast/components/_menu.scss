@@ -70,3 +70,7 @@ button {
     border: 1px solid var(--reference-item-bg) !important;
   }
 }
+/* Save Status */
+.bp3-transition-container {
+  z-index: 1000;
+}

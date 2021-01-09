@@ -4,7 +4,8 @@
 
 /* Features Includes */
 // @import 'global/features/editor/image-zoom/main';
-// @import 'global/features/editor/bullet-collapse/main';
+@import 'global/features/editor/bullet-collapse/main';
+// @import 'global/features/editor/bullet-collapse/main-old';
 // @import 'global/features/editor/wide-layout/main';
 
 // @import 'global/features/left-sidebar/mosaic/main';
@@ -16,6 +17,8 @@
 // @import 'global/features/scrollbars/simple/main';
 
 @import 'global/features/search/full-width/main';
+
+// @import 'global/features/sticky-headers/main';
 
 // @import 'global/features/top-bar/mosaic/main';
 // @import 'global/features/top-bar/hide-top-bar/main';
