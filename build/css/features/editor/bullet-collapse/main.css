@@ -1,3 +1,7 @@
+/* Bullet Collapse
+  Provides a larger target for collapsing a block
+  Provides better location tracking of which block is currently under the mouse
+ */
 .roam-block-container {
   position: relative;
 }
@@ -48,14 +52,8 @@
   .rm-block-main
   .controls
   .block-expand
-  .bp3-icon-caret-down {
-  border-color: var(--bullet-outline-highlight);
-}
-.roam-block-container
-  .rm-block-main
-  .controls
-  .block-expand
   .bp3-icon-caret-down:hover {
+  border-color: var(--bullet-outline-highlight);
   border-width: 4px;
 }
 .roam-block-container
@@ -98,6 +96,9 @@
 .roam-block-container:hover > .rm-block__self .controls .block-expand {
   border-left-style: solid;
   border-left-color: var(--bullet-outline-hover);
+}
+.roam-block-container:focus-within > .rm-block__self .controls .block-expand {
+  border-left: 1px solid var(--bullet-outline-hover);
 }
 .roam-block-container
   > .rm-block-main

@@ -3,6 +3,10 @@
 .bp3-dialog {
   background: var(--dialog-bg) !important;
   color: var(--dialog-font-color);
+
+  textarea {
+    color: var(--dialog-bg);
+  }
 }
 
 input {

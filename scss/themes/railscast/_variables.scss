@@ -1,7 +1,7 @@
 @import '../../global/variables';
 
 // TODO Add variables for #mobile-capture
-// the inherit and initial values are ussed when there isn't a value defined by Roam CSS, not sure if these will work
+// the inherit and initial values are used when there isn't a value defined by Roam CSS, not sure if these will work
 
 :root {
   /* Roam default variables */
@@ -22,8 +22,8 @@
 
   /* Fonts */
 
-  --alias-bg: transparent;
-  --alias-font-color: #fecf2b;
+  --alias-bg: transparent; /* Legacy alias */
+  --alias-font-color: #fecf2b; /* Legacy alias */
   --attr-font-color: rgba(17, 137, 189, 0.65);
   --block-ref-bg: none;
   --block-ref-border: rgba(254, 207, 43, 0.6);
@@ -88,7 +88,7 @@
   --strong: #508bb5;
   --tag-font-color: #777;
   --tag-font-color-hover: #fff;
-  --tag-hashtag: #e9892475;
+  --tag-hashtag: #ab6634;
   --tag-hover-bg: #e98924;
   --tag-padding: 0.071428571em 0.428571429em 0.214285714em;
   --tag-radius: 2em;
@@ -133,6 +133,8 @@
   --select-bg: #232323;
   --topbar-bg: var(--body-bg);
   --topbar-border-color: #333;
+
+  /* YouTube Timestamp js extension */
   --yt-play-button-border: rgba(225, 117, 28, 1);
   --yt-play-button-bg: rgba(108, 109, 36, 0.1);
   --yt-play-button-bg-hover: rgba(109, 77, 36, 0.25);
@@ -169,6 +171,13 @@
   --pomodoro-color: #fc5963;
   --pomodoro-border: #fc596370;
 
+  --block-callout__bg--grey: #333;
+  --block-callout__bg--blue: rgba(0, 170, 255, 0.1);
+  --block-callout__bg--red: rgba(249, 87, 56, 0.25);
+  --block-callout__bg--orange: rgba(238, 150, 75, 0.25);
+  --block-callout__bg--yellow: rgba(244, 211, 94, 0.2);
+  // --block-callout__border--grey: #222;  // TODO considering adding a border option. Doesn't work so well on child
+
   --blockquote-font-color: rgba(109, 156, 190, 0.89);
   --blockquote-font-size: 14px;
   --blockquote-border-color: #30404d;
@@ -183,6 +192,7 @@
   --no-query-results-color: #fc5963;
   --query-results-border: #f2c98f1a;
 
+  /* Seasonal colors for date links */
   --q1: #50b2c0;
   --q2: #c5d86d;
   --q3: #ff6b6b;

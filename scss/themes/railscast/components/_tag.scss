@@ -31,11 +31,12 @@ span {
 // }
 
 .rm-page-ref--tag[data-tag='42SmartBlock']:before {
-  content: '#';
-  color: var(--tag-hashtag);
-  margin: 5px 0 0 -7px;
+  content: '#' !important;
+  color: var(--tag-hashtag) !important;
+  // margin: 5px 0 0 -7px;
   position: absolute;
   visibility: visible;
+  background: none !important;
 }
 
 // .rm-page-ref--tag[data-tag='42SmartBlock']:before {
@@ -75,4 +76,18 @@ span[data-tag*='Meeting']:before {
   padding-left: 10px;
   clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
   border-radius: 4px 0 0 4px;
+}
+
+[data-tag]::before {
+  content: '#';
+  color: var(--tag-hashtag);
+  visibility: visible;
+  position: absolute;
+}
+
+[data-tag]:hover::before {
+  // content: '#';
+  color: var(--tag-font-color-hover);
+  // visibility: visible;
+  // position: absolute;
 }

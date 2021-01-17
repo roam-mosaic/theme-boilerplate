@@ -1,4 +1,4 @@
-/* @import "../fonts/Inter/inter.css"; */
+@import "../fonts/Inter/inter.css";
 
 .loading-astrolabe {
   margin: auto;
@@ -3394,17 +3394,6 @@ body {
 
 .rm-user-settings__title {
   margin: 0 auto 20px auto
-}
-
-.rm-user-settings .rm-display-name-settings__input {
-  width: 100%;
-  border: none;
-  padding: 4px 10px;
-  background: #F5F8FA
-}
-
-.rm-user-settings .rm-display-name-settings__input:focus {
-  background: #E1E8ED
 }
 
 .rm-user-settings .rm-brackets-settings__switch {

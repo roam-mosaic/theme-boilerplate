@@ -51,3 +51,7 @@
 .bp3-icon-star:before {
   color: var(--icon-color);
 }
+// Fix for word count interferring with # color option
+.rm-block-main .bp3-button:not([class*='bp3-intent-']) {
+  min-height: 25px;
+}
