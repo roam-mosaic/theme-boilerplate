@@ -1,0 +1,57 @@
+/* Icons */
+
+.bp3-button {
+  > sub {
+    padding-left: 3px;
+    color: var(--filter-sub);
+  }
+
+  .bp3-icon {
+    color: var(--icon-color);
+  }
+
+  .bp3-icon-standard {
+    color: var(--icon-color);
+  }
+
+  .bp3-icon-large {
+    color: var(--icon-color);
+  }
+
+  &:before {
+    color: var(--icon-color);
+  }
+
+  &:not([class*='bp3-intent-']) {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    color: var(--icon-color);
+    font-weight: 700;
+
+    &:hover {
+      background-color: var(--icon-bg-hover);
+      color: var(--icon-color-hover) !important;
+    }
+  }
+
+  &[class*='bp3-icon-']::before {
+    color: inherit;
+  }
+
+  &[style*='border-radius: 25px;'] {
+    &:hover {
+      height: 30px;
+      width: 30px;
+    }
+  }
+}
+
+.bp3-icon-star:before {
+  color: var(--icon-color);
+}
+// Fix for word count interferring with # color option
+.rm-block-main .bp3-button:not([class*='bp3-intent-']) {
+  min-height: 25px;
+}

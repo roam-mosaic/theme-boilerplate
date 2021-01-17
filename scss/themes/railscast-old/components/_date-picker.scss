@@ -1,0 +1,31 @@
+/* Date picker */
+
+.bp3-popover {
+  .bp3-popover-content {
+    .bp3-datepicker {
+      background-color: var(--datepicker-bg);
+      color: var(--datepicker-font-color);
+
+      .DayPicker-Day.DayPicker-Day--isToday {
+        .bp3-datepicker-day-wrapper {
+          border: 1px solid var(--datepicker-day-wrapper);
+        }
+      }
+    }
+  }
+}
+
+/* Month and year selectors */
+.bp3-html-select {
+  &.bp3-minimal {
+    select {
+      background-color: var(--popover-bg) !important;
+      color: var(--popover-font-color);
+
+      &:hover {
+        background: rgba(167, 182, 194, 0.3);
+        color: var(--popover-font-color);
+      }
+    }
+  }
+}
