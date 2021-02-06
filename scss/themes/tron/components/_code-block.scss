@@ -13,7 +13,7 @@
   color: #fff !important;
 }
 .CodeMirror-lines {
-  background: var(--code-bg);
+  background: var(--code__background);
 }
 .CodeMirror-activeline {
   pre {
@@ -22,16 +22,16 @@
 }
 .CodeMirror {
   height: auto !important;
-  font-family: var(--code-font);
-  background: var(--code-bg);
+  font-family: var(--code-font__font-family);
+  background: var(--code__background);
   color: #f4f1ed;
-  font-size: var(--code-font-size);
+  font-size: var(--code-font__font-size);
   border-radius: 8px;
   .CodeMirror-code {
     pre {
-      font-family: var(--code-font);
+      font-family: var(--code-font__font-family);
       box-shadow: none;
-      font-size: var(--code-font-size);
+      font-size: var(--code-font__font-size);
     }
   }
 }
@@ -40,11 +40,11 @@
 }
 .CodeMirror-gutters {
   background: #2b2b2b;
-  background: var(--code-bg);
+  background: var(--code__background);
   border-right: 2px solid #2c2c2c;
 }
 .CodeMirror-linenumber {
-  color: var(--page-link-color);
+  color: var(--page-link__color);
 }
 .CodeMirror-cursor {
   border-left: 1px solid #d4cfc9 !important;

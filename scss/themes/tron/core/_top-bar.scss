@@ -42,7 +42,7 @@
 .bp3-input {
   background: var(--search-bg);
   box-shadow: none;
-  color: var(--popover-font-color);
+  color: var(--menu__color);
   font-size: 0.85em;
 
   &::placeholder {

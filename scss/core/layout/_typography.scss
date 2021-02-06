@@ -1,8 +1,8 @@
 /* Typography */
 
 textarea {
-  font-family: var(--main-font);
-  font-size: var(--main-font-size);
+  font-family: var(--main-font__font-family);
+  font-size: var(--main-font__font-size);
 }
 
 h1 {
@@ -87,7 +87,7 @@ h1 {
 
 .roam-body {
   .roam-app {
-    color: var(--main-font-color);
+    color: var(--main-font__color);
 
     h1 {
       color: var(--h1-font-color);
@@ -96,14 +96,14 @@ h1 {
         margin-top: 4px !important;
 
         a {
-          color: var(--page-link-color);
+          color: var(--page-link__color);
         }
       }
     }
 
     .roam-article {
       div {
-        font-family: var(--main-font);
+        font-family: var(--main-font__font-family);
       }
 
       h1 {

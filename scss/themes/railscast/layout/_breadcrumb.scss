@@ -1,0 +1,37 @@
+/* Breadcrumbs */
+
+.rm-zoom .rm-zoom-item .rm-zoom-item-content {
+  // padding: unset;
+  padding-bottom: 2px;
+  padding-top: 2px;
+}
+
+// /* To target the size of checkboxes in breadcrumb mentions */
+// .rm-zoom-item {
+//   .check-container {
+//     padding-right: 0;
+//   }
+//   .checkmark {
+//     height: 10px;
+//     width: 10px;
+//   }
+// }
+
+// /* Comment/un-comment to remove checkboxes in breadcrumb navigation */
+
+// .roam-article,
+// .roam-reference-item {
+//   > div {
+//     &:first-child {
+//       &:not(.roam-log-container) {
+//         > div {
+//           &:first-child {
+//             label.check-container {
+//               display: none;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }

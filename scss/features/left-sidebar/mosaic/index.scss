@@ -1,9 +1,9 @@
 /* TODO: This needs cleanup - does not play nice with `roam-sidedbar-modifier.scss` */
 
-.roam-topbar {
+.rm-topbar {
   /* Need to remove this because the lock menu button is on the topbar
      and we need to move it in front of the side menu to make it clickable */
-  border-bottom: none;
+  // border-bottom: none;
 }
 
 .roam-center {
@@ -54,7 +54,7 @@
   bottom: 0px;
 }
 
-#app > div > div > div.roam-main > div.roam-topbar {
+#app > div > div > div.roam-main > div.rm-topbar {
   /* z-index: -1;    */
   background-color: transparent;
 }
@@ -84,7 +84,7 @@
   > div
   > div
   > div.roam-main
-  > div.roam-topbar
+  > div.rm-topbar
   > div
   > span.bp3-button.bp3-minimal.bp3-small {
   /* background-color: blue !important;*/
@@ -97,7 +97,7 @@
   > div
   > div
   > div.roam-main
-  > div.roam-topbar
+  > div.rm-topbar
   > div
   > span.bp3-button.bp3-minimal.bp3-icon-menu-open.bp3-small {
   position: relative;
@@ -106,12 +106,12 @@
   opacity: 1;
 }
 
-/* #app > div > div > div.roam-main > div.roam-topbar > div > span.bp3-button.bp3-minimal.bp3-icon-menu-open.bp3-small,*/
+/* #app > div > div > div.roam-main > div.rm-topbar > div > span.bp3-button.bp3-minimal.bp3-icon-menu-open.bp3-small,*/
 #app
   > div
   > div
   > div.roam-main
-  > div.roam-topbar
+  > div.rm-topbar
   > div
   > span.bp3-button.bp3-minimal.bp3-icon-menu.pointer.bp3-small {
   left: 0;
@@ -141,11 +141,17 @@
  * on click, the content gets pushed (as expected)
  * ~ is the sibling CSS selector; to detect the closed state of the sidebar
  */
-.roam-sidebar-container:not([style^='left: 0px; top: 0px; bottom: 0px;']) ~ .roam-main .roam-body-main {
+.roam-sidebar-container:not([style^='left: 0px; top: 0px; bottom: 0px;'])
+  ~ .roam-main
+  .roam-body-main {
   width: 100vw !important;
 }
 
-.roam-sidebar-container:not([style^='left: 0px; top: 0px; bottom: 0px;']) ~ .roam-main .roam-body-main > .roam-center > div:first-child {
+.roam-sidebar-container:not([style^='left: 0px; top: 0px; bottom: 0px;'])
+  ~ .roam-main
+  .roam-body-main
+  > .roam-center
+  > div:first-child {
   padding-right: calc((100% - 800px) / 2) !important;
   padding-left: calc((100% - 800px) / 2) !important;
 }
@@ -164,7 +170,13 @@ html {
   padding: 8px 0 !important;
 }
 
-.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page,
+.roam-body
+  .roam-app
+  .roam-sidebar-container
+  .roam-sidebar-content
+  .starred-pages-wrapper
+  .starred-pages
+  .page,
 .starred-pages-wrapper > div.flex-h-box {
   padding-left: 20px;
 }

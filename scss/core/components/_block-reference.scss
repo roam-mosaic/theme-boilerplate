@@ -1,0 +1,35 @@
+/* Block Reference */
+
+.rm-block-ref {
+  background-color: var(--block-ref__background-color);
+  border-bottom: 0.5px solid var(--block-ref__border-bottom);
+  font-family: var(--main-font__font-family);
+  font-size: var(--block-ref__font-size);
+
+  &:hover {
+    background-color: var(--block-ref__background-color_hover);
+    color: var(--block-ref__color_hover);
+  }
+}
+
+/* When clicking the number of references and viewing them inline  */
+.rm-inline-references {
+  background-color: var(--block-ref__background-color_inline);
+  border-left: 4px solid var(--block-ref__border-left_inline);
+}
+
+.rm-block__self .rm-block__ref-count.rm-active {
+  color: var(--icon__color_hover);
+  background-color: var(--icon__background-color_hover);
+}
+
+/* Left side hover action for embedded blocks and pages */
+.rm-embed-margin-action {
+  background-color: var(--block-embed__background-color_margin-action);
+  border-left: 1px solid var(--block-embed__border-left_margin-action);
+}
+
+.rm-embed--page > .rm-embed-margin-action {
+  background-color: var(--block-embed__background-color_margin-action);
+  border: 0 solid var(--block-embed__border-left_margin-action);
+}

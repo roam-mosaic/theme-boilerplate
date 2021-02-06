@@ -6,11 +6,15 @@
   .rm-block-text {
     padding-right: 30px;
   }
+
+  .rm-title-textarea {
+    width: 95%; //To keep the Page title from moving when editing it
+  }
 }
 
 #roam-right-sidebar-content {
   div {
-    font-family: var(--main-font);
+    font-family: var(--main-font__font-family);
 
     h1 {
       div {

@@ -12,36 +12,36 @@
 
   /* Primary fonts */
 
-  --main-font: 'Inter', sans-serif;
-  --main-font-color: #999;
-  --main-font-size: 14px;
-  --code-font: 'Source Code Pro', 'Courier New', Courier, monospace;
-  --code-font-color: #6d9cbe;
-  --code-font-size: 0.9rem;
-  --caret-color: #0080ff;
+  --main-font__font-family: 'Inter', sans-serif;
+  --main-font__color: #999;
+  --main-font__font-size: 14px;
+  --code-font__font-family: 'Source Code Pro', 'Courier New', Courier, monospace;
+  --code-font__color: #6d9cbe;
+  --code-font__font-size: 0.9rem;
+  --caret__color: #0080ff;
 
   /* Fonts */
 
-  --alias-bg: transparent;
-  --alias-font-color: #fecf2b;
-  --block-ref-bg: none;
-  --block-ref-border: rgba(254, 207, 43, 0.6);
-  --block-ref-font-size: 1em;
-  --block-ref-hover: #eb9854;
-  --block-ref-hover-bg: #111;
-  --breadcrumb-color: #5c7080;
-  --breadcrumb-font-size: 13px;
+  --alias__background-color: transparent;
+  --alias__color: #fecf2b;
+  --block-ref__background-color: none;
+  --block-ref__border-bottom: rgba(254, 207, 43, 0.6);
+  --block-ref__font-size: 1em;
+  --block-ref__color_hover: #eb9854;
+  --block-ref__background-color_hover: #111;
+  --query__color_query-string: #5c7080;
+  --breadcrumb__font-size: 13px;
   --breadcrumb-line-height: 0.85em;
   --calculation-color: #ff6000;
   --emphasis: #fc5963;
-  --external-link-color: #8dbb40;
-  --h1-font: var(--main-font);
+  --external-link__color: #8dbb40;
+  --h1-font: var(--main-font__font-family);
   --h1-font-color: #1189bd;
   --h1-font-size: 1.8rem;
-  --h2-font: var(--main-font);
+  --h2-font: var(--main-font__font-family);
   --h2-font-color: #1189bd;
   --h2-font-size: 1.4rem;
-  --h3-font: var(--main-font);
+  --h3-font: var(--main-font__font-family);
   --h3-font-color: #1189bd;
   --h3-font-size: 1.2rem;
   --highlight-background-color: #fef09f;
@@ -53,13 +53,13 @@
   --left-sidebar-shortcuts-color: var(--left-sidebar-font-color);
   --left-sidebar-shortcuts-font-size: 1rem;
   --left-sidebar-shortcuts-title-color: var(--left-sidebar-font-color);
-  --page-brackets: rgba(228, 124, 67, 0.25);
-  --page-link-color: #eb9854;
-  --page-link-namespace-color: #eb9854;
-  --popover-font-color: #e98924;
-  --popover-bg: #333;
+  --page-brackets__color: rgba(228, 124, 67, 0.25);
+  --page-link__color: #eb9854;
+  --page-link-namespace__color: #eb9854;
+  --menu__color: #e98924;
+  --menu__background: #333;
   --ref-count-font-size: 0.8em;
-  --right-sidebar-font-color: var(--main-font-color);
+  --right-sidebar-font-color: var(--main-font__color);
   --right-sidebar-link-color: #eb9854; // JH: added prefix --right TODO update the body variable
   --right-sidebar-bg: #323232;
   --right-sidebar-section-border-color: #e9892475;
@@ -69,51 +69,51 @@
   --search-new-page-color: #8dbb40; // JH: added prefix --search TODO update the body variable
   --search-outline: #e9892475; // JH: TODO update the style to reflect a full rule rather than just a single color
   --search-selected-row: #4c4c4c;
-  --tag-font-color: #777;
-  --tag-font-color-hover: #fff;
-  --tag-hover-bg: #e98924;
-  --tag-padding: 0.25em 0.4375em;
-  --tag-radius: 2em;
+  --tag__color: #777;
+  --tag__color_hover: #fff;
+  --tag__background-color_hover: #e98924;
+  --tag__padding: 0.25em 0.4375em;
+  --tag__border-radius: 2em;
   --strong: #508bb5;
 
   /* Backgrounds and objects */
 
-  --block-highlight: #00588e;
-  --block-highlight-current: rgba(
+  --block-highlight__background-color_selected: #00588e;
+  --block-highlight__background-color_active: rgba(
     255,
     255,
     255,
     0.05
   ); // JH: renamed variable from --current-block-highlight TODO update the body vairable
-  --block-highlight-bg: yellow; // JH: not sure when this is used by Roam
-  // --body-bg: #232323;
-  --body-bg: #2c2c2c;
-  --bullet: rgba(225, 117, 28, 0.3);
-  --bullet-closed: rgba(225, 117, 28, 0.7);
-  --bullet-closed-right-sidebar: var(
-    --bullet-closed
+  --block-highlight__background-color_mentions: yellow; // JH: not sure when this is used by Roam
+  // --body__background-color: #232323;
+  --body__background-color: #2c2c2c;
+  --bullet__background-color: rgba(225, 117, 28, 0.3);
+  --bullet__border_closed: rgba(225, 117, 28, 0.7);
+  --bullet__border_closed-right-sidebar: var(
+    --bullet__border_closed
   ); // JH: New variable TODO add to #right-sidebar .roam-bullet-closed
-  --bullet-outline: #404040;
-  --bullet-position: 4px;
-  --bullet-version: #137cbd;
+  --bullet__background-color-outline: #404040;
+  --bullet__background-color-position: 4px;
+  --version-bullet__background-color: #137cbd;
   --checkmark-border: #137cbd; // JH: New variable TODO add to .checkmark
-  --checkmark-color: #137cbd;
-  --code-bg: #232323;
-  --datepicker-bg: transparent;
-  --datepicker-day-wrapper: #d9822b7a;
-  --datepicker-font-color: var(--popover-font-color);
+  --todo-checkmark__color: #137cbd;
+  --code__background: #232323;
+  --datepicker__background-color: transparent;
+  --datepicker-today__border: #d9822b7a;
+  --datepicker__color: var(--menu__color);
   --datepicker-select-bg: #444; // JH: added prefix --datepicker TODO add to .bp3-html-select.bp3-minimal select
-  --hr: rgba(225, 117, 28, 0.5);
-  --icon-bg-hover: rgba(167, 182, 194, 0.3);
-  --icon-color: #e78924;
-  --icon-color-hover: #e78924;
+  --hr__border: rgba(225, 117, 28, 0.5);
+  --icon__background-color_hover: rgba(167, 182, 194, 0.3);
+  --icon__color: #e78924;
+  --icon__color_hover: #e78924;
   --inline-search-bg: #333;
   // --left-sidebar-bg: #2b2b2b;
   --left-sidebar-bg: #323232;
   --left-sidebar-hover-bg: #1f1f1f; // JH: added prefix --left TODO update the body variable
-  --reference-item-bg: #d8ac6e1a; // JH: Railscast uses 1 semi-transparent color for all three bg values
-  --reference-item-bg-2: #d8ac6e1a;
-  --reference-item-bg-3: #d8ac6e1a;
+  --linked-reference__backgound-color_1: #d8ac6e1a; // JH: Railscast uses 1 semi-transparent color for all three bg values
+  --linked-reference__backgound-color_2: #d8ac6e1a;
+  --linked-reference__backgound-color_3: #d8ac6e1a;
   --select-bg: #232323;
   --topbar-bg: transparent;
   --topbar-border-color: #333;
@@ -132,39 +132,39 @@
   --pages-table-border: #293035;
   --pages-sorted-color: #5c7080; // JH: New variable TODO add to body .sorted-header-text and .sorting-button-group .sort-button.focused
 
-  --table-border: #444;
-  --table-font-size: 0.85rem;
+  --table__border: #444;
+  --table__font-size: 0.85rem;
 
-  --kanban-board-bg: #333333;
-  --kanban-card-bg: #555555;
-  --kanban-card-font-color: #6d9cbe;
-  --kanban-column-bg: #454545;
-  --kanban-column-font-color: #e98924;
+  --kanban-board__background-color: #333333;
+  --kanban-card__background-color: #555555;
+  --kanban-card__color: #6d9cbe;
+  --kanban-column__background-color: #454545;
+  --kanban-column__color: #e98924;
 
-  --encrypted-font-color: #ff6000;
-  --encrypted-bg: #222;
+  --encrypted__color: #ff6000;
+  --encrypted__background-color: #222;
 
-  --pomodoro-bg: transparent;
-  --pomodoro-color: #fc5963;
-  --pomodoro-border: #fc596370;
+  --pomodoro__background: transparent;
+  --pomodoro__color: #fc5963;
+  --pomodoro__border-color: #fc596370;
 
-  --blockquote-font-color: rgba(109, 156, 190, 0.89);
-  --blockquote-border-color: #444;
-  --blockquote-bg: none;
+  --blockquote__color: rgba(109, 156, 190, 0.89);
+  --blockquote__border_color: #444;
+  --blockquote__background-color: none;
   --blockquote-cite: #777;
 
-  --emoji-bg: #2d2d2d;
-  --emoji-border: rgba(225, 117, 28, 0.4);
-  --emoji-color: #aaa;
+  --emoji__background-color: #2d2d2d;
+  --emoji__border: rgba(225, 117, 28, 0.4);
+  --emoji__color: #aaa;
 
   --no-query-results: 'Query returned no results';
   --no-query-results-color: #fc5963;
-  --query-results-border: #f2c98f1a;
+  --query__border: #f2c98f1a;
 
-  --q1: #50b2c0;
-  --q2: #c5d86d;
-  --q3: #ff6b6b;
-  --q4: #ca7d4a;
+  --page-link-date__color_q1: #50b2c0;
+  --page-link-date__color_q2: #c5d86d;
+  --page-link-date__color_q3: #ff6b6b;
+  --page-link-date__color_q4: #ca7d4a;
 
   /* Scrollbar settings - to disable set values to none */
 
@@ -173,9 +173,9 @@
 
   /* Saving icon colors */
 
-  --saving-local: #99280f;
-  --saving-remote: #d9822b;
-  --synched: #0f9960;
+  --status-icon__background-color_saving-local: #99280f;
+  --status-icon__background-color_saving-remote: #d9822b;
+  --status-icon__background-color_synched: #0f9960;
 
   /* fragile styles that may break with the next update */
 
@@ -183,7 +183,7 @@
   --block-embed-font-size: 0.85em; // JH: TODO Not sure if the works anymore, need to test
 
   /* JH overrides */
-  /*   --main-font: 'Calendas Plus', serif;
-  --main-font-size: 16px;
-  --code-font-size: 0.9em;  */
+  /*   --main-font__font-family: 'Calendas Plus', serif;
+  --main-font__font-size: 16px;
+  --code-font__font-size: 0.9em;  */
 }

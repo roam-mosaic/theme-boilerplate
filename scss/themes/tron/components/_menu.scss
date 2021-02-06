@@ -1,19 +1,19 @@
 .bp3-popover {
   .bp3-popover-content {
-    background: var(--popover-bg);
+    background: var(--menu__background);
     border-radius: 4px;
-    color: var(--popover-font-color);
+    color: var(--menu__color);
   }
 
   .bp3-popover-arrow-fill {
-    fill: var(--popover-bg);
+    fill: var(--menu__background);
   }
 }
 
 .bp3-menu {
-  background: var(--popover-bg);
+  background: var(--menu__background);
   border-radius: 4px;
-  color: var(--popover-font-color);
+  color: var(--menu__color);
 }
 
 /* Slash menu and inline search */
@@ -22,20 +22,18 @@ div {
     background-color: var(--inline-search-bg) !important;
     border-radius: 4px;
     box-shadow: 0 0 0 2px #222, 0 2px 15px #222;
-    color: var(--popover-font-color);
+    color: var(--menu__color);
     font-size: 0.85em;
   }
 }
 
 [title~='Search'] {
-  color: var(--popover-font-color) !important;
+  color: var(--menu__color) !important;
 }
 
 /* Row highlight in search menus */
-.bp3-elevation-3
-  .dont-unfocus-block[style*='background-color: rgb(213, 218, 223);'],
-.bp3-popover-content
-  .rm-menu-item[style*='background-color: rgb(213, 218, 223);'] {
+.bp3-elevation-3 .dont-unfocus-block[style*='background-color: rgb(213, 218, 223);'],
+.bp3-popover-content .rm-menu-item[style*='background-color: rgb(213, 218, 223);'] {
   background-color: var(--search-selected-row) !important;
 }
 
@@ -43,13 +41,13 @@ div {
 button {
   &[style*='background-color: rgba(72, 176, 240, 0.5);'] {
     // Selected buttion
-    background-color: var(--reference-item-bg) !important;
-    border: 1px solid var(--icon-color) !important;
+    background-color: var(--linked-reference__backgound-color_1) !important;
+    border: 1px solid var(--icon__color) !important;
   }
 
   &[style*='border: 0.5px solid rgb(206, 217, 224);'] {
     // Default buttons
-    background-color: var(--reference-item-bg) !important;
-    border: 1px solid var(--reference-item-bg) !important;
+    background-color: var(--linked-reference__backgound-color_1) !important;
+    border: 1px solid var(--linked-reference__backgound-color_1) !important;
   }
 }

@@ -2,16 +2,16 @@
 
 .rm-page-ref-brackets, // legacy selector
 .rm-page-ref__brackets {
-  color: var(--page-brackets);
+  color: var(--page-brackets__color);
 }
 
 .rm-page-ref--link {
-  color: var(--page-link-color);
+  color: var(--page-link__color);
 }
 
 .rm-page-ref-namespace-color, // legacy selector
 .rm-page-ref--namespace {
-  color: var(--page-link-namespace-color);
+  color: var(--page-link-namespace__color);
 }
 
 .rm-heading-level-1 {

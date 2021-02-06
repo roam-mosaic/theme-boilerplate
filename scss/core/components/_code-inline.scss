@@ -1,11 +1,9 @@
 /* Code - inline */
 
 code {
-  background-color: var(--code-bg);
-  border: none;
-  border-radius: 4px;
-  color: var(--code-font-color);
-  font-family: var(--code-font);
-  font-size: var(--code-font-size);
-  padding: 3px 4px;
+  background-color: var(--code__background);
+  border: var(--code-inline__border);
+  color: var(--code-font__color);
+  font-family: var(--code-font__font-family);
+  font-size: var(--code-font__font-size);
 }

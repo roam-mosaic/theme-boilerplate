@@ -1,0 +1,14 @@
+/* Twitter embeds */
+
+.twitter-tweet {
+  // filter: invert(1) hue-rotate(0deg) !important;
+
+  &.twitter-tweet-rendered {
+    opacity: 0.6;
+    transition: opacity 0.25s ease-in-out;
+  }
+
+  &:hover {
+    opacity: 0.9;
+  }
+}

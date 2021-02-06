@@ -2,7 +2,7 @@
 // TODO: Conflicts with Versions. when there are 2 versions, the first one is not visible.
 
 // :root {
-//   --bullet-color: rgba(197, 156, 8, 1) !important;
+//   --bullet__background-color-color: rgba(197, 156, 8, 1) !important;
 // }
 
 .block-border-left {
@@ -36,7 +36,7 @@
 
         .bp3-icon-caret-down {
           // background-color: yellow;
-          border-left: 1px solid var(--bullet-outline);
+          border-left: 1px solid var(--bullet__background-color-outline);
           height: 100%;
           width: 20px;
 
@@ -51,7 +51,7 @@
 
         &.cursor-pointer {
           .bp3-icon-caret-down {
-            border-color: var(--bullet-outline-highlight);
+            border-color: var(--bullet__background-color-outline-highlight);
 
             &:hover {
               // Potential to add better
@@ -68,7 +68,7 @@
           border-radius: 50%;
           width: 5px;
           height: 5px;
-          background-color: var(--bullet-closed);
+          background-color: var(--bullet__border_closed);
           left: 9px;
 
           .simple-bullet-inner {
@@ -76,7 +76,7 @@
             border-radius: 0px;
             width: 1px;
             left: -13px;
-            background-color: var(--bullet-outline-highlight);
+            background-color: var(--bullet__background-color-outline-highlight);
             padding: 9px 0px;
           }
         }

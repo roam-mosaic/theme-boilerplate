@@ -1,0 +1,28 @@
+/* Query */
+
+.rm-query {
+  border-radius: 7px;
+
+  .rm-query-title {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    font-size: 0.8em;
+    display: flex;
+  }
+}
+
+// /* Custom message for empty querty results */
+// .rm-block-text {
+//   .rm-reference-main {
+//     .rm-mentions {
+//       &:empty {
+//         &:after {
+//           color: var(--no-query-results-color);
+//           content: var(--no-query-results);
+//           font-family: var(--main-font__font-family);
+//           padding: var(--s1);
+//         }
+//       }
+//     }
+//   }
+// }

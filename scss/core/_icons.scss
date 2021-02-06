@@ -7,19 +7,23 @@
   }
 
   .bp3-icon {
-    color: var(--icon-color);
+    color: var(--icon__color);
   }
 
   .bp3-icon-standard {
-    color: var(--icon-color);
+    color: var(--icon__color);
   }
 
   .bp3-icon-large {
-    color: var(--icon-color);
+    color: var(--icon__color);
   }
 
   &:before {
-    color: var(--icon-color);
+    color: var(--icon__color);
+  }
+
+  &:focus {
+    outline: var(--icon__color) auto 2px;
   }
 
   &:not([class*='bp3-intent-']) {
@@ -27,12 +31,12 @@
     box-shadow: none;
     background-color: transparent;
     background-image: none;
-    color: var(--icon-color);
+    color: var(--icon__color);
     font-weight: 700;
 
     &:hover {
-      background-color: var(--icon-bg-hover);
-      color: var(--icon-color-hover) !important;
+      background-color: var(--icon__background-color_hover);
+      color: var(--icon__color_hover) !important;
     }
   }
 
@@ -49,8 +53,9 @@
 }
 
 .bp3-icon-star:before {
-  color: var(--icon-color);
+  color: var(--icon__color);
 }
+
 // Fix for word count interferring with # color option
 .rm-block-main .bp3-button:not([class*='bp3-intent-']) {
   min-height: 25px;

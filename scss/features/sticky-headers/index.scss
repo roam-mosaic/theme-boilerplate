@@ -9,7 +9,7 @@
   > .roam-block-container
   > .rm-block-main.rm-block__self:first-child {
   position: sticky !important;
-  background: var(--body-bg);
+  background: var(--body__background-color);
   will-change: transform;
   z-index: 100;
   top: 0 !important;
@@ -23,7 +23,7 @@
   position: sticky !important;
   // top: 0 !important;
   will-change: transform;
-  background: var(--body-bg);
+  background: var(--body__background-color);
   z-index: 99;
   top: 2em !important;
 }
@@ -35,7 +35,7 @@
   > .rm-block-main.rm-block__self:first-child {
   position: sticky !important;
   // top: 0 !important;
-  background: var(--body-bg);
+  background: var(--body__background-color);
   will-change: transform;
   z-index: 98;
   top: 4em !important;
@@ -48,7 +48,7 @@
   > .rm-block-main.rm-block__self:first-child {
   position: sticky !important;
   // top: 0 !important;
-  background: var(--body-bg);
+  background: var(--body__background-color);
   will-change: transform;
   z-index: 97;
   top: 6em !important;
@@ -61,7 +61,7 @@
   > .rm-block-main.rm-block__self:first-child {
   position: sticky !important;
   // top: 0 !important;
-  background: var(--body-bg);
+  background: var(--body__background-color);
   will-change: transform;
   z-index: 96;
   top: 8em !important;
@@ -74,7 +74,7 @@
   > .rm-block-main.rm-block__self:first-child {
   position: sticky !important;
   // top: 0 !important;
-  background: var(--body-bg);
+  background: var(--body__background-color);
   will-change: transform;
   z-index: 95;
   top: 10em !important;
@@ -87,7 +87,7 @@
   > .rm-block-main.rm-block__self:first-child {
   position: sticky !important;
   // top: 0 !important;
-  background: var(--body-bg);
+  background: var(--body__background-color);
   will-change: transform;
   z-index: 94;
   top: 12em !important;

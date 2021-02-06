@@ -1,0 +1,15 @@
+/* Inline block */
+
+.rm-paren {
+  border-radius: 4px;
+}
+.rm-spacer {
+  font-size: 1.1em;
+  position: relative;
+  top: 3px;
+
+  svg {
+    height: 16px;
+    width: 16px;
+  }
+}

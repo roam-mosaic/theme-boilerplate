@@ -7,7 +7,7 @@
   .rm-pages-title-col {
     a {
       strong {
-        color: var(--page-link-color) !important;
+        color: var(--page-link__color) !important;
         &:hover {
           text-decoration: underline;
         }
@@ -23,7 +23,7 @@
 /* Custom checkboxes */
 .bp3-control {
   .bp3-control-indicator {
-    background-color: var(--checkmark-bg);
+    background-color: var(--todo-checkmark__background-color);
     background-image: -webkit-gradient(
       linear,
       left top,
@@ -40,7 +40,7 @@
 
   &:hover {
     .bp3-control-indicator {
-      background-color: var(--checkmark-color);
+      background-color: var(--todo-checkmark__color);
       background-image: none;
     }
   }
@@ -52,7 +52,7 @@
       border-bottom: 1px solid var(--pages-table-border);
 
       .rm-pages-title-col {
-        color: var(--main-font-color);
+        color: var(--main-font__color);
       }
     }
 
@@ -62,7 +62,7 @@
     }
   }
   div {
-    font-family: var(--main-font);
+    font-family: var(--main-font__font-family);
   }
 }
 

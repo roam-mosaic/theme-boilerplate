@@ -1,6 +1,6 @@
 /* Topbar */
 
-.roam-topbar {
+.rm-topbar {
   background-color: var(--topbar-bg);
   border-bottom: 0.5px solid var(--topbar-border-color);
 }
@@ -8,7 +8,7 @@
 .bp3-input {
   background: var(--search-bg);
   box-shadow: none;
-  color: var(--popover-font-color);
+  color: var(--menu__color);
   font-size: 0.85em;
 
   &::placeholder {
@@ -36,4 +36,15 @@
   > .bp3-icon {
     color: var(--search-font-color);
   }
+}
+
+//saving status icon dot
+.rm-sync--status-icon__background-color_saving-local {
+  background-color: var(--status-icon__background-color_saving-local);
+}
+.rm-sync--status-icon__background-color_saving-remote {
+  background-color: var(--status-icon__background-color_saving-remote);
+}
+.rm-sync--synced {
+  background-color: var(--status-icon__background-color_synched);
 }

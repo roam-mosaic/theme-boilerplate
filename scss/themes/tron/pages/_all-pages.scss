@@ -18,7 +18,7 @@
   .rm-pages-title-col {
     a {
       strong {
-        color: var(--page-link-color) !important;
+        color: var(--page-link__color) !important;
         &:hover {
           text-decoration: underline;
         }
@@ -106,7 +106,7 @@
       align-items: flex-start;
       color: #8a9ba8;
       .rm-pages-title-col {
-        color: var(--main-font-color);
+        color: var(--main-font__color);
         padding: 8px 4px;
         flex: 2 0 0;
         text-overflow: ellipsis;

@@ -1,7 +1,37 @@
-@import '../../core/index';
-// @import '../../features/';
+/*
+### ROAM Railscast THEME ###
+> Many thanks to the Roam Slack community for all the resources, particularly @Anthony, @Calhistoriaan, @Devon, @Murf, @Malcolm Ocean, and @David Cranall.
+> Edits by Jeff Harris
+> v2.0.11
+*/
+
+// Optional vanilla roam variable import
+// @import '../../core/variables-vanilla-roam';
 
 @import 'variables';
 
-@import '../../features/search/full-width/index';
+@import '../../core/index';
+// @import '../../features/';
 
+/* components */
+@import 'components/alias';
+@import 'components/block-reference';
+@import 'components/code-inline';
+@import 'components/database-menu';
+@import 'components/dialog';
+@import 'components/emoji';
+@import 'components/inline-block';
+@import 'components/linked-reference';
+@import 'components/query';
+@import 'components/tag';
+@import 'components/todo';
+@import 'components/twitter-embed';
+
+@import 'layout/body';
+@import 'layout/breadcrumb';
+
+@import '../../features/search/full-width/index';
+// @import '../../features/editor/bullet-collapse/index';
+@import '../../features/editor/bullet-zoom-focus/index';
+// @import '../../features/scrollbars/simple/index';
+@import '../../features/editor/query/index';

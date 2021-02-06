@@ -3,24 +3,20 @@
 */
 
 .timestamp-control {
-  background-color: var(--yt-play-button-bg);
-  color: var(--yt-play-button-border);
+  background-color: var(--yt-play-button__background-color);
+  color: var(--yt-play-button__color);
   margin-right: 8px;
   margin-top: 0px;
-  margin-left: 25px;
+  margin-left: 5px;
   margin-bottom: 5px;
   border-radius: 50% !important;
-  // border-style: inset;
-  // border-color: #ff3200;
   font-size: 0.9em;
   padding: 5px 8px !important;
   border: 1px solid;
   opacity: 0.65;
 }
 .timestamp-control:hover {
-  background-color: var(--yt-play-button-bg-hover);
-  // border-style: outset;
-  // color: #ffffff;
+  background-color: var(--yt-play-button__background-color_hover);
   opacity: 1;
 }
 /* Hide YouTube Breadcrumb */

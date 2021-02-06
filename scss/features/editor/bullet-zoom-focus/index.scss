@@ -12,12 +12,17 @@ so there is no need to remove the tag when done.
     line-height: 1.5em; /* space between lines */
   }
 
+  .rm-multibar {
+    display: none;
+  }
+
   &.roam-block-container {
     .roam-block-container {
       margin-top: 0.7em; /* space between blocks */
     }
 
     .controls {
+      // .rm-bullet {
       display: none;
     }
   }

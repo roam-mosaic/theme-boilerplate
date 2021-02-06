@@ -2,21 +2,21 @@
 
 .rm-bq {
   display: inline-block;
-  background-color: var(--blockquote-bg);
-  border-left: 5px solid var(--blockquote-border-color);
-  font-size: var(--blockquote-font-size);
-  color: var(--blockquote-font-color);
+  background-color: var(--blockquote__background-color);
+  border-left: 5px solid var(--blockquote__border_color);
+  font-size: var(--blockquote__font-size);
+  color: var(--blockquote__color);
   text-align: justify;
   text-justify: inter-word;
 }
 
 // These styles are for hiccup formated blockquotes e.g., :hiccup [:blockquote [:p "Operational effectiveness is not a strategy"] [:footer [:cite "Michael Porter, p61"]]]
 blockquote {
-  background-color: var(--blockquote-bg);
-  border-left: 5px solid var(--blockquote-border-color);
+  background-color: var(--blockquote__background-color);
+  border-left: 5px solid var(--blockquote__border_color);
   box-sizing: border-box;
-  color: var(--blockquote-font-color);
-  font-size: var(--blockquote-font-size);
+  color: var(--blockquote__color);
+  font-size: var(--blockquote__font-size);
   margin: 0 0 20px;
   min-height: 0;
   min-width: 0;

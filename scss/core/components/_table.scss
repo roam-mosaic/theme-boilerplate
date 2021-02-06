@@ -1,31 +1,14 @@
 /* Table */
 
 .roam-table {
-  overflow-x: scroll;
-  padding-bottom: 24px;
+  // overflow-x: scroll;
+  padding-bottom: 24px !important; //TODO this is a fix
 
-  th {
-    border: 1px solid var(--table-border);
-    font-family: var(--main-font);
-    font-size: var(--table-font-size);
-    margin: 0;
-  }
-
-  td {
-    border: 1px solid var(--table-border);
-    font-family: var(--main-font);
-    font-size: var(--table-font-size);
-    margin: 0;
-  }
-
+  th,
+  td,
   tr {
-    border: 1px solid var(--table-border);
-    font-family: var(--main-font);
-    font-size: var(--table-font-size);
-    margin: 0;
-  }
-
-  div {
-    font-family: var(--main-font);
+    border: var(--table__border);
+    font-family: var(--main-font__font-family);
+    font-size: var(--table__font-size);
   }
 }

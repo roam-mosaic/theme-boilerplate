@@ -1,0 +1,21 @@
+/* Linked reference */
+
+.rm-reference-container {
+  margin-bottom: 2em; // A littled extra space between linked and unlinked reference sections
+}
+
+.rm-reference-item {
+  border-radius: 7px;
+  padding: 10px;
+  padding-right: 0;
+
+  .controls {
+    .block-expand {
+      margin-top: 0;
+    }
+  }
+
+  .rm-block-text {
+    padding-right: 30px;
+  }
+}

@@ -25,11 +25,11 @@
 
 .roam-body {
   .roam-app {
-    color: var(--main-font-color);
+    color: var(--main-font__color);
 
     .roam-article {
       div {
-        font-family: var(--main-font);
+        font-family: var(--main-font__font-family);
       }
     }
 
@@ -37,11 +37,11 @@
       color: var(--h1-font-color);
 
       .level2 {
-        font-family: var(--main-font);
+        font-family: var(--main-font__font-family);
         margin-top: 4px !important;
 
         a {
-          color: var(--page-link-color);
+          color: var(--page-link__color);
         }
       }
     }
