@@ -4,7 +4,7 @@
 }
 
 .rm-g.rm-not-focused .rm-block {
-  background-color: var(--inline-search-bg);
+  background-color: var(--inline-search__background-color);
   // background-color: transparent;
   // border-radius: 20px 0px 0px 20px;
   margin: 0 0 0 35px; /* fix for expand bullets feature */
@@ -26,7 +26,7 @@
   // background-color: #394b59;
   // color: #394b59;
   background-color: var(--tag__color_hashtag);
-  color: var(--highlight-font-color);
+  color: var(--highlight__color);
   left: 5px;
   transform: rotate(90deg) translateY(-1em);
   transform-origin: top left;

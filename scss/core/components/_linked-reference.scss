@@ -13,7 +13,7 @@
   }
 
   div[style*='color: rgb(206, 217, 224);'] {
-    font-size: var(--h3-font-size);
+    font-size: var(--h3__font-family-size);
 
     strong {
       font-weight: normal;
@@ -47,7 +47,7 @@
   padding-top: 2em;
 
   strong[style*='color: rgb(206, 217, 224);'] {
-    font-size: var(--h3-font-size);
+    font-size: var(--h3__font-family-size);
     font-weight: normal;
   }
 }

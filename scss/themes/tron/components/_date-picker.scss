@@ -17,7 +17,7 @@
 .bp3-html-select {
   .bp3-minimal {
     select {
-      background-color: var(--select-bg);
+      background-color: var(--select-menu__background-color);
       color: var(--menu__color);
 
       &:hover {

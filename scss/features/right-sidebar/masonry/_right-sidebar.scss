@@ -31,15 +31,15 @@
 
         // TODO: Make this a configurable
         width: 600px;
-        background-color: var(--right-sidebar-masonry-bg) !important;
-        border: 1px solid var(--right-sidebar-masonry-outline) !important;
+        background-color: var(--right-sidebar-masonry__background-color) !important;
+        border: 1px solid var(--right-sidebar-masonry__border) !important;
 
         &:nth-child(1) {
           margin-left: 0px;
         }
 
         &:before {
-          background: var(--right-sidebar-bg);
+          background: var(--right-sidebar__background-color);
         }
 
         /* item header */

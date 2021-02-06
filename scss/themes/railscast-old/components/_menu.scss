@@ -36,7 +36,7 @@
 /* Slash menu and inline search */
 div {
   .bp3-elevation-3 {
-    background-color: var(--inline-search-bg) !important;
+    background-color: var(--inline-search__background-color) !important;
     border-radius: 4px;
     box-shadow: 0 0 0 2px #222, 0 2px 15px #222;
     color: var(--menu__color);
@@ -51,7 +51,7 @@ div {
 /* Row highlight in search menus */
 .bp3-elevation-3 .dont-unfocus-block[style*='background-color: rgb(213, 218, 223);'],
 .bp3-popover-content .rm-menu-item[style*='background-color: rgb(213, 218, 223);'] {
-  background-color: var(--search-selected-row) !important;
+  background-color: var(--search__background-color_selected-row) !important;
 }
 
 /* Alignment and Header buttons in the bullet popover menu */

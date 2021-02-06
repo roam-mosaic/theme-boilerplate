@@ -59,14 +59,6 @@ body {
   background-color: var(--block-highlight__background-color_mentions);
 }
 
-// TODO this is a fix to support a hiccup hr
-hr {
-  margin-top: 0.785714286em;
-  margin-bottom: 2.5em;
-  border: 0;
-  border-top: 1px solid var(--hr__border);
-}
-
 /*RR change: DEFAULT TEXT - a small addition to the placeholder text to Daily Notes or Pages to help get you started */
 // TODO this is a fix
 

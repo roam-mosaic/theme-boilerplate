@@ -11,44 +11,6 @@
   --s1: 8px;
   --background-color: #e1e8ed;
 
-  /* Refactored */
-
-  /* layout */
-
-  /* body */
-
-  --body__background-color: #2c2c2c;
-  --main-font__color: #999;
-  --main-font__font-family: 'Inter', sans-serif;
-  --main-font__font-size: 14px;
-  --caret__color: #0080ff;
-  --accent__color: #e98924;
-  --accent-font__color: #1189bd;
-
-  --block-highlight__background-color_selected: #00588e;
-  --block-highlight__background-color_active: rgba(255, 255, 255, 0.05);
-  --block-highlight__background-color_mentions: #312c28; // This is the Mentions background highlight color in the sidebar
-
-  --bullet__background-color: rgba(225, 117, 28, 0.3);
-  --bullet__border_closed: rgba(225, 117, 28, 1);
-  --bullet-outline__border: #404040;
-  --bullet-outline__border_hover: rgba(255, 149, 0, 0.4);
-
-  --hr__border: rgba(225, 117, 28, 0.5);
-
-  --section-divider_border-top: 1px solid #e9892475;
-
-  /* breadcrumb */
-
-  --breadcrumb__background-color: transparent;
-  --breadcrumb__font-size: 13px;
-
-  /* help */
-
-  --help__background-color: #333;
-  --help__border: var(--hr__border);
-  --help__color: var(--main-font__color);
-
   /* Components */
 
   --alias__background-color: transparent; /* Legacy alias */
@@ -119,12 +81,9 @@
   --external-link__color: #8dbb40;
   --external-link__text-decoration: underline;
 
-  --icon__background-color_hover: rgba(167, 182, 194, 0.3);
-  --icon__color: #e78924;
-  --icon__color_hover: #e78924;
-
   --inline-block__background-color: transparent;
   --inline-block__border: none;
+  --inline-search__background-color: #333;
 
   --kanban-board__background-color: #333333;
   --kanban-card__background-color: #555555;
@@ -169,8 +128,10 @@
   --query__border: 0.75px solid #f2c98f1a;
   --query__color_query-string: #5c7080;
 
-  --rm-g__background-color_block: var(--inline-search-bg);
+  --rm-g__background-color_block: var(--inline-search__background-color);
   --rm-g__background-color_left-border: #ab6634;
+
+  --select-menu__background-color: #232323;
 
   --table__border: 1px solid #444;
   --table__font-size: 0.85em;
@@ -186,11 +147,6 @@
   --todo-checkmark__background-color: #555;
   --todo-checkmark__color: #137cbd;
 
-  /* Saving icon colors */
-  --status-icon__background-color_saving-local: #99280f;
-  --status-icon__background-color_saving-remote: #d9822b;
-  --status-icon__background-color_synched: #0f9960;
-
   --version-bullet__background-color: #137cbd;
   --version-bullet__border: #137cbd;
 
@@ -199,89 +155,137 @@
   --yt-play-button__background-color: rgba(108, 109, 36, 0.1);
   --yt-play-button__background-color_hover: rgba(109, 77, 36, 0.25);
 
-  /* Refactored */
+  /* layout */
 
-  /* Primary fonts */
+  /* body */
 
-  /* Fonts */
+  --body__background-color: #2c2c2c;
+  --main-font__color: #999;
+  --main-font__font-family: 'Inter', sans-serif;
+  --main-font__font-size: 14px;
+  --caret__color: #0080ff;
+  --accent__color: #e98924;
+  --accent-font__color: #1189bd;
 
-  --calculation-color: #ff6000;
+  --block-highlight__background-color_selected: #00588e;
+  --block-highlight__background-color_active: rgba(255, 255, 255, 0.05);
+  --block-highlight__background-color_mentions: #312c28; // This is the Mentions background highlight color in the sidebar
 
-  --emphasis: #fc5963;
-  --h1-font: var(--main-font);
-  --h1-font-color: #1189bd;
-  --h1-font-size: 2.25em;
-  --h1-font__link--color: var(--page-link__color);
-  --h2-font: var(--h1-font);
-  --h2-font-color: #1189bd;
-  --h2-font-size: 1.625em;
-  --h2-font__link--color: var(--page-link__color);
-  --h3-font: var(--h1-font);
-  --h3-font-color: #1189bd;
-  --h3-font-size: 1.3em;
-  --h3-font__link--color: var(--page-link__color);
-  --highlight-background-color: #008aff5e;
-  --highlight-font-color: #bbb;
-  --highlight-link-color: #ff6000;
-  --left-sidebar-font-color: #1189bd;
-  --left-sidebar-font-color-hover: var(--accent__color);
-  --left-sidebar-font-size: 1rem;
-  --left-sidebar-shortcuts-color: var(--left-sidebar-font-color);
-  --left-sidebar-shortcuts-font-size: 1rem;
-  --left-sidebar-shortcuts-title-color: var(--left-sidebar-font-color);
+  --bullet__background-color: rgba(225, 117, 28, 0.3);
+  --bullet__border_closed: rgba(225, 117, 28, 1);
+  --bullet-outline__border: #404040;
+  --bullet-outline__border_hover: rgba(255, 149, 0, 0.4);
 
-  --ref-count-font-size: 0.8em;
-  --right-sidebar-font-color: var(--main-font__color);
-  --right-sidebar-link-color: #eb9854;
-  --right-sidebar-bg: #323232;
-  --right-sidebar-masonry-bg: var(--body__background-color);
-  --right-sidebar-masonry-outline: #3d3d3d;
-  --right-sidebar-section-border-color: #e9892475;
-  --search-bg: #252525;
-  --search-body-font-color: #8a9ba8;
-  --search-font-color: #af671c;
-  --search-new-page-color: #8dbb40;
-  --search-outline: #e9892475;
-  --search-selected-row: #4c4c4c;
-  --strong: #508bb5;
+  --section-divider_border-top: 1px solid #e9892475;
 
-  /* Backgrounds and objects */
+  /* breadcrumb */
 
-  --inline-search-bg: #333;
+  --breadcrumb__background-color: transparent;
+  --breadcrumb__font-size: 13px;
 
-  // --left-sidebar-bg: #2b2b2b;
-  --left-sidebar-bg: #323232;
-  --left-sidebar-hover-bg: #1f1f1f;
+  /* help */
 
-  --select-bg: #232323;
-  --topbar-bg: var(--body__background-color);
-  --topbar-border-color: #333;
+  --help__background-color: #333;
+  --help__border: var(--hr__border);
+  --help__color: var(--main-font__color);
 
-  /* Misc */
+  /* left sidebar */
 
-  --pages-delete-bg: #222; // modal variable
-  --pages-delete-border-color: #d8e1e8; // JH: modal variable, New variable TODO add to body .delete-all-dialog-items
-  --pages-header-row-bg: #262626;
-  --pages-header-row-font-color: #bfccd6;
-  --pages-mentions-bg-empty: #3a3a3a;
-  --pages-mentions-color: #ff6000;
-  --pages-mentions-color-empty: #737373;
-  --pages-row-highlight: #292929;
-  --pages-search-bg: #3a3a3a;
-  --pages-search-outline: #e9892475;
-  // --pages-search-outline: var(--search-outline); //no longer exists in Roam, add if needed for Theme or replace with inherit or initial?
-  --pages-table-border: #2f373d;
-  --pages-sorted-color: #508bb5;
+  --left-sidebar__background-color: #323232;
+  --left-sidebar__background-color_hover: #1f1f1f;
+  --left-sidebar__color: #1189bd;
+  --left-sidebar__color_hover: var(--accent__color);
+  --left-sidebar__font-size: 0.9em;
+  --left-sidebar-shortcuts__color: var(--left-sidebar__color);
+  --left-sidebar-shortcuts__color_title: var(--left-sidebar__color);
+  --left-sidebar-shortcuts__font-size: 1rem;
 
-  /* Scrollbar settings - to disable set values to none */
+  /* right sidebar */
 
-  --scrollbar-thumb: #323232;
+  --right-sidebar__color_title-closed: var(--accent-font__color);
+  --right-sidebar__background-color: #323232;
+  --right-sidebar__border: #e9892475;
+  --right-sidebar-masonry__background-color: var(--body__background-color);
+  --right-sidebar-masonry__border: #3d3d3d;
+
+  /* scrollbar */
+
   --scrollbar-thumb: #ffffff10;
   --scrollbar-track: rgba(153, 153, 153, 0.1);
-  // --scrollbar-track: transparent;
 
-  /* JH overrides */
-  /*   --main-font: 'Calendas Plus', serif;
-  --main-font__font-size: 16px;
-  --code-font__font-size: 0.9em;  */
+  /* topbar */
+
+  --status-icon__background-color_saving-local: #99280f;
+  --status-icon__background-color_saving-remote: #d9822b;
+  --status-icon__background-color_synched: #0f9960;
+  --search__background: #252525;
+  --search__background-color_selected-row: #4c4c4c;
+  --search__color_body: #8a9ba8;
+  --search__color_new-page: #8dbb40;
+  --search__color_page: #af671c;
+  --search__border: #e9892475;
+  --topbar__background-color: var(--body__background-color);
+  --topbar__border: #333;
+
+  /* typography */
+
+  --calculation__color: #ff6000;
+  --emphasis__color: #fc5963;
+  --h1__color: #1189bd;
+  --h1__color_link: var(--page-link__color);
+  --h1__font-family: var(--main-font__font-family);
+  --h1__font-size: 2.25em;
+  --h1__font-weight: 400;
+  --h2__color: #1189bd;
+  --h2__color_link: var(--page-link__color);
+  --h2__font-family: var(--h1__font-family);
+  --h2__font-size: 1.625em;
+  --h2__font-weight: 400;
+  --h3__color: #1189bd;
+  --h3__color_link: var(--page-link__color);
+  --h3__font-family: var(--h1__font-family);
+  --h3__font-size: 1.3em;
+  --h3__font-weight: 700;
+  --highlight__background-color: #008aff5e;
+  --highlight__color: #bbb;
+  --highlight-link-color: #ff6000;
+  --hr__border: rgba(225, 117, 28, 0.5);
+  --hr__margin-bottom: 2.5em;
+  --hr__margin-top: 0.785714286em;
+  --strikethrough__color: inherit;
+  --strikethrough__font-style: italic;
+  --strikethrough__opacity: 0.6;
+  --strong__color: #508bb5;
+  --strong__font-weight: 700;
+
+  /* pages */
+
+  /* all pages */
+
+  --pages-checkmark__background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(82, 82, 82, 0.8)),
+    to(rgba(0, 0, 0, 0))
+  );
+  --pages-delete__background-color: #222;
+  --pages-delete__border-color: #ff6000;
+  --pages-header__background-color: #262626;
+  --pages-header__color: #bfccd6;
+  --pages-header__color_sorted: #508bb5;
+  --pages-mentions__background-color: #ff6000;
+  --pages-mentions__background-color_empty: #3a3a3a;
+  --pages-mentions__color_empty: #737373;
+  --pages-row__background-color_highlight: #292929; // Don't think this exists any more
+  --pages-search-field__background-color: #3a3a3a;
+  --pages-search-field__border-color: #e9892475;
+  --pages-table__border-color: #2f373d;
+
+  /* icons */
+
+  --icon__background-color_hover: rgba(167, 182, 194, 0.3);
+  --icon__color: #e78924;
+  --icon__color_hover: #e78924;
+  --filter__color_subscript: #5c7080;
 }

@@ -32,49 +32,49 @@
   --query__color_query-string: #5c7080;
   --breadcrumb__font-size: 13px;
   --breadcrumb-line-height: 0.85em;
-  --calculation-color: #ff6000;
-  --emphasis: #fc5963;
+  --calculation__color: #ff6000;
+  --emphasis__color: #fc5963;
   --external-link__color: #8dbb40;
-  --h1-font: var(--main-font__font-family);
-  --h1-font-color: #1189bd;
-  --h1-font-size: 1.8rem;
-  --h2-font: var(--main-font__font-family);
-  --h2-font-color: #1189bd;
-  --h2-font-size: 1.4rem;
-  --h3-font: var(--main-font__font-family);
-  --h3-font-color: #1189bd;
-  --h3-font-size: 1.2rem;
-  --highlight-background-color: #fef09f;
-  --highlight-font-color: #222;
+  --h1__font-family: var(--main-font__font-family);
+  --h1__font-family-color: #1189bd;
+  --h1__font-family-size: 1.8rem;
+  --h2__font-family: var(--main-font__font-family);
+  --h2__font-family-color: #1189bd;
+  --h2__font-family-size: 1.4rem;
+  --h3__font-family: var(--main-font__font-family);
+  --h3__font-family-color: #1189bd;
+  --h3__font-family-size: 1.2rem;
+  --highlight__background-color: #fef09f;
+  --highlight__color: #222;
   --highlight-link-color: #ff6000;
-  --left-sidebar-font-color: #1189bd; // JH: added prefix --left TODO update body variable
-  --left-sidebar-font-color-hover: #e98924; // JH: added prefix --left TODO update body variable
-  --left-sidebar-font-size: 1rem;
-  --left-sidebar-shortcuts-color: var(--left-sidebar-font-color);
-  --left-sidebar-shortcuts-font-size: 1rem;
-  --left-sidebar-shortcuts-title-color: var(--left-sidebar-font-color);
+  --left-sidebar__color: #1189bd; // JH: added prefix --left TODO update body variable
+  --left-sidebar__color_hover: #e98924; // JH: added prefix --left TODO update body variable
+  --left-sidebar__font-size: 1rem;
+  --left-sidebar-shortcuts__color: var(--left-sidebar__color);
+  --left-sidebar-shortcuts__font-size: 1rem;
+  --left-sidebar-shortcuts__color_title: var(--left-sidebar__color);
   --page-brackets__color: rgba(228, 124, 67, 0.25);
   --page-link__color: #eb9854;
   --page-link-namespace__color: #eb9854;
   --menu__color: #e98924;
   --menu__background: #333;
   --ref-count-font-size: 0.8em;
-  --right-sidebar-font-color: var(--main-font__color);
-  --right-sidebar-link-color: #eb9854; // JH: added prefix --right TODO update the body variable
-  --right-sidebar-bg: #323232;
-  --right-sidebar-section-border-color: #e9892475;
-  --search-bg: #252525;
-  --search-body-font-color: #8a9ba8;
-  --search-font-color: #af671c;
-  --search-new-page-color: #8dbb40; // JH: added prefix --search TODO update the body variable
-  --search-outline: #e9892475; // JH: TODO update the style to reflect a full rule rather than just a single color
-  --search-selected-row: #4c4c4c;
+  --right-sidebar__color_title-closed: var(--main-font__color);
+  --right-sidebar__color_title-closed: #eb9854; // JH: added prefix --right TODO update the body variable
+  --right-sidebar__background-color: #323232;
+  --right-sidebar__border: #e9892475;
+  --search__background: #252525;
+  --search__color_body: #8a9ba8;
+  --search__color_page: #af671c;
+  --search__color_new-page: #8dbb40; // JH: added prefix --search TODO update the body variable
+  --search__border: #e9892475; // JH: TODO update the style to reflect a full rule rather than just a single color
+  --search__background-color_selected-row: #4c4c4c;
   --tag__color: #777;
   --tag__color_hover: #fff;
   --tag__background-color_hover: #e98924;
   --tag__padding: 0.25em 0.4375em;
   --tag__border-radius: 2em;
-  --strong: #508bb5;
+  --strong__color: #508bb5;
 
   /* Backgrounds and objects */
 
@@ -107,30 +107,30 @@
   --icon__background-color_hover: rgba(167, 182, 194, 0.3);
   --icon__color: #e78924;
   --icon__color_hover: #e78924;
-  --inline-search-bg: #333;
-  // --left-sidebar-bg: #2b2b2b;
-  --left-sidebar-bg: #323232;
-  --left-sidebar-hover-bg: #1f1f1f; // JH: added prefix --left TODO update the body variable
+  --inline-search__background-color: #333;
+  // --left-sidebar__background-color: #2b2b2b;
+  --left-sidebar__background-color: #323232;
+  --left-sidebar__background-color_hover: #1f1f1f; // JH: added prefix --left TODO update the body variable
   --linked-reference__backgound-color_1: #d8ac6e1a; // JH: Railscast uses 1 semi-transparent color for all three bg values
   --linked-reference__backgound-color_2: #d8ac6e1a;
   --linked-reference__backgound-color_3: #d8ac6e1a;
-  --select-bg: #232323;
-  --topbar-bg: transparent;
-  --topbar-border-color: #333;
+  --select-menu__background-color: #232323;
+  --topbar__background-color: transparent;
+  --topbar__border: #333;
 
   /* Misc */
 
-  --pages-delete-bg: #222; // JH: modal variable
-  --pages-delete-border-color: #d8e1e8; // JH: modal variable, New variable TODO add to body .delete-all-dialog-items
+  --pages-delete__background-color: #222; // JH: modal variable
+  --pages-delete__border-color: #d8e1e8; // JH: modal variable, New variable TODO add to body .delete-all-dialog-items
   //--pages-header-row: #2d2d2d; // JH: TODO the style for this was removed with the All Pages update, add it back in?
-  --pages-mentions-bg-empty: #3a3a3a;
-  --pages-mentions-color: #ff6000;
-  --pages-mentions-color-empty: #737373;
-  --pages-search-bg: #3a3a3a;
-  --pages-search-outline: #e9892475;
-  // --pages-search-outline: var(--search-outline); //doesn't exist in Roam, add if needed for Theme or replace with inherit or initial?
-  --pages-table-border: #293035;
-  --pages-sorted-color: #5c7080; // JH: New variable TODO add to body .sorted-header-text and .sorting-button-group .sort-button.focused
+  --pages-mentions__background-color_empty: #3a3a3a;
+  --pages-mentions__background-color: #ff6000;
+  --pages-mentions__background-color-empty: #737373;
+  --pages-search-field__background-color: #3a3a3a;
+  --pages-search-field__border-color: #e9892475;
+  // --pages-search-field__border-color: var(--search__border); //doesn't exist in Roam, add if needed for Theme or replace with inherit or initial?
+  --pages-table__border-color: #293035;
+  --pages-header__color_sorted: #5c7080; // JH: New variable TODO add to body .sorted-header-text and .sorting-button-group .sort-button.focused
 
   --table__border: #444;
   --table__font-size: 0.85rem;

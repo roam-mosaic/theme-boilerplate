@@ -1,5 +1,5 @@
 #right-sidebar {
-  background-color: var(--right-sidebar-bg) !important;
+  background-color: var(--right-sidebar__background-color) !important;
 
   /* container */
   #roam-right-sidebar-content {
@@ -10,7 +10,7 @@
     /* item */
     > div {
       border: 1px solid #2b343b !important;
-      background-color: var(--right-sidebar-bg) !important;
+      background-color: var(--right-sidebar__background-color) !important;
 
       h1.level2 {
         a {

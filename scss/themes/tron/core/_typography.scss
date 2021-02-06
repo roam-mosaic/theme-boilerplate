@@ -18,9 +18,9 @@
 */
 
 :root {
-  --h1-font: 'Rajdhani';
-  --h2-font: 'Rajdhani';
-  --h3-font: 'Rajdhani';
+  --h1__font-family: 'Rajdhani';
+  --h2__font-family: 'Rajdhani';
+  --h3__font-family: 'Rajdhani';
 }
 
 .roam-body {
@@ -34,7 +34,7 @@
     }
 
     h1 {
-      color: var(--h1-font-color);
+      color: var(--h1__font-family-color);
 
       .level2 {
         font-family: var(--main-font__font-family);
@@ -49,12 +49,12 @@
 }
 
 .rm-level1 {
-  font-family: var(--h1-font);
-  font-size: var(--h1-font-size);
+  font-family: var(--h1__font-family);
+  font-size: var(--h1__font-family-size);
   font-weight: 400;
 
   span {
-    font-family: var(--h1-font);
+    font-family: var(--h1__font-family);
   }
 
   label {
@@ -67,9 +67,9 @@
 }
 
 .rm-level2 {
-  color: var(--h2-font-color);
-  font-family: var(--h2-font);
-  font-size: var(--h2-font-size);
+  color: var(--h2__font-family-color);
+  font-family: var(--h2__font-family);
+  font-size: var(--h2__font-family-size);
   font-weight: 400;
 
   .rm-block-text {
@@ -78,16 +78,16 @@
 }
 
 .rm-level3 {
-  color: var(--h3-font-color);
-  font-family: var(--h3-font);
-  font-size: var(--h3-font-size);
+  color: var(--h3__font-family-color);
+  font-family: var(--h3__font-family);
+  font-size: var(--h3__font-family-size);
   font-weight: 700;
 }
 
 /* Calculation Results */
 span {
   &[style*='color: rgb(14, 90, 138);'] {
-    color: var(--calculation-color) !important;
+    color: var(--calculation__color) !important;
   }
 }
 

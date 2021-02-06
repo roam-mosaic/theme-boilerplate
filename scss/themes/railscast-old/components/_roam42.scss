@@ -95,12 +95,12 @@ span.flatpickr-weekday {
 
 .tribute-container ul {
   // background-color: var(--bg-popover) !important;
-  background-color: var(--pages-search-bg) !important;
+  background-color: var(--pages-search-field__background-color) !important;
   color: var(--main-font__color);
   font-family: var(--main-font__font-family);
 
   .highlight {
-    background: var(--search-outline) !important;
+    background: var(--search__border) !important;
     color: #fff;
   }
 }

@@ -34,7 +34,7 @@
   --query__color_query-string: #5c7080;
   --breadcrumb__font-size: 13px;
   --breadcrumb-line-height: 0.85em;
-  --calculation-color: #ff6000;
+  --calculation__color: #ff6000;
   --db-menu__background-color: #333;
   --db-menu-border: #3d3d3d;
   --db-menu-header: #5c7080;
@@ -43,29 +43,29 @@
   --db-menu__background-color_hover: rgba(167, 182, 194, 0.3);
   --dialog__background: #333;
   --dialog__color: #eee;
-  --emphasis: #fc5963;
+  --emphasis__color: #fc5963;
   --external-link__color: #8dbb40;
-  --h1-font: var(--main-font__font-family);
-  --h1-font-color: #1189bd;
-  --h1-font-size: 2.25em;
-  --h1-font__link--color: var(--page-link__color);
-  --h2-font: var(--h1-font);
-  --h2-font-color: #1189bd;
-  --h2-font-size: 1.625em;
-  --h2-font__link--color: var(--page-link__color);
-  --h3-font: var(--h1-font);
-  --h3-font-color: #1189bd;
-  --h3-font-size: 1.2rem;
-  --h3-font__link--color: var(--page-link__color);
-  --highlight-background-color: #008aff5e;
-  --highlight-font-color: #bbb;
+  --h1__font-family: var(--main-font__font-family);
+  --h1__font-family-color: #1189bd;
+  --h1__font-family-size: 2.25em;
+  --h1__color_link: var(--page-link__color);
+  --h2__font-family: var(--h1__font-family);
+  --h2__font-family-color: #1189bd;
+  --h2__font-family-size: 1.625em;
+  --h2__color_link: var(--page-link__color);
+  --h3__font-family: var(--h1__font-family);
+  --h3__font-family-color: #1189bd;
+  --h3__font-family-size: 1.2rem;
+  --h3__color_link: var(--page-link__color);
+  --highlight__background-color: #008aff5e;
+  --highlight__color: #bbb;
   --highlight-link-color: #ff6000;
-  --left-sidebar-font-color: #1189bd;
-  --left-sidebar-font-color-hover: #e98924;
-  --left-sidebar-font-size: 1rem;
-  --left-sidebar-shortcuts-color: var(--left-sidebar-font-color);
-  --left-sidebar-shortcuts-font-size: 1rem;
-  --left-sidebar-shortcuts-title-color: var(--left-sidebar-font-color);
+  --left-sidebar__color: #1189bd;
+  --left-sidebar__color_hover: #e98924;
+  --left-sidebar__font-size: 1rem;
+  --left-sidebar-shortcuts__color: var(--left-sidebar__color);
+  --left-sidebar-shortcuts__font-size: 1rem;
+  --left-sidebar-shortcuts__color_title: var(--left-sidebar__color);
   --page-brackets__color: rgba(228, 124, 67, 0.25);
   --page-link__color: #eb9854;
   --page-link-namespace__color: #ebd454;
@@ -73,19 +73,19 @@
   --menu__color: #e98924;
   --menu__background: #333;
   --ref-count-font-size: 0.8em;
-  --right-sidebar-font-color: var(--main-font__color);
-  --right-sidebar-link-color: #eb9854;
-  --right-sidebar-bg: #323232;
-  --right-sidebar-masonry-bg: var(--body__background-color);
-  --right-sidebar-masonry-outline: #3d3d3d;
-  --right-sidebar-section-border-color: #e9892475;
-  --search-bg: #252525;
-  --search-body-font-color: #8a9ba8;
-  --search-font-color: #af671c;
-  --search-new-page-color: #8dbb40;
-  --search-outline: #e9892475;
-  --search-selected-row: #4c4c4c;
-  --strong: #508bb5;
+  --right-sidebar__color_title-closed: var(--main-font__color);
+  --right-sidebar__color_title-closed: #eb9854;
+  --right-sidebar__background-color: #323232;
+  --right-sidebar-masonry__background-color: var(--body__background-color);
+  --right-sidebar-masonry__border: #3d3d3d;
+  --right-sidebar__border: #e9892475;
+  --search__background: #252525;
+  --search__color_body: #8a9ba8;
+  --search__color_page: #af671c;
+  --search__color_new-page: #8dbb40;
+  --search__border: #e9892475;
+  --search__background-color_selected-row: #4c4c4c;
+  --strong__color: #508bb5;
   --tag__color: #777;
   --tag__color_hover: #fff;
   --tag__color_hashtag: #ab6634;
@@ -120,19 +120,19 @@
   --icon__background-color_hover: rgba(167, 182, 194, 0.3);
   --icon__color: #e78924;
   --icon__color_hover: #e78924;
-  --inline-search-bg: #333;
+  --inline-search__background-color: #333;
   --inline-block__background-color: transparent;
   --inline-block__background-color_hover: var(--linked-reference__backgound-color_1);
-  // --left-sidebar-bg: #2b2b2b;
-  --left-sidebar-bg: #323232;
-  --left-sidebar-hover-bg: #1f1f1f;
+  // --left-sidebar__background-color: #2b2b2b;
+  --left-sidebar__background-color: #323232;
+  --left-sidebar__background-color_hover: #1f1f1f;
   --linked-reference__backgound-color_1: #d8ac6e1a; // JH: Railscast uses 1 semi-transparent color for all three bg values
   --linked-reference__backgound-color_2: #d8ac6e1a;
   --linked-reference__backgound-color_3: #d8ac6e1a;
   --section-divider_border-top: #e9892475;
-  --select-bg: #232323;
-  --topbar-bg: var(--body__background-color);
-  --topbar-border-color: #333;
+  --select-menu__background-color: #232323;
+  --topbar__background-color: var(--body__background-color);
+  --topbar__border: #333;
 
   /* YouTube Timestamp js extension */
   --yt-play-button__color: rgba(225, 117, 28, 1);
@@ -141,19 +141,19 @@
 
   /* Misc */
 
-  --pages-delete-bg: #222; // modal variable
-  --pages-delete-border-color: #d8e1e8; // JH: modal variable, New variable TODO add to body .delete-all-dialog-items
-  --pages-header-row-bg: #262626;
-  --pages-header-row-font-color: #bfccd6;
-  --pages-mentions-bg-empty: #3a3a3a;
-  --pages-mentions-color: #ff6000;
-  --pages-mentions-color-empty: #737373;
-  --pages-row-highlight: #292929;
-  --pages-search-bg: #3a3a3a;
-  --pages-search-outline: #e9892475;
-  // --pages-search-outline: var(--search-outline); //no longer exists in Roam, add if needed for Theme or replace with inherit or initial?
-  --pages-table-border: #2f373d;
-  --pages-sorted-color: #508bb5;
+  --pages-delete__background-color: #222; // modal variable
+  --pages-delete__border-color: #d8e1e8; // JH: modal variable, New variable TODO add to body .delete-all-dialog-items
+  --pages-header__background-color: #262626;
+  --pages-header__color: #bfccd6;
+  --pages-mentions__background-color_empty: #3a3a3a;
+  --pages-mentions__background-color: #ff6000;
+  --pages-mentions__background-color-empty: #737373;
+  --pages-row__background-color_highlight: #292929;
+  --pages-search-field__background-color: #3a3a3a;
+  --pages-search-field__border-color: #e9892475;
+  // --pages-search-field__border-color: var(--search__border); //no longer exists in Roam, add if needed for Theme or replace with inherit or initial?
+  --pages-table__border-color: #2f373d;
+  --pages-header__color_sorted: #508bb5;
 
   --table__border: #444;
   --table__font-size: 0.85rem;

@@ -24,12 +24,12 @@
       font-weight: bold;
 
       .rm-new-page {
-        color: var(--search-new-page-color);
+        color: var(--search__color_new-page);
       }
     }
 
     .rm-search-list-item {
-      color: var(--search-body-font-color);
+      color: var(--search__color_body);
       margin-left: -20px;
       overflow-wrap: break-spaces;
       word-break: break-word;

@@ -26,11 +26,11 @@
   --external-link__color: #8dbb40;
   --sidebar-link-color: #8dbb40;
   --page-brackets__color: rgba(228, 124, 67, 0.25);
-  --h1-font-color: #1189bd;
-  --h2-font-color: #1189bd;
-  --h3-font-color: #1189bd;
-  --strong: #508bb5;
-  --emphasis: #fc5963;
+  --h1__font-family-color: #1189bd;
+  --h2__font-family-color: #1189bd;
+  --h3__font-family-color: #1189bd;
+  --strong__color: #508bb5;
+  --emphasis__color: #fc5963;
   --tag__color: #777;
   --tag__color_hover: #fff;
   --tag__background-color_hover: #e98924;
@@ -44,18 +44,18 @@
   --block-ref__color_hover: #eb9854;
   --block-ref__background-color_hover: #111;
   --block-ref__font-size: 1em;
-  --highlight-font-color: #222;
-  --highlight-background-color: #fef09f;
+  --highlight__color: #222;
+  --highlight__background-color: #fef09f;
   --highlight-link-color: #ff6000;
-  --search-font-color: #af671c;
-  --search-body-font-color: #8a9ba8;
+  --search__color_page: #af671c;
+  --search__color_body: #8a9ba8;
   --new-page-color: #8dbb40;
   --menu__color: #e98924;
   --ref-count-font-size: 12px;
   --query__color_query-string: #5c7080;
   --breadcrumb__font-size: 13px;
   --breadcrumb-line-height: 0.85em;
-  --filter-sub: grey;
+  --filter__color_subscript: grey;
 
   /* Saving icon colors */
   --status-icon__background-color_saving-local: #99280f;
@@ -64,8 +64,8 @@
 
   /* backgrounds and outlines */
   --body__background-color: #232323;
-  --left-sidebar-bg: #2b2b2b;
-  --right-sidebar-bg: #2b2b2b;
+  --left-sidebar__background-color: #2b2b2b;
+  --right-sidebar__background-color: #2b2b2b;
   --top-bg: transparent;
   --top-border-color: none;
   --icon__color: #e78924;
@@ -83,23 +83,23 @@
   --block-highlight__background-color_selected: #00588e;
   --block-highlight__background-color_mentions: rgba(0, 0, 0, 0.4);
   --current-block-highlight: rgba(255, 255, 255, 0.05);
-  --search-outline: #e9892475;
-  --search-bg: #252525;
-  --search-selected-row: #4c4c4c;
-  --inline-search-bg: #333;
+  --search__border: #e9892475;
+  --search__background: #252525;
+  --search__background-color_selected-row: #4c4c4c;
+  --inline-search__background-color: #333;
   --menu__background: #333;
-  --select-bg: #444;
+  --select-menu__background-color: #444;
   --datepicker__background-color: transparent;
   --datepicker-today__border: #d9822b7a;
-  /* --pages-row-highlight: #292929; */
+  /* --pages-row__background-color_highlight: #292929; */
   --pages-header-row: #2d2d2d;
-  --pages-search-bg: #3a3a3a;
-  --pages-search-outline: var(--search-outline);
-  --pages-mentions-color: #ff6000;
-  --pages-table-border: #293035;
-  --pages-mentions-bg-empty: #3a3a3a;
-  --pages-mentions-color-empty: #737373;
-  --pages-delete-bg: #222;
+  --pages-search-field__background-color: #3a3a3a;
+  --pages-search-field__border-color: var(--search__border);
+  --pages-mentions__background-color: #ff6000;
+  --pages-table__border-color: #293035;
+  --pages-mentions__background-color_empty: #3a3a3a;
+  --pages-mentions__background-color-empty: #737373;
+  --pages-delete__background-color: #222;
   --section-divider_border-top: #e9892475;
 
   /* fragile styles that may break with the next update */
@@ -513,7 +513,7 @@ h1 textarea.rm-title-textarea {
 /*RR change: FILTER subscript*/
 .bp3-button > sub {
   padding-left: 3px;
-  color: var(--filter-sub);
+  color: var(--filter__color_subscript);
 }
 
 /*RR change: SECTION border*/
@@ -1237,7 +1237,7 @@ body {
 .roam-body .roam-app h1 {
   /*color: #202b33;*/
   /*RR change: font, blue text and background highlight*/
-  color: var(--h1-font-color);
+  color: var(--h1__font-family-color);
   font-family: var(--main-font__font-family);
 }
 .roam-body .roam-app .roam-sidebar-container {
@@ -1250,7 +1250,9 @@ body {
   transition: all 200ms ease-in;
   /*background-color: #2f3437;*/
   /*background-color: #182026;*/
-  background-color: var(--left-sidebar-bg); /*RR change: darken the sidebar*/
+  background-color: var(
+    --left-sidebar__background-color
+  ); /*RR change: darken the sidebar*/
 }
 .roam-body .roam-app .roam-sidebar-container .roam-hover-sidebar-reveal {
   position: absolute;
@@ -1761,7 +1763,7 @@ div.rm-block-ref {
   word-break: break-word;
   /* color: #8a9ba8;  */
   color: var(
-    --search-body-font-color
+    --search__color_body
   ); /*RR change: this is the search results body text color*/
   overflow-wrap: break-spaces;
   margin-left: -20px;
@@ -1778,7 +1780,9 @@ div.rm-block-ref {
 }
 .rm-pages-row-highlight {
   /*background-color: #f5f8fa;*/
-  background-color: var(--pages-row-highlight); /*RR change: dark alternating row color*/
+  background-color: var(
+    --pages-row__background-color_highlight
+  ); /*RR change: dark alternating row color*/
 }
 .rm-pages-row {
   display: flex;
@@ -1879,7 +1883,7 @@ div.rm-block-ref {
   display: flex;
   flex: 0 0 auto;
   /* border-bottom: 1px solid #e1e8ed; */
-  border-bottom: 1px solid var(--pages-table-border); /*RR change: added variable*/
+  border-bottom: 1px solid var(--pages-table__border-color); /*RR change: added variable*/
   width: auto;
   z-index: 1;
   min-width: 720px;
@@ -1925,7 +1929,7 @@ div.rm-block-ref {
 }
 .sorted-header-text {
   /* color: #5c7080; */
-  color: var(--strong);
+  color: var(--strong__color);
   font-weight: 600;
 }
 .sorting-button-group {
@@ -1941,7 +1945,7 @@ div.rm-block-ref {
 .sorting-button-group .sort-button.focused {
   font-weight: 600;
   /* color: #5c7080; */
-  color: var(--strong);
+  color: var(--strong__color);
 }
 .rm-clickable-pill {
   display: inline-block;
@@ -1956,31 +1960,31 @@ div.rm-block-ref {
   color: white;
   opacity: 0.6;
   /* background-color: #2b95d6; */
-  background-color: var(--pages-mentions-color);
+  background-color: var(--pages-mentions__background-color);
   cursor: pointer;
 }
 .rm-clickable-pill.empty-pill {
   /* color: #0e5a8a; */
-  color: var(--pages-mentions-color-empty);
+  color: var(--pages-mentions__background-color-empty);
   opacity: 1;
   pointer-events: none;
   /* background-color: white; */
-  background-color: var(--pages-mentions-bg-empty);
+  background-color: var(--pages-mentions__background-color_empty);
 }
 .rm-clickable-pill.level1-pill {
   opacity: 0.6;
   background-color: #137cbd;
-  background-color: var(--pages-mentions-color);
+  background-color: var(--pages-mentions__background-color);
 }
 .rm-clickable-pill.level2-pill {
   opacity: 0.7;
   background-color: #137cbd;
-  background-color: var(--pages-mentions-color);
+  background-color: var(--pages-mentions__background-color);
 }
 .rm-clickable-pill.level3-pill {
   opacity: 0.8;
   background-color: #137cbd;
-  background-color: var(--pages-mentions-color);
+  background-color: var(--pages-mentions__background-color);
 }
 .rm-pages-more-info-popover {
   padding: 8px 8px;
@@ -2014,24 +2018,26 @@ div.rm-block-ref {
 }
 .rm-pages-toolbar .toolbar-search-group .search-icon {
   /* color: #bfccd6; */
-  color: var(--search-font-color); /*RR change: added variable and reduced opacity*/
+  color: var(--search__color_page); /*RR change: added variable and reduced opacity*/
   opacity: 0.8;
 }
 .rm-pages-toolbar .toolbar-search-group .search-icon.focused {
   /* color: #8a9ba8; */
-  color: var(--search-font-color);
+  color: var(--search__color_page);
   opacity: 1;
 }
 .rm-pages-toolbar .toolbar-search-group .search-input {
   margin-right: 4px;
   box-shadow: none;
   /* background-color: #f5f8fa; */
-  background-color: var(--pages-search-bg); /*RR change: added variable*/
-  border: 1px solid var(--pages-search-bg); /*RR change: added invisible border to get rid of the "jump" that occurs when selecting the control*/
+  background-color: var(
+    --pages-search-field__background-color
+  ); /*RR change: added variable*/
+  border: 1px solid var(--pages-search-field__background-color); /*RR change: added invisible border to get rid of the "jump" that occurs when selecting the control*/
 }
 .rm-pages-toolbar .toolbar-search-group .search-input.focused {
   border: 1px solid #8a9ba8;
-  border: 1px solid var(--pages-search-outline);
+  border: 1px solid var(--pages-search-field__border-color);
 }
 .rm-pages-toolbar .toolbar-search-group .bp3-input-group {
   margin-right: 10px; /*RR change: added margin to move it way from the other icons*/
@@ -2049,7 +2055,7 @@ div.rm-block-ref {
   border-bottom-width: 1px;
   border-bottom-style: solid;
   /* border-bottom-color: #d8e1e8; */
-  border-bottom-color: var(--pages-table-border); /*RR change: added variable*/
+  border-bottom-color: var(--pages-table__border-color); /*RR change: added variable*/
 }
 .delete-all-dialog-items.last-item {
   margin: 0px;
@@ -2071,7 +2077,7 @@ div.rm-block-ref {
   margin: 12px;
   max-height: 40vh;
   /* background-color: #f5f8fa; */
-  background-color: var(--pages-delete-bg);
+  background-color: var(--pages-delete__background-color);
   border-radius: 4px;
   padding: 0px 4px;
 }
@@ -2140,7 +2146,7 @@ div.rm-reference-container {
   /*font-family: 'Inter', sans-serif;*/
   font-weight: 400;
   font-size: 1.8rem;
-  /* color: var(--h1-font-color); */
+  /* color: var(--h1__font-family-color); */
   font-family: var(--main-font__font-family); /*RR change: font change*/
   /* background-color: var(--h1-bg); */
   /* padding-left: 10px; */
@@ -2160,7 +2166,7 @@ div.rm-reference-container {
   font-weight: 400;
   font-size: 1.4rem;
   font-family: var(--main-font__font-family);
-  color: var(--h2-font-color);
+  color: var(--h2__font-family-color);
   /* margin-top: -5px !important; */
 }
 .rm-level2 textarea {
@@ -2175,7 +2181,7 @@ div.rm-reference-container {
   font-weight: 700;
   font-size: 1.2rem;
   /* color: #5c7080; */
-  color: var(--h3-font-color);
+  color: var(--h3__font-family-color);
   font-family: var(--main-font__font-family);
 }
 .rm-level3 textarea {
@@ -2187,20 +2193,20 @@ div.rm-reference-container {
 
 /*RR change: Header styles*/
 .roam-app h1 {
-  /* color: var(--h1-font-color); */
+  /* color: var(--h1__font-family-color); */
   /* background-color: var(--h1-bg); */
   /* padding-left: 10px; */
   margin-top: -4px !important;
 }
 .roam-app h2 {
-  /* color: var(--h2-font-color); */
+  /* color: var(--h2__font-family-color); */
   /* background-color: var(--h1-bg); */
   /* padding-left: 10px; */
   margin-top: -5px !important;
 }
 .roam-app h3 {
   /* font-weight: bold; */
-  /* color: var(--h3-font-color); */
+  /* color: var(--h3__font-family-color); */
   /* background-color: var(--h1-bg); */
   /* padding-left: 10px; */
   margin-top: 3px !important;
@@ -2283,8 +2289,8 @@ div.rm-reference-container {
   /* background-color: #fef09f; */
   margin: -2px;
   padding: 2px;
-  background-color: var(--highlight-background-color);
-  color: var(--highlight-font-color); /*RR change: invert the highlighted text color*/
+  background-color: var(--highlight__background-color);
+  color: var(--highlight__color); /*RR change: invert the highlighted text color*/
 }
 .roam-highlight .rm-page-ref-link-color {
   color: var(--highlight-link-color);
@@ -2539,7 +2545,7 @@ div.rm-reference-container {
   font-weight: 200;
   font-size: 26px;
   /* color: rgba(0,0,0,1); */
-  color: var(--h2-font-color);
+  color: var(--h2__font-family-color);
   letter-spacing: 0.001em;
 }
 .level3 {
@@ -2548,7 +2554,7 @@ div.rm-reference-container {
   font-weight: 500;
   font-size: 15px;
   /* color: rgba(68,68,68,1); */
-  color: var(--h3-font-color);
+  color: var(--h3__font-family-color);
   letter-spacing: 0.002em;
 }
 .roam-body .roam-app h1.level2 {
@@ -3051,7 +3057,7 @@ bp3-button bp3-small block-ref-count-button*/
 /* Roam Search Box Placeholder Text Color */
 .bp3-input::placeholder,
 .bp3-input-group > .bp3-icon {
-  color: var(--search-font-color);
+  color: var(--search__color_page);
 }
 
 /* Input Text Color */
@@ -3062,26 +3068,26 @@ bp3-button bp3-small block-ref-count-button*/
 /* Roam Search Box Field and Border */
 .bp3-input,
 .bp3-input[readonly] {
-  background: var(--search-bg);
-  /* box-shadow: inset 0 0 0 1px var(--search-outline); */
+  background: var(--search__background);
+  /* box-shadow: inset 0 0 0 1px var(--search__border); */
   box-shadow: none;
   font-size: 0.85em;
 }
 .bp3-input:focus,
 .bp3-input.bp3-active {
   /* -webkit-box-shadow: 0 0 0 1px #137cbd, 0 0 0 3px rgba(19,124,189,0.3), inset 0 1px 1px rgba(16,22,26,0.2); */
-  box-shadow: 0 0 0 1px var(--search-outline);
+  box-shadow: 0 0 0 1px var(--search__border);
   /* -webkit-box-shadow: none; */
   /* box-shadow: none; */
-  border: var(--search-outline);
+  border: var(--search__border);
 }
 /*RR change: additional text styles*/
 .roam-app strong {
-  color: var(--strong) !important;
+  color: var(--strong__color) !important;
 }
 
 .roam-app em {
-  color: var(--emphasis);
+  color: var(--emphasis__color);
 }
 
 /*RR change: Markdown Links */
@@ -3113,7 +3119,7 @@ hr {
 
 /*RR change: Sidebar modifications*/
 #right-sidebar {
-  background-color: var(--right-sidebar-bg) !important;
+  background-color: var(--right-sidebar__background-color) !important;
 }
 
 #all-pages-search div {
@@ -3142,14 +3148,14 @@ hr {
 
 .bp3-html-select.bp3-minimal select {
   color: var(--menu__color);
-  background-color: var(--select-bg);
+  background-color: var(--select-menu__background-color);
 }
 
 /* Slash Popup */
 div.bp3-elevation-3 {
   /* color: #1775db; */
   color: var(--menu__color);
-  background-color: var(--inline-search-bg) !important;
+  background-color: var(--inline-search__background-color) !important;
   font-size: 0.85em;
   border-radius: 4px;
   box-shadow: 0 0 0 2px #222, 0 2px 15px #222;
@@ -3160,7 +3166,7 @@ div.bp3-elevation-3 {
 }
 .bp3-elevation-3 .dont-unfocus-block[style*='background-color: rgb(213, 218, 223);'],
 .bp3-popover-content .rm-menu-item[style*='background-color: rgb(213, 218, 223);'] {
-  background-color: var(--search-selected-row) !important;
+  background-color: var(--search__background-color_selected-row) !important;
   /*filter: invert(100%); /*RR change: Inverts the colors of the / and link search menus*/
 }
 
@@ -3202,8 +3208,8 @@ blockquote small {
 }
 
 select {
-  background-color: var(--select-bg) !important;
-  border-color: var(--search-outline);
+  background-color: var(--select-menu__background-color) !important;
+  border-color: var(--search__border);
 }
 
 /*RR change: This section contains a series of very specific overrides that are extremely fragile and will probably break with any minor update*/
@@ -3282,7 +3288,7 @@ div[style*='position: absolute; background-color: white; border: 1px solid light
   border-color: var(--kanban-card__background-color) !important;
 }
 .roam-body .roam-app svg div {
-  /* color: var(--strong); */
+  /* color: var(--strong__color); */
   color: #202b33;
 }
 svg .rm-page-ref-link-color {
