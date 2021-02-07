@@ -115,15 +115,15 @@ strong,
   color: var(--calculation__color) !important;
 }
 
+// TODO this is a fix to support a hiccup hr
+hr {
+  // margin-top: 0.785714286em;
+  border-top: 1px solid var(--hr__border);
+}
+
 .rm-hr {
   // border: 0;
   border: 1px solid var(--hr__border);
   margin-bottom: var(--hr__margin-bottom);
   margin-top: var(--hr__margin-top);
-}
-
-// TODO this is a fix to support a hiccup hr
-hr {
-  margin-top: 0.785714286em;
-  border-top: 1px solid var(--hr__border);
 }
