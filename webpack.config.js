@@ -17,7 +17,7 @@ const userstylesEntries = glob
     return obj;
   }, {});
 const featureEntries = glob
-  .sync('./scss/global/features/**/main.scss')
+  .sync('./scss/features/**/index.scss')
   .reduce((obj, el) => {
     // console.log(path.parse(el));
     const featureMatch = "features/";
