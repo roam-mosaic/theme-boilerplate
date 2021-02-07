@@ -1,11 +1,11 @@
 .rm-page-ref-tag {
-  border-radius: var(--tag-radius);
-  color: var(--tag-font-color);
-  padding: var(--tag-padding);
+  border-radius: var(--tag__border-radius);
+  color: var(--tag__color);
+  padding: var(--tag__padding);
 
   &:hover {
-    background-color: var(--tag-hover-bg);
-    color: var(--tag-font-color-hover) !important;
+    background-color: var(--tag__background-color_hover);
+    color: var(--tag__color_hover) !important;
     text-decoration: none;
   }
 }
@@ -13,8 +13,8 @@
 span {
   &.rm-page-ref.rm-page-ref-tag {
     &:hover {
-      background-color: var(--tag-hover-bg);
-      color: var(--tag-font-color-hover) !important;
+      background-color: var(--tag__background-color_hover);
+      color: var(--tag__color_hover) !important;
       text-decoration: none;
     }
   }

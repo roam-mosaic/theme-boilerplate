@@ -1,11 +1,11 @@
 /* Select Menu */
 
-select {
-  background-color: var(--select-bg) !important;
-  border-color: var(--search-outline);
-  border-radius: 4px;
-  font-size: 0.857142857rem;
-  padding: 1px 5px;
-}
+.rm-option {
+  border: 1px solid var(--accent-font__color);
+  color: var(--accent-font__color);
+  margin: 0 4px;
 
-// TODO It would be awesome to use something like this to have the width of the select box change according to the content http://jsfiddle.net/FSsG8/444/
+  &:after {
+    border-top: 4px solid var(--accent-font__color);
+  }
+}

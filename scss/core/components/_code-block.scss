@@ -1,11 +1,11 @@
-/* Code block */
+/* Code block - Solarized Dark */
 
 .CodeMirror-matchingbracket {
   outline: 1px solid #ff9c3a;
   color: #fff !important;
 }
 .CodeMirror-lines {
-  background: var(--code-bg);
+  background: var(--code__background);
 }
 .CodeMirror-activeline {
   pre {
@@ -13,19 +13,19 @@
   }
 }
 .CodeMirror {
-  background: var(--code-bg);
+  background: var(--code__background);
   border-radius: 8px;
   color: #839496;
-  font-family: var(--code-font);
-  font-size: var(--code-font-size);
+  font-family: var(--code-font__font-family);
+  font-size: var(--code-font__font-size);
   height: auto !important;
   text-shadow: #002b36 0 1px;
 
   .CodeMirror-code {
     pre {
-      font-family: var(--code-font);
+      font-family: var(--code-font__font-family);
       box-shadow: none;
-      font-size: var(--code-font-size);
+      font-size: var(--code-font__font-size);
     }
   }
 }
@@ -33,11 +33,15 @@
   background: #4d516d !important;
 }
 .CodeMirror-gutters {
-  background: #2b2b2b;
-  background: var(--code-bg);
-  background: #073642;
-  border-right: 2px solid #2c2c2c;
+  background: var(--code__background_gutter);
+  border-right: 2px solid transparent;
 }
+
+.CodeMirror-scrollbar-filler,
+.CodeMirror-gutter-filler {
+  background-color: var(--scrollbar-track);
+}
+
 .CodeMirror-linenumber {
   color: #586e75;
   text-shadow: #021014 0 -1px;

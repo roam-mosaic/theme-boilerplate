@@ -1,7 +1,7 @@
 /* Breadcrumbs */
 
 .zoom-mentions-view {
-  font-size: var(--breadcrumb-font-size);
+  font-size: var(--breadcrumb__font-size);
 
   span {
     padding-bottom: 0 !important;
@@ -18,7 +18,7 @@
 
   &.zoom-path-view {
     .rm-zoom-mask {
-      background-color: var(--breadcrumb-bg);
+      background-color: var(--breadcrumb__background-color);
       flex: 1 1 100%;
       mix-blend-mode: saturation;
     }
@@ -27,19 +27,19 @@
 
 /* Comment/un-comment to remove checkboxes in breadcrumb navigation */
 
-.roam-article,
-.roam-reference-item {
-  > div {
-    &:first-child {
-      &:not(.roam-log-container) {
-        > div {
-          &:first-child {
-            label.check-container {
-              display: none;
-            }
-          }
-        }
-      }
-    }
-  }
-}
+// .roam-article,
+// .roam-reference-item {
+//   > div {
+//     &:first-child {
+//       &:not(.roam-log-container) {
+//         > div {
+//           &:first-child {
+//             label.check-container {
+//               display: none;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }

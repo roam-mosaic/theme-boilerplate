@@ -1,0 +1,36 @@
+/* Body styles */
+
+.roam-block-container {
+  border-radius: 0px;
+  max-width: 100%;
+}
+
+.rm-block-text {
+  max-width: 100%;
+}
+
+.roam-center {
+  flex-basis: 50% !important;
+}
+
+// #right-sidebar {
+//   flex-basis: 40% !important;
+// }
+
+// .rm-block-input,
+// .rm-block__input--active {
+//   width: 96%;
+// }
+
+/* Bullets */
+
+// .rm-caret.rm-caret-hidden {
+//   opacity: 0 !important;
+// }
+
+/* Scroll past the bottom */
+.roam-article {
+  position: relative;
+  height: auto !important;
+  padding-bottom: 40vh !important;
+}

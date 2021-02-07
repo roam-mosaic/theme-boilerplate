@@ -1,16 +1,16 @@
 #right-sidebar {
-  background-color: var(--right-sidebar-bg) !important;
+  background-color: var(--right-sidebar__background-color) !important;
 
   /* container */
   #roam-right-sidebar-content {
     div {
-      font-family: var(--main-font);
+      font-family: var(--main-font__font-family);
     }
 
     /* item */
     > div {
       border: 1px solid #2b343b !important;
-      background-color: var(--right-sidebar-bg) !important;
+      background-color: var(--right-sidebar__background-color) !important;
 
       h1.level2 {
         a {

@@ -1,7 +1,7 @@
 /* Right sidebar */
 
 #right-sidebar {
-  background-color: var(--right-sidebar-bg) !important;
+  background-color: var(--right-sidebar__background-color) !important;
 
   .rm-block-text {
     padding-right: 30px;
@@ -10,30 +10,30 @@
 
 #roam-right-sidebar-content {
   div {
-    font-family: var(--main-font);
+    font-family: var(--main-font__font-family);
 
     h1 {
       div {
-        font-family: var(--h1-font);
+        font-family: var(--h1__font-family);
       }
     }
 
     h2 {
       div {
-        font-family: var(--h1-font);
+        font-family: var(--h1__font-family);
 
         textarea {
-          font-family: var(--h1-font);
+          font-family: var(--h1__font-family);
         }
       }
     }
 
     h3 {
       div {
-        font-family: var(--h1-font);
+        font-family: var(--h1__font-family);
 
         textarea {
-          font-family: var(--h1-font);
+          font-family: var(--h1__font-family);
         }
       }
     }
@@ -42,5 +42,5 @@
 
 /* Right sidebar SECTION border */
 div[style*='border-bottom: 1px solid rgb(138, 155, 168);'] {
-  border-bottom: 1px solid var(--right-sidebar-section-border-color) !important;
+  border-bottom: 1px solid var(--right-sidebar__border) !important;
 }

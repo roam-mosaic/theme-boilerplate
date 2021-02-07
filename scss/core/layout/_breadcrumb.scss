@@ -1,45 +1,21 @@
 /* Breadcrumbs */
 
-.zoom-mentions-view {
-  font-size: var(--breadcrumb-font-size);
-
-  span {
-    padding-bottom: 0 !important;
-    padding-top: 0 !important;
-  }
+.rm-zoom.zoom-path-view,
+.rm-zoom.zoom-mentions-view {
+  font-size: var(--breadcrumb__font-size);
 }
 
 .rm-zoom {
   .parent-path-wrapper {
+    //TODO this is a fix for word wrap for long line length  breadcrumb itemes
     max-height: none;
-    // padding-right: 10px;
     white-space: normal;
   }
 
   &.zoom-path-view {
     .rm-zoom-mask {
-      background-color: var(--breadcrumb-bg);
-      flex: 1 1 100%;
-      mix-blend-mode: saturation;
-    }
-  }
-}
-
-/* Comment/un-comment to remove checkboxes in breadcrumb navigation */
-
-.roam-article,
-.roam-reference-item {
-  > div {
-    &:first-child {
-      &:not(.roam-log-container) {
-        > div {
-          &:first-child {
-            label.check-container {
-              display: none;
-            }
-          }
-        }
-      }
+      background-color: var(--breadcrumb__background-color);
+      mix-blend-mode: unset;
     }
   }
 }

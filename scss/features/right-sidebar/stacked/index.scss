@@ -20,8 +20,8 @@
     }
 
     > div {
-      background-color: var(--right-sidebar-masonry-bg) !important;
-      border: 1px solid var(--right-sidebar-masonry-outline) !important;
+      background-color: var(--right-sidebar-masonry__background-color) !important;
+      border: 1px solid var(--right-sidebar-masonry__border) !important;
       border-radius: 5px;
       left: 0;
       padding: 10px;
@@ -37,7 +37,7 @@
 
       &:before {
         align-items: center;
-        background: var(--right-sidebar-bg);
+        background: var(--right-sidebar__background-color);
         content: counter(page);
         counter-increment: page;
         display: flex;

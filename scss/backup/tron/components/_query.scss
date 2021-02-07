@@ -1,13 +1,13 @@
 .rm-query {
-  border: 0.75px solid var(--query-results-border);
+  border: 0.75px solid var(--query__border);
   border-radius: 7px;
   padding-bottom: var(--s1);
 
   .rm-query-title {
-    background-color: var(--reference-item-bg);
+    background-color: var(--linked-reference__backgound-color_1);
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
-    color: var(--breadcrumb-color);
+    color: var(--query__color_query-string);
     font-size: 0.8em;
     padding: var(--s1);
   }
@@ -21,7 +21,7 @@
         &:after {
           color: var(--no-query-results-color);
           content: var(--no-query-results);
-          font-family: var(--main-font);
+          font-family: var(--main-font__font-family);
           padding: var(--s1);
         }
       }

@@ -1,0 +1,14 @@
+/* Bullet Outline */
+
+.rm-multibar {
+  border-color: var(--bullet-outline__border);
+  z-index: 8;
+
+  &:hover {
+    border-right: 3px solid var(--bullet-outline__border_hover);
+  }
+}
+
+.rm-level-0 > .rm-multibar {
+  opacity: 1;
+}

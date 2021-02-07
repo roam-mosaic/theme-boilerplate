@@ -2,19 +2,25 @@
 
 .rm-alias-tooltip__content {
   max-width: 500px;
-  font-family: var(--main-font);
-  font-size: var(--main-font-size);
+  font-family: var(--main-font__font-family);
+  font-size: var(--main-font__font-size);
+
+  .rm-bq {
+    color: var(--blockquote__color);
+    border-left: 5px solid var(--blockquote__border_color);
+  }
 }
 
 .rm-alias--page {
-  font-style: italic;
+  color: var(--alias__color);
+
+  &:hover {
+    color: var(--alias__color);
+  }
 }
 
 /* Legacy Alias */
 span[style*='background-color: rgb(235, 241, 245); border-radius: 4px;'] {
-  background-color: var(--alias-bg) !important;
-  border-radius: 0 !important;
-  color: var(--alias-font-color) !important;
-  cursor: alias;
-  padding: 0 !important;
+  background-color: var(--alias__background-color) !important;
+  color: var(--alias__color) !important;
 }

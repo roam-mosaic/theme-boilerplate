@@ -1,0 +1,19 @@
+/* Help */
+
+.rm-help-popup__drag-handle.bp3-card {
+  background-color: var(--help__background-color);
+}
+.rm-help-popup,
+.rm-help-results .rm-help-functions .rm-help-function__name,
+.rm-help-results .rm-help-functions .rm-help-function__shortcut {
+  color: var(--help__color);
+}
+
+.rm-help-results .rm-help-categories {
+  border-right: 1px solid var(--help__border);
+}
+
+.intercom-lightweight-app-launcher-icon-open svg path,
+.intercom-dlvlg4 svg path {
+  fill: var(--accent__color) !important;
+}

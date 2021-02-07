@@ -1,7 +1,7 @@
 /* In-line comments */
 .rm-paren {
   color: var(--body-text);
-  background-color: var(--inline-comment-bg);
+  background-color: var(--inline-block__background-color);
   border: none;
   border-radius: 4px;
   // padding: 3px;
@@ -9,35 +9,35 @@
 
   &:hover {
     // cursor: crosshair;
-    // background-color: var(--inline-comment-bg-hover);
+    // background-color: var(--inline-block__background-color_hover);
   }
 }
 .rm-spacer {
   font-size: 1.1em;
   position: relative;
   top: 3px;
-  color: var(--icon-color);
-  fill: var(--icon-color);
+  color: var(--icon__color);
+  fill: var(--icon__color);
 
   svg {
     height: 16px;
     width: 16px;
     path {
-      fill: var(--icon-color);
+      fill: var(--icon__color);
     }
   }
 
   &:hover {
-    color: var(--icon-color);
+    color: var(--icon__color);
   }
 }
 
 .rm-paren__paren {
-  color: var(--icon-color);
+  color: var(--icon__color);
 
   &:hover {
-    color: var(--icon-color);
-    background-color: var(--icon-bg-hover);
+    color: var(--icon__color);
+    background-color: var(--icon__background-color_hover);
   }
 }
 
@@ -55,7 +55,7 @@
 
 .rm-paren--closed {
   &:hover {
-    background-color: var(--icon-bg-hover);
-    color: var(--icon-color-hover);
+    background-color: var(--icon__background-color_hover);
+    color: var(--icon__color_hover);
   }
 }

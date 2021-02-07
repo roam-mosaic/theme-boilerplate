@@ -3,8 +3,8 @@
 */
 
 .timestamp-control {
-  background-color: var(--yt-play-button-bg);
-  color: var(--yt-play-button-border);
+  background-color: var(--yt-play-button__background-color);
+  color: var(--yt-play-button__color);
   margin-right: 8px;
   margin-top: 0px;
   margin-left: 25px;
@@ -18,7 +18,7 @@
   opacity: 0.65;
 }
 .timestamp-control:hover {
-  background-color: var(--yt-play-button-bg-hover);
+  background-color: var(--yt-play-button__background-color_hover);
   // border-style: outset;
   // color: #ffffff;
   opacity: 1;

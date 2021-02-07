@@ -1,14 +1,6 @@
 /* Attributes */
 
 .rm-attr-ref {
-  color: var(--attr-font-color);
-  font-weight: 700;
-
-  &:hover {
-    cursor: pointer;
-  }
-}
-
-.rm-block-ref span .rm-attr-ref {
-  pointer-events: pointer;
+  color: var(--attr__color);
+  font-weight: var(--attr__font-weight);
 }

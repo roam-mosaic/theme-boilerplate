@@ -1,0 +1,6 @@
+/* Todo checkmark */
+
+[data-page-links*='"DONE"'] > .rm-block__self {
+  opacity: 0.55;
+  /*   text-decoration: line-through; */
+}

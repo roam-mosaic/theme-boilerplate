@@ -33,7 +33,7 @@
 
 /* Outline border */
 .block-border-left {
-  border-left: 1px solid var(--bullet-outline);
+  border-left: 1px solid var(--bullet__background-color-outline);
 }
 
 /* Bullets */
@@ -51,21 +51,21 @@
     padding-top: 3px; //RR change: slight adjustment for bullet position
 
     .simple-bullet-outer {
-      margin-top: var(--bullet-position);
+      margin-top: var(--bullet__background-color-position);
 
       .simple-bullet-inner {
-        background-color: var(--bullet);
+        background-color: var(--bullet__background-color);
       }
     }
   }
 }
 
 .roam-bullet-closed {
-  background-color: var(--bullet-closed);
+  background-color: var(--bullet__border_closed);
 }
 
 #right-sidebar {
   .roam-bullet-closed {
-    background-color: var(--bullet-closed);
+    background-color: var(--bullet__border_closed);
   }
 }

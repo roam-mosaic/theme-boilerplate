@@ -1,5 +1,5 @@
 // Optional vanilla roam variable import
-@import '../../core/variables';
+// @import '../../core/variables-vanilla-roam';
 
 // TODO Add variables for #mobile-capture
 // the inherit and initial values are used when there isn't a value defined by Roam CSS, not sure if these will work
@@ -11,207 +11,281 @@
   --s1: 8px;
   --background-color: #e1e8ed;
 
-  /* Primary fonts */
+  /* Components */
 
-  --main-font: 'Inter', sans-serif;
-  --main-font-color: #999;
-  --main-font-size: 14px;
-  --code-font: 'Source Code Pro', 'Courier New', Courier, monospace;
-  --code-font-color: #6d9cbe;
-  --code-font-size: 0.9rem;
-  --caret-color: #0080ff;
+  --alias__background-color: transparent; /* Legacy alias */
+  --alias__color: #d8ac11;
 
-  /* Fonts */
+  --attr__color: rgba(17, 137, 189, 0.65);
+  --attr__font-weight: 700;
 
-  --alias-bg: transparent; /* Legacy alias */
-  --alias-font-color: #fecf2b; /* Legacy alias */
-  --attr-font-color: rgba(17, 137, 189, 0.65);
-  --block-ref-bg: none;
-  --block-ref-border: rgba(254, 207, 43, 0.6);
-  --block-ref-font-size: 1em;
-  --block-ref-hover: #eb9854;
-  --block-ref-hover-bg: #111;
-  --breadcrumb-bg: transparent;
-  --breadcrumb-color: #5c7080;
-  --breadcrumb-font-size: 13px;
-  --breadcrumb-line-height: 0.85em;
-  --calculation-color: #ff6000;
-  --db-menu-bg: #333;
-  --db-menu-border: #3d3d3d;
-  --db-menu-header: #5c7080;
-  --db-menu-item: #eb9854;
-  --db-title-font-color: #eb9854;
-  --db-title-hover: rgba(167, 182, 194, 0.3);
-  --dialog-bg: #333;
-  --dialog-font-color: #eee;
-  --emphasis: #fc5963;
-  --external-link-color: #8dbb40;
-  --h1-font: var(--main-font);
-  --h1-font-color: #1189bd;
-  --h1-font-size: 2.25em;
-  --h1-font__link--color: var(--page-link-color);
-  --h2-font: var(--h1-font);
-  --h2-font-color: #1189bd;
-  --h2-font-size: 1.625em;
-  --h2-font__link--color: var(--page-link-color);
-  --h3-font: var(--h1-font);
-  --h3-font-color: #1189bd;
-  --h3-font-size: 1.2rem;
-  --h3-font__link--color: var(--page-link-color);
-  --highlight-background-color: #008aff5e;
-  --highlight-font-color: #bbb;
-  --highlight-link-color: #ff6000;
-  --left-sidebar-font-color: #1189bd;
-  --left-sidebar-font-color-hover: #e98924;
-  --left-sidebar-font-size: 1rem;
-  --left-sidebar-shortcuts-color: var(--left-sidebar-font-color);
-  --left-sidebar-shortcuts-font-size: 1rem;
-  --left-sidebar-shortcuts-title-color: var(--left-sidebar-font-color);
-  --page-brackets: rgba(228, 124, 67, 0.25);
-  --page-link-color: #eb9854;
-  --page-link-namespace-color: #ebd454;
-  --page-link-namespace-color: #f57030;
-  --popover-font-color: #e98924;
-  --popover-bg: #333;
-  --ref-count-font-size: 0.8em;
-  --right-sidebar-font-color: var(--main-font-color);
-  --right-sidebar-link-color: #eb9854;
-  --right-sidebar-bg: #323232;
-  --right-sidebar-masonry-bg: var(--body-bg);
-  --right-sidebar-masonry-outline: #3d3d3d;
-  --right-sidebar-section-border-color: #e9892475;
-  --search-bg: #252525;
-  --search-body-font-color: #8a9ba8;
-  --search-font-color: #af671c;
-  --search-new-page-color: #8dbb40;
-  --search-outline: #e9892475;
-  --search-selected-row: #4c4c4c;
-  --strong: #508bb5;
-  --tag-font-color: #777;
-  --tag-font-color-hover: #fff;
-  --tag-hashtag: #ab6634;
-  --tag-hover-bg: #e98924;
-  --tag-padding: 0.071428571em 0.428571429em 0.214285714em;
-  --tag-radius: 2em;
+  --block-ref__background-color: none;
+  --block-ref__background-color_hover: #111;
+  --block-ref__border-bottom: rgba(254, 207, 43, 0.4);
+  --block-ref__color_hover: #eb9854;
+  --block-ref__font-size: 1em;
+  --block-ref__background-color_inline: rgba(33, 33, 33, 0.5);
+  --block-ref__border-left_inline: var(--blockquote__border_color);
 
-  /* Backgrounds and objects */
+  --block-callout__background-color_grey: #333;
+  --block-callout__background-color_blue: rgba(0, 170, 255, 0.1);
+  --block-callout__background-color_red: rgba(249, 87, 56, 0.25);
+  --block-callout__background-color_orange: rgba(238, 150, 75, 0.25);
+  --block-callout__background-color_yellow: rgba(244, 211, 94, 0.2);
+  // --block-callout__border_grey: #222;  // TODO considering adding a border option. Doesn't work so well on child
 
-  --block-highlight: #00588e;
-  --block-highlight-current: rgba(255, 255, 255, 0.05);
-  --block-highlight-bg: #312c28; // This is the Mentions background highlight color
-  // --body-bg: #232323;
-  --body-bg: #2c2c2c;
-  --bullet: rgba(225, 117, 28, 0.3);
-  --bullet-closed: rgba(225, 117, 28, 1);
-  --bullet-closed-right-sidebar: var(--bullet-closed);
-  --bullet-outline: #404040;
-  --bullet-outline-highlight: #ff9500;
-  --bullet-outline-hover: #ff9500b3; //recommend this be 70% of --bullet-outline-highlight
-  --bullet-position: 4px;
-  --bullet-version: #137cbd;
-  --checkmark-border: #137cbd;
-  --checkmark-bg: #555;
-  --checkmark-color: #137cbd;
-  --code-bg: #002b36;
-  --datepicker-bg: transparent;
-  --datepicker-day-wrapper: #d9822b7a;
-  --datepicker-font-color: var(--popover-font-color);
-  --datepicker-select-bg: #444;
-  --hr: rgba(225, 117, 28, 0.5);
-  --icon-bg-hover: rgba(167, 182, 194, 0.3);
-  --icon-color: #e78924;
-  --icon-color-hover: #e78924;
-  --inline-search-bg: #333;
-  --inline-comment-bg: transparent;
-  --inline-comment-bg-hover: var(--reference-item-bg);
-  // --left-sidebar-bg: #2b2b2b;
-  --left-sidebar-bg: #323232;
-  --left-sidebar-hover-bg: #1f1f1f;
-  --reference-item-bg: #d8ac6e1a; // JH: Railscast uses 1 semi-transparent color for all three bg values
-  --reference-item-bg-2: #d8ac6e1a;
-  --reference-item-bg-3: #d8ac6e1a;
-  --section-border-color: #e9892475;
-  --select-bg: #232323;
-  --topbar-bg: var(--body-bg);
-  --topbar-border-color: #333;
+  --block-embed__background-color: #d8ac6e0e;
+  --block-embed__background-color_margin-action: var(--blockquote__border_color);
+  --block-embed__border-left_margin-action: var(--bullet-outline__border_hover);
 
-  /* YouTube Timestamp js extension */
-  --yt-play-button-border: rgba(225, 117, 28, 1);
-  --yt-play-button-bg: rgba(108, 109, 36, 0.1);
-  --yt-play-button-bg-hover: rgba(109, 77, 36, 0.25);
+  --blockquote__background-color: none;
+  --blockquote__border_color: #30404d;
+  --blockquote__border-left: 5px solid;
+  --blockquote__color: rgba(109, 156, 190, 0.89);
+  --blockquote__font-size: 14px;
+  --blockquote__text-align: justify;
+  --blockquote__text-justify: inter-word;
+  // --blockquote-cite: #777;
 
-  /* Misc */
+  --code-font__color: #6d9cbe;
+  --code-font__font-family: 'Source Code Pro', monospace;
+  --code-font__font-size: 0.9rem;
+  --code__background: #002b36;
+  --code__background_gutter: #073642;
+  --code-inline__border: none;
 
-  --pages-delete-bg: #222; // modal variable
-  --pages-delete-border-color: #d8e1e8; // JH: modal variable, New variable TODO add to body .delete-all-dialog-items
-  --pages-header-row-bg: #262626;
-  --pages-header-row-font-color: #bfccd6;
-  --pages-mentions-bg-empty: #3a3a3a;
-  --pages-mentions-color: #ff6000;
-  --pages-mentions-color-empty: #737373;
-  --pages-row-highlight: #292929;
-  --pages-search-bg: #3a3a3a;
-  --pages-search-outline: #e9892475;
-  // --pages-search-outline: var(--search-outline); //no longer exists in Roam, add if needed for Theme or replace with inherit or initial?
-  --pages-table-border: #2f373d;
-  --pages-sorted-color: #508bb5;
+  --db-menu__background-color: #333;
+  --db-menu__background-color_hover: var(--icon__background-color_hover);
+  --db-menu__box-shadow: #000;
+  --db-menu-title__color: #eb9854;
 
-  --table-border: #444;
-  --table-font-size: 0.85rem;
+  --datepicker__background-color: var(--menu__background);
+  --datepicker__color: var(--menu__color);
+  --datepicker__color_other-month: rgba(92, 112, 128, 0.6);
+  --datepicker-day__background_hover: var(--accent__color);
+  --datepicker-day__color_hover: #333;
+  --datepicker-today__border: #d9822b7a;
 
-  --kanban-board-bg: #333333;
-  --kanban-card-bg: #555555;
-  --kanban-card-font-color: #6d9cbe;
-  --kanban-column-bg: #454545;
-  --kanban-column-font-color: #e98924;
+  --dialog__background: #333;
+  --dialog__color: #999;
+  --dialog-input__background: #444;
 
-  --encrypted-font-color: #ff6000;
-  --encrypted-bg: #222;
+  --emoji__background-color: #2d2d2d;
+  --emoji__border: rgba(225, 117, 28, 0.4);
+  --emoji__color: #aaa;
 
-  --pomodoro-bg: transparent;
-  --pomodoro-color: #fc5963;
-  --pomodoro-border: #fc596370;
+  --encrypted__background-color: transparent;
+  --encrypted__color: #ff6000;
+  --encrypted__font-size: 0.857142857em;
 
-  --block-callout__bg--grey: #333;
-  --block-callout__bg--blue: rgba(0, 170, 255, 0.1);
-  --block-callout__bg--red: rgba(249, 87, 56, 0.25);
-  --block-callout__bg--orange: rgba(238, 150, 75, 0.25);
-  --block-callout__bg--yellow: rgba(244, 211, 94, 0.2);
-  // --block-callout__border--grey: #222;  // TODO considering adding a border option. Doesn't work so well on child
+  --external-link__color: #8dbb40;
+  --external-link__text-decoration: underline;
 
-  --blockquote-font-color: rgba(109, 156, 190, 0.89);
-  --blockquote-font-size: 14px;
-  --blockquote-border-color: #30404d;
-  --blockquote-bg: none;
-  --blockquote-cite: #777;
+  --inline-block__background-color: transparent;
+  --inline-block__border: none;
+  --inline-search__background-color: #333;
 
-  --emoji-bg: #2d2d2d;
-  --emoji-border: rgba(225, 117, 28, 0.4);
-  --emoji-color: #aaa;
+  --kanban-board__background-color: #333333;
+  --kanban-card__background-color: #555555;
+  --kanban-card__color: #6d9cbe;
+  --kanban-column__background-color: #454545;
+  --kanban-column__color: var(--accent__color);
 
-  --no-query-results: 'Query returned no results';
-  --no-query-results-color: #fc5963;
-  --query-results-border: #f2c98f1a;
+  --linked-reference__backgound-color_1: #d8ac6e1a; // JH: Railscast uses 1 semi-transparent color for all three bg values
+  --linked-reference__backgound-color_2: #d8ac6e1a;
+  --linked-reference__backgound-color_3: #d8ac6e1a;
+
+  --menu__color: var(--accent__color);
+  --menu__background: #333;
+
+  --mermaid-path__stroke: #555;
+  --mermaid-element__fill: #594032;
+  --mermaid-element__stroke: var(--accent__color);
 
   /* Seasonal colors for date links */
-  --q1: #50b2c0;
-  --q2: #c5d86d;
-  --q3: #ff6b6b;
-  --q4: #ca7d4a;
+  --page-link-date__color_q1: #50b2c0;
+  --page-link-date__color_q2: #c5d86d;
+  --page-link-date__color_q3: #ff6b6b;
+  --page-link-date__color_q4: #ca7d4a;
 
-  /* Scrollbar settings - to disable set values to none */
+  --page-brackets__color: rgba(228, 124, 67, 0.25);
+  --page-link__color: #eb9854;
+  // --page-link-namespace__color: #ebd454;
+  --page-link-namespace__color: #f57030;
 
-  --scrollbar-thumb: #323232;
+  --pomodoro__background: transparent;
+  --pomodoro__background_break: transparent;
+  --pomodoro__background_running: transparent;
+  --pomodoro__border-color: #fc596370;
+  --pomodoro__border-color_break: #8dbb40;
+  --pomodoro__border-color_running: var(--pomodoro__border-color);
+  --pomodoro__color: #fc5963;
+  --pomodoro__color_break: #8dbb40;
+  --pomodoro__color_running: var(--pomodoro__color);
+
+  // --no-query-results: 'Query returned no results';
+  // --no-query-results-color: #fc5963;
+  --query__border: 0.75px solid #f2c98f1a;
+  --query__color_query-string: #5c7080;
+
+  --rm-g__background-color_block: var(--inline-search__background-color);
+  --rm-g__background-color_left-border: #ab6634;
+
+  --select-menu__background-color: #232323;
+
+  --table__border: 1px solid #444;
+  --table__font-size: 0.85em;
+
+  --tag__background-color_hover: var(--accent__color);
+  --tag__border-radius: 2em;
+  --tag__color: #777;
+  --tag__color_hover: #fff;
+  --tag__color_hashtag: #ab6634;
+  --tag__padding: 0.071428571em 0.428571429em 0.214285714em;
+
+  // --checkmark-border: #137cbd;
+  --todo-checkmark__background-color: #555;
+  --todo-checkmark__color: #137cbd;
+
+  --version-bullet__background-color: #137cbd;
+  --version-bullet__border: #137cbd;
+
+  /* YouTube Timestamp js extension */
+  --yt-play-button__color: rgba(225, 117, 28, 1);
+  --yt-play-button__background-color: rgba(108, 109, 36, 0.1);
+  --yt-play-button__background-color_hover: rgba(109, 77, 36, 0.25);
+
+  /* layout */
+
+  /* body */
+
+  --body__background-color: #2c2c2c;
+  --main-font__color: #999;
+  --main-font__font-family: 'Inter', sans-serif;
+  --main-font__font-size: 14px;
+  --caret__color: #0080ff;
+  --accent__color: #e98924;
+  --accent-font__color: #1189bd;
+
+  --block-highlight__background-color_selected: #00588e;
+  --block-highlight__background-color_active: rgba(255, 255, 255, 0.05);
+  --block-highlight__background-color_mentions: #312c28; // This is the Mentions background highlight color in the sidebar
+
+  --bullet__background-color: rgba(225, 117, 28, 0.3);
+  --bullet__border_closed: rgba(225, 117, 28, 1);
+  --bullet-outline__border: #404040;
+  --bullet-outline__border_hover: rgba(255, 149, 0, 0.4);
+
+  --section-divider_border-top: 1px solid #e9892475;
+
+  /* breadcrumb */
+
+  --breadcrumb__background-color: transparent;
+  --breadcrumb__font-size: 13px;
+
+  /* help */
+
+  --help__background-color: #333;
+  --help__border: var(--hr__border);
+  --help__color: var(--main-font__color);
+
+  /* left sidebar */
+
+  --left-sidebar__background-color: #323232;
+  --left-sidebar__background-color_hover: #1f1f1f;
+  --left-sidebar__color: #1189bd;
+  --left-sidebar__color_hover: var(--accent__color);
+  --left-sidebar__font-size: 0.9em;
+  --left-sidebar-shortcuts__color: var(--left-sidebar__color);
+  --left-sidebar-shortcuts__color_title: var(--left-sidebar__color);
+  --left-sidebar-shortcuts__font-size: 1rem;
+
+  /* right sidebar */
+
+  --right-sidebar__color_title-closed: var(--accent-font__color);
+  --right-sidebar__background-color: #323232;
+  --right-sidebar__border: #e9892475;
+  --right-sidebar-masonry__background-color: var(--body__background-color);
+  --right-sidebar-masonry__border: #3d3d3d;
+
+  /* scrollbar */
+
+  --scrollbar-thumb: #ffffff10;
   --scrollbar-track: rgba(153, 153, 153, 0.1);
 
-  /* Saving icon colors */
+  /* topbar */
 
-  --saving-local: #99280f;
-  --saving-remote: #d9822b;
-  --synched: #0f9960;
+  --status-icon__background-color_saving-local: #99280f;
+  --status-icon__background-color_saving-remote: #d9822b;
+  --status-icon__background-color_synched: #0f9960;
+  --search__background: #252525;
+  --search__background-color_selected-row: #4c4c4c;
+  --search__color_body: #8a9ba8;
+  --search__color_new-page: #8dbb40;
+  --search__color_page: #af671c;
+  --search__border: #e9892475;
+  --topbar__background-color: var(--body__background-color);
+  --topbar__border: #333;
 
-  /* JH overrides */
-  /*   --main-font: 'Calendas Plus', serif;
-  --main-font-size: 16px;
-  --code-font-size: 0.9em;  */
+  /* typography */
+
+  --calculation__color: #ff6000;
+  --emphasis__color: #fc5963;
+  --h1__color: #1189bd;
+  --h1__color_link: var(--page-link__color);
+  --h1__font-family: var(--main-font__font-family);
+  --h1__font-size: 2.25em;
+  --h1__font-weight: 400;
+  --h2__color: #1189bd;
+  --h2__color_link: var(--page-link__color);
+  --h2__font-family: var(--h1__font-family);
+  --h2__font-size: 1.625em;
+  --h2__font-weight: 400;
+  --h3__color: #1189bd;
+  --h3__color_link: var(--page-link__color);
+  --h3__font-family: var(--h1__font-family);
+  --h3__font-size: 1.3em;
+  --h3__font-weight: 700;
+  --highlight__background-color: #008aff5e;
+  --highlight__color: #bbb;
+  --highlight-link-color: #ff6000;
+  --hr__border: rgba(225, 117, 28, 0.5);
+  --hr__margin-bottom: 2.5em;
+  --hr__margin-top: 11px;
+  --strikethrough__color: inherit;
+  --strikethrough__font-style: italic;
+  --strikethrough__opacity: 0.6;
+  --strong__color: #508bb5;
+  --strong__font-weight: 700;
+
+  /* pages */
+
+  /* all pages */
+
+  --pages-checkmark__background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(82, 82, 82, 0.8)),
+    to(rgba(0, 0, 0, 0))
+  );
+  --pages-delete__background-color: #222;
+  --pages-delete__border-color: #ff6000;
+  --pages-header__background-color: #262626;
+  --pages-header__color: #bfccd6;
+  --pages-header__color_sorted: #508bb5;
+  --pages-mentions__background-color: #ff6000;
+  --pages-mentions__background-color_empty: #3a3a3a;
+  --pages-mentions__color_empty: #737373;
+  --pages-row__background-color_highlight: #292929; // Don't think this exists any more
+  --pages-search-field__background-color: #3a3a3a;
+  --pages-search-field__border-color: #e9892475;
+  --pages-table__border-color: #2f373d;
+
+  /* icons */
+
+  --icon__background-color_hover: rgba(167, 182, 194, 0.3);
+  --icon__color: #e78924;
+  --icon__color_hover: #e78924;
+  --filter__color_subscript: #5c7080;
 }

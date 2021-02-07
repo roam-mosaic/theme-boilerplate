@@ -1,16 +1,16 @@
 /* Version bullet */
 .version-bullet {
-  background-color: var(--bullet-version) !important;
+  background-color: var(--version-bullet__background-color) !important;
 }
 
 /* Version controls */
 div {
   &[style*='border-bottom: 0.5px solid rgb(216, 225, 232);'] {
-    border-bottom: 0.5px solid var(--bullet-version) !important;
+    border-bottom: 0.5px solid var(--version-bullet__background-color) !important;
 
     span {
       &[style*='border-bottom: 2px solid rgb(138, 155, 168);'] {
-        border-bottom: 2px solid var(--bullet-version) !important;
+        border-bottom: 2px solid var(--version-bullet__background-color) !important;
       }
     }
   }

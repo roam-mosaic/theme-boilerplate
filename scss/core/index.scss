@@ -1,5 +1,5 @@
 @import 'resources';
-@import 'variables';
+// @import 'variables-vanilla-roam';
 @import 'mixins';
 @import 'icons';
 @import 'reset';
@@ -11,9 +11,10 @@
 @import 'components/alias';
 @import 'components/attributes';
 @import 'components/block-callout';
-@import 'components/block_reference';
+@import 'components/block-reference';
 @import 'components/block-embed';
 @import 'components/blockquote';
+@import 'components/bullet-outline';
 @import 'components/code-block';
 @import 'components/code-inline';
 @import 'components/database-menu';
@@ -23,11 +24,12 @@
 @import 'components/emoji';
 @import 'components/encrypted-block';
 @import 'components/external-link';
-@import 'components/inline-comments';
+@import 'components/inline-block';
 @import 'components/kanban';
 @import 'components/linked-reference';
 @import 'components/menu';
 @import 'components/mermaid';
+@import 'components/page-embed';
 @import 'components/page-link';
 @import 'components/page-link-date';
 @import 'components/pomodoro';
@@ -48,6 +50,7 @@
 @import 'layout/typography';
 @import 'layout/top-bar';
 @import 'layout/breadcrumb';
+@import 'layout/help';
 @import 'layout/scrollbars';
 @import 'layout/left-sidebar';
 @import 'layout/right-sidebar';
