@@ -127,7 +127,8 @@
   --main-font__font-size: 14px;
   --caret__color: #0080ff;
   --accent__color: #e98924;
-  --accent-font__color: #1189bd;
+  --accent__color_alert: #ff6000;
+  --accent__color-font: #1189bd;
   --block-highlight__background-color_selected: #00588e;
   --block-highlight__background-color_active: rgba(255, 255, 255, 0.05);
   --block-highlight__background-color_mentions: #312c28;
@@ -153,7 +154,7 @@
   --left-sidebar-shortcuts__color_title: var(--left-sidebar__color);
   --left-sidebar-shortcuts__font-size: 1rem;
   /* right sidebar */
-  --right-sidebar__color_title-closed: var(--accent-font__color);
+  --right-sidebar__color_title-closed: var(--accent__color-font);
   --right-sidebar__background-color: #323232;
   --right-sidebar__border: #e9892475;
   --right-sidebar-masonry__background-color: var(--body__background-color);
@@ -196,7 +197,7 @@
   --highlight-link-color: #ff6000;
   --hr__border: rgba(225, 117, 28, 0.5);
   --hr__margin-bottom: 2.5em;
-  --hr__margin-top: 0.785714286em;
+  --hr__margin-top: 11px;
   --strikethrough__color: inherit;
   --strikethrough__font-style: italic;
   --strikethrough__opacity: 0.6;
@@ -288,6 +289,10 @@
 
 .rm-block-main .bp3-button:not([class*='bp3-intent-']) {
   min-height: 25px;
+}
+
+.rm-displaced-button {
+  color: var(--accent__color_alert);
 }
 
 /* All Pages */
@@ -1312,12 +1317,12 @@ span.flatpickr-weekday {
 
 /* Select Menu */
 .rm-option {
-  border: 1px solid var(--accent-font__color);
-  color: var(--accent-font__color);
+  border: 1px solid var(--accent__color-font);
+  color: var(--accent__color-font);
   margin: 0 4px;
 }
 .rm-option:after {
-  border-top: 4px solid var(--accent-font__color);
+  border-top: 4px solid var(--accent__color-font);
 }
 
 /* Table */
@@ -1558,15 +1563,18 @@ strong,
   color: var(--calculation__color) !important;
 }
 
+hr {
+  border-top: 1px solid var(--hr__border);
+}
+
 .rm-hr {
   border: 1px solid var(--hr__border);
   margin-bottom: var(--hr__margin-bottom);
   margin-top: var(--hr__margin-top);
 }
 
-hr {
-  margin-top: 0.785714286em;
-  border-top: 1px solid var(--hr__border);
+.level2 {
+  font-family: var(--main-font__font-family);
 }
 
 /* Topbar */
@@ -1857,7 +1865,7 @@ span.rm-page-ref.rm-page-ref--tag[data-tag*='meeting']:hover {
 }
 
 span[data-tag*='meeting'] {
-  padding-right: 22px;
+  padding-right: 24px;
   padding-left: 0;
   padding-top: 0;
   padding-bottom: 0;
@@ -2141,4 +2149,188 @@ inspired by Matt Goldenberg */
   margin-left: -12px;
   margin-top: 3px;
   padding: 0;
+}
+
+/* Rainbow indentation */
+/* 
+Feel free to adjust the color variables!
+This one has 18 colors deep (3 cycles of 3 rainbow flavored palettes).
+This loops 3 times so it goes 54 levels deep!
+To add more levels just target
+.rm-level-n > div for every nth level
+*/
+/* 
+To add deeper indents:
+Add colors for " .rm-level-n > div " incrementally (n = indent level)
+*/
+/* Level 1 */
+.rm-level-1 > div,
+.rm-level-19 > div,
+.rm-level-37 > div,
+.rm-inline-references > .rm-multibar {
+  border-right-color: var(--indent1) !important;
+  box-shadow: var(--box-shadow-values) var(--indent1) inset;
+}
+
+/* Level 2 */
+.rm-level-2 > div,
+.rm-level-20 > div,
+.rm-level-38 > div {
+  border-right-color: var(--indent2) !important;
+  box-shadow: var(--box-shadow-values) var(--indent2) inset;
+}
+
+/* Level 3 */
+.rm-level-3 > div,
+.rm-level-21 > div,
+.rm-level-39 > div {
+  border-right-color: var(--indent3) !important;
+  box-shadow: var(--box-shadow-values) var(--indent3) inset;
+}
+
+/* Level 4 */
+.rm-level-4 > div,
+.rm-level-22 > div,
+.rm-level-40 > div {
+  border-right-color: var(--indent4) !important;
+  box-shadow: var(--box-shadow-values) var(--indent4) inset;
+}
+
+/* Level 5 */
+.rm-level-5 > div,
+.rm-level-23 > div,
+.rm-level-41 > div {
+  border-right-color: var(--indent5) !important;
+  box-shadow: var(--box-shadow-values) var(--indent5) inset;
+}
+
+/* Level 6 */
+.rm-level-6 > div,
+.rm-level-24 > div,
+.rm-level-42 > div {
+  border-right-color: var(--indent6) !important;
+  box-shadow: var(--box-shadow-values) var(--indent6) inset;
+}
+
+/* Level 7 */
+.rm-level-7 > div,
+.rm-level-25 > div,
+.rm-level-43 > div {
+  border-right-color: var(--indent7) !important;
+  box-shadow: var(--box-shadow-values) var(--indent7) inset;
+}
+
+/* Level 8 */
+.rm-level-8 > div,
+.rm-level-26 > div,
+.rm-level-44 > div {
+  border-right-color: var(--indent8) !important;
+  box-shadow: var(--box-shadow-values) var(--indent8) inset;
+}
+
+/* Level 9 */
+.rm-level-9 > div,
+.rm-level-27 > div,
+.rm-level-45 > div {
+  border-right-color: var(--indent9) !important;
+  box-shadow: var(--box-shadow-values) var(--indent9) inset;
+}
+
+/* Level 10 */
+.rm-level-10 > div,
+.rm-level-28 > div,
+.rm-level-46 > div {
+  border-right-color: var(--indent10) !important;
+  box-shadow: var(--box-shadow-values) var(--indent10) inset;
+}
+
+/* Level 11 */
+.rm-level-11 > div,
+.rm-level-29 > div,
+.rm-level-47 > div {
+  border-right-color: var(--indent11) !important;
+  box-shadow: var(--box-shadow-values) var(--indent11) inset;
+}
+
+/* Level 12 */
+.rm-level-12 > div,
+.rm-level-30 > div,
+.rm-level-48 > div {
+  border-right-color: var(--indent12) !important;
+  box-shadow: var(--box-shadow-values) var(--indent12) inset;
+}
+
+/* Level 13 */
+.rm-level-13 > div,
+.rm-level-31 > div,
+.rm-level-49 > div {
+  border-right-color: var(--indent13) !important;
+  box-shadow: var(--box-shadow-values) var(--indent13) inset;
+}
+
+/* Level 14 */
+.rm-level-14 > div,
+.rm-level-32 > div,
+.rm-level-50 > div {
+  border-right-color: var(--indent14) !important;
+  box-shadow: var(--box-shadow-values) var(--indent14) inset;
+}
+
+/* Level 15 */
+.rm-level-15 > div,
+.rm-level-33 > div,
+.rm-level-51 > div {
+  border-right-color: var(--indent15) !important;
+  box-shadow: var(--box-shadow-values) var(--indent15) inset;
+}
+
+/* Level 16 */
+.rm-level-16 > div,
+.rm-level-34 > div,
+.rm-level-52 > div {
+  border-right-color: var(--indent16) !important;
+  box-shadow: var(--box-shadow-values) var(--indent16) inset;
+}
+
+/* Level 17 */
+.rm-level-17 > div,
+.rm-level-35 > div,
+.rm-level-53 > div {
+  border-right-color: var(--indent17) !important;
+  box-shadow: var(--box-shadow-values) var(--indent17) inset;
+}
+
+/* Level 18 */
+.rm-level-18 > div,
+.rm-level-36 > div,
+.rm-level-54 > div {
+  border-right-color: var(--indent18) !important;
+  box-shadow: var(--box-shadow-values) var(--indent18) inset;
+}
+
+:root {
+  --box-shadow-values: 25px 0px 20px -30px;
+  /* Set to "none" to remove shadow */
+  --indent1: #5f388bad;
+  --indent2: #4a57baad;
+  --indent3: #48864dad;
+  --indent4: #a7a15aad;
+  --indent5: #ad7e48ad;
+  --indent6: #a5494fad;
+  --indent7: #634071ad;
+  --indent8: #303472ad;
+  --indent9: #395c45ad;
+  --indent10: #7c7948ad;
+  --indent11: #7d5039ad;
+  --indent12: #a5494fad;
+  --indent13: #706597ad;
+  --indent14: #657d91ad;
+  --indent15: #6d8d76ad;
+  --indent16: #a09a84ad;
+  --indent17: #987174ad;
+  --indent18: #8b5f78ad;
+}
+
+.rm-multibar {
+  z-index: 4;
 }
