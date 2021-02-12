@@ -14,6 +14,10 @@ To add deeper indents:
 Add colors for " .rm-level-n > div " incrementally (n = indent level)
 */
 
+.rm-multibar {
+  z-index: 4;
+}
+
 /* Level 1 */
 .rm-level-1 > .rm-multibar,
 .rm-level-19 > .rm-multibar,
@@ -160,7 +164,7 @@ Add colors for " .rm-level-n > div " incrementally (n = indent level)
 }
 
 :root {
-  // --box-shadow-values: 25px 0px 20px -30px; /* Set to "none" to remove shadow */
+  --box-shadow-values: 25px 0px 20px -30px; /* Set to "none" to remove shadow */
   --indent1: #5f388bad;
   --indent2: #4a57baad;
   --indent3: #48864dad;
@@ -179,8 +183,4 @@ Add colors for " .rm-level-n > div " incrementally (n = indent level)
   --indent16: #a09a84ad;
   --indent17: #987174ad;
   --indent18: #8b5f78ad;
-}
-
-.rm-multibar {
-  z-index: 4;
 }
