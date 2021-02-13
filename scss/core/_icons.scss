@@ -65,3 +65,7 @@
 .rm-block-main .bp3-button:not([class*='bp3-intent-']) {
   min-height: 25px;
 }
+
+.rm-displaced-button {
+  color: var(--accent__color_alert);
+}

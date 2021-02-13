@@ -165,7 +165,8 @@
   --main-font__font-size: 14px;
   --caret__color: #0080ff;
   --accent__color: #e98924;
-  --accent-font__color: #1189bd;
+  --accent__color_alert: #ff6000;
+  --accent__color-font: #1189bd;
 
   --block-highlight__background-color_selected: #00588e;
   --block-highlight__background-color_active: rgba(255, 255, 255, 0.05);
@@ -202,7 +203,7 @@
 
   /* right sidebar */
 
-  --right-sidebar__color_title-closed: var(--accent-font__color);
+  --right-sidebar__color_title-closed: var(--accent__color-font);
   --right-sidebar__background-color: #323232;
   --right-sidebar__border: #e9892475;
   --right-sidebar-masonry__background-color: var(--body__background-color);
