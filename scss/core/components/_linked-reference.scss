@@ -1,0 +1,53 @@
+/* Linked reference */
+
+.rm-reference-container {
+  margin-bottom: 0em !important; // A littled extra space between linked and unlinked reference sections
+
+  &.dont-focus-block {
+    margin-bottom: 0 !important;
+  }
+
+  span[style*='color: red;'] {
+    /* Embed link */
+    color: var(--main-font__color) !important;
+  }
+
+  div[style*='color: rgb(206, 217, 224);'] {
+    font-size: var(--h3__font-family-size);
+
+    strong {
+      font-weight: normal;
+    }
+  }
+}
+
+.rm-reference-item {
+  background-color: var(--linked-reference__backgound-color_1);
+
+  div {
+    font-family: var(--main-font__font-family);
+  }
+
+  .controls {
+    .block-expand {
+      margin-top: 0;
+    }
+  }
+
+  .rm-block-text {
+    padding-right: 30px;
+  }
+}
+
+/* Unlinked References */
+
+.rm-reference-container + div {
+  margin-top: 3em;
+  border-top: 1px solid var(--hr__border);
+  padding-top: 2em;
+
+  strong[style*='color: rgb(206, 217, 224);'] {
+    font-size: var(--h3__font-family-size);
+    font-weight: normal;
+  }
+}

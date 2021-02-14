@@ -1,0 +1,178 @@
+@charset "UTF-8";
+/* TODO: This needs cleanup - does not play nice with `roam-sidedbar-modifier.scss` */
+.rm-topbar {
+  /* Need to remove this because the lock menu button is on the topbar
+     and we need to move it in front of the side menu to make it clickable */
+}
+
+.roam-center {
+  /* Move the border here to resolve the above issue */
+  border-top: 1px solid var(--topbar__border);
+}
+
+.roam-body .roam-app .roam-sidebar-container[style*='left: 0px;'] {
+  z-index: 5;
+}
+
+.roam-body .roam-app .roam-sidebar-container[style*='top: 0px;'] {
+  z-index: 200;
+}
+
+#app
+  > div
+  > div
+  > div.roam-sidebar-container.noselect
+  > div
+  > div.flex-v-box.starred-pages-wrapper
+  > div:nth-child(1),
+#app
+  > div
+  > div
+  > div.roam-sidebar-container.noselect
+  > div
+  > div.flex-v-box.starred-pages-wrapper
+  > div:nth-child(2) {
+  display: none;
+}
+
+#app
+  > div
+  > div
+  > div.roam-sidebar-container.noselect
+  > div
+  > div.flex-v-box.starred-pages-wrapper
+  > div.flex-h-box {
+  margin-top: 4px;
+}
+
+#app > div > div > div.roam-sidebar-container.noselect {
+  /* left: 0px; */
+  top: 0px !important;
+  bottom: 0px;
+}
+
+#app > div > div > div.roam-main > div.rm-topbar {
+  /* z-index: -1;    */
+  background-color: transparent;
+}
+
+#app > div > div > div.roam-sidebar-container.noselect {
+  /* z-index: -1;*/
+}
+
+#app > div > div > div.roam-sidebar-container.noselect > div > div.flex-h-box {
+  z-index: 10;
+}
+#app > div > div > div.roam-sidebar-container.noselect > div > div.flex-h-box > span {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+  min-width: 24px;
+  min-height: 24px;
+}
+
+#app
+  > div
+  > div
+  > div.roam-main
+  > div.rm-topbar
+  > div
+  > span.bp3-button.bp3-minimal.bp3-small {
+  /* background-color: blue !important;*/
+  transition: opacity 50ms ease-in 200ms;
+  opacity: 0;
+}
+
+#app
+  > div
+  > div
+  > div.roam-main
+  > div.rm-topbar
+  > div
+  > span.bp3-button.bp3-minimal.bp3-icon-menu-open.bp3-small {
+  position: relative;
+  left: 180px;
+  z-index: 11;
+  opacity: 1;
+}
+
+/* #app > div > div > div.roam-main > div.rm-topbar > div > span.bp3-button.bp3-minimal.bp3-icon-menu-open.bp3-small,*/
+#app
+  > div
+  > div
+  > div.roam-main
+  > div.rm-topbar
+  > div
+  > span.bp3-button.bp3-minimal.bp3-icon-menu.pointer.bp3-small {
+  left: 0;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  min-width: 20px;
+  z-index: 100;
+  background-color: transparent;
+}
+#app
+  > div
+  > div
+  > div.roam-main
+  > div.rm-topbar
+  > div
+  > span.bp3-button.bp3-minimal.bp3-icon-menu.pointer.bp3-small:hover {
+  min-width: 25px;
+}
+#app
+  > div
+  > div
+  > div.roam-main
+  > div.rm-topbar
+  > div
+  > span.bp3-button.bp3-minimal.bp3-icon-menu.pointer.bp3-small:before {
+  content: '';
+}
+
+/* sidebar hover magic 🔥 :)
+ * resets the padding changes when sidebar is visible. 
+ * This allows the sidebar to overlay the content, instead of pushing it. 
+ * on click, the content gets pushed (as expected)
+ * ~ is the sibling CSS selector; to detect the closed state of the sidebar
+ */
+.roam-sidebar-container:not([style^='left: 0px; top: 0px; bottom: 0px;'])
+  ~ .roam-main
+  .roam-body-main {
+  width: 100vw !important;
+}
+
+.roam-sidebar-container:not([style^='left: 0px; top: 0px; bottom: 0px;'])
+  ~ .roam-main
+  .roam-body-main
+  > .roam-center
+  > div:first-child {
+  padding-right: calc((100% - 800px) / 2) !important;
+  padding-left: calc((100% - 800px) / 2) !important;
+}
+
+/* Prevents weird siderbar scroll */
+html {
+  overflow: hidden;
+}
+
+/*  more sidebar fixes */
+/* makes the shortcuts stick edge-to-edge, 
+ * with spacing on the left 
+*/
+.starred-pages-wrapper {
+  padding: 8px 0 !important;
+}
+
+.roam-body
+  .roam-app
+  .roam-sidebar-container
+  .roam-sidebar-content
+  .starred-pages-wrapper
+  .starred-pages
+  .page,
+.starred-pages-wrapper > div.flex-h-box {
+  padding-left: 20px;
+}

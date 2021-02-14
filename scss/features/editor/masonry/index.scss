@@ -1,0 +1,98 @@
+.roam-body-main {
+  > div {
+    padding: 0 !important;
+
+    .roam-article {
+      width: 800px;
+      margin: 0px auto;
+      
+      > div {
+        // Linked References
+        + div {
+          // background-color: rgba($color: rgb(0, 191, 255), $alpha: 0.1);
+        }
+
+        .zoom-path-view {
+          .rm-zoom-item {
+            &-content {
+              // Page Heading
+              span {
+                color: black;
+              }
+            }
+          }
+
+          // Wrapper around entire block
+          + div {
+            > div.masonry {
+              // background-color: rgba($color: #ff7300, $alpha: 0.2);
+              max-width: 100%;
+
+              // .rm-block__controls {
+              //   .rm-bullet {
+              //     // position: absolute;
+              //     // left: 0;
+              //   }
+              // }
+              
+              .rm-block__self {
+                .rm-embed-margin-action {
+                  &.rm-closed {
+                    top: 20px;
+                  }
+                }
+              }
+
+              > div.rm-block {
+
+                &__children {
+                  &.rm-level-1 {
+                    // background-color: rgba($color: #ff7300, $alpha: 0.3);
+                    overflow: scroll !important;
+                    white-space: normal;
+                    align-content: flex-start;
+                    flex-flow: column wrap;
+                    max-height: 2000px;
+
+                    // display: grid;
+                    // gap: 5px;
+                    // // grid-auto-rows: 750px;
+                    // grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+
+                    // div[data-page-links*='embed'] {
+                    //   background-color: rgba($color: #ff7300, $alpha: 0.3);
+                    // }
+                    div[data-path-page-links*='.masonry'] {
+                      &.block-border-left {
+                        // background-color: rgba($color: #ff7300, $alpha: 0.4);
+                        margin-left: 10px;
+                        min-width: 500px;
+                        width: 100%;
+                        position: relative;
+                        flex: 0 1 auto;
+                        flex-direction: column;
+                        align-self: flex-start;
+                        min-height: 38px;
+                        // resize: vertical;
+                        // overflow-y: auto;
+                        // overflow-x: hidden;
+                        max-height: 1000px;
+
+                        // grid-row: span 4;
+                        // display: flex;
+
+                        &:last-child {
+                          margin-right: 10px;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

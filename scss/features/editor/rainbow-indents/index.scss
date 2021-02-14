@@ -1,0 +1,186 @@
+/* Rainbow indentation */
+/* 
+Feel free to adjust the color variables!
+This one has 18 colors deep (3 cycles of 3 rainbow flavored palettes).
+This loops 3 times so it goes 54 levels deep!
+To add more levels just target
+.rm-level-n > div for every nth level
+*/
+
+// @import url('https://abhayprasanna.github.io/rainbow-indent-core.css');
+
+/* 
+To add deeper indents:
+Add colors for " .rm-level-n > div " incrementally (n = indent level)
+*/
+
+.rm-multibar {
+  z-index: 4;
+}
+
+/* Level 1 */
+.rm-level-1 > .rm-multibar,
+.rm-level-19 > .rm-multibar,
+.rm-level-37 > .rm-multibar,
+.rm-inline-references > .rm-multibar {
+  border-right-color: var(--indent1) !important;
+  box-shadow: var(--box-shadow-values) var(--indent1) inset;
+}
+
+/* Level 2 */
+.rm-level-2 > .rm-multibar,
+.rm-level-20 > .rm-multibar,
+.rm-level-38 > .rm-multibar {
+  border-right-color: var(--indent2) !important;
+  box-shadow: var(--box-shadow-values) var(--indent2) inset;
+}
+
+/* Level 3 */
+.rm-level-3 > .rm-multibar,
+.rm-level-21 > .rm-multibar,
+.rm-level-39 > .rm-multibar {
+  border-right-color: var(--indent3) !important;
+  box-shadow: var(--box-shadow-values) var(--indent3) inset;
+}
+
+/* Level 4 */
+.rm-level-4 > .rm-multibar,
+.rm-level-22 > .rm-multibar,
+.rm-level-40 > .rm-multibar {
+  border-right-color: var(--indent4) !important;
+  box-shadow: var(--box-shadow-values) var(--indent4) inset;
+}
+
+/* Level 5 */
+.rm-level-5 > .rm-multibar,
+.rm-level-23 > .rm-multibar,
+.rm-level-41 > .rm-multibar {
+  border-right-color: var(--indent5) !important;
+  box-shadow: var(--box-shadow-values) var(--indent5) inset;
+}
+
+/* Level 6 */
+.rm-level-6 > .rm-multibar,
+.rm-level-24 > .rm-multibar,
+.rm-level-42 > .rm-multibar {
+  border-right-color: var(--indent6) !important;
+  box-shadow: var(--box-shadow-values) var(--indent6) inset;
+}
+
+/* Level 7 */
+.rm-level-7 > .rm-multibar,
+.rm-level-25 > .rm-multibar,
+.rm-level-43 > .rm-multibar {
+  border-right-color: var(--indent7) !important;
+  box-shadow: var(--box-shadow-values) var(--indent7) inset;
+}
+
+/* Level 8 */
+.rm-level-8 > .rm-multibar,
+.rm-level-26 > .rm-multibar,
+.rm-level-44 > .rm-multibar {
+  border-right-color: var(--indent8) !important;
+  box-shadow: var(--box-shadow-values) var(--indent8) inset;
+}
+
+/* Level 9 */
+.rm-level-9 > .rm-multibar,
+.rm-level-27 > .rm-multibar,
+.rm-level-45 > .rm-multibar {
+  border-right-color: var(--indent9) !important;
+  box-shadow: var(--box-shadow-values) var(--indent9) inset;
+}
+
+/* Level 10 */
+.rm-level-10 > .rm-multibar,
+.rm-level-28 > .rm-multibar,
+.rm-level-46 > .rm-multibar {
+  border-right-color: var(--indent10) !important;
+  box-shadow: var(--box-shadow-values) var(--indent10) inset;
+}
+
+/* Level 11 */
+.rm-level-11 > .rm-multibar,
+.rm-level-29 > .rm-multibar,
+.rm-level-47 > .rm-multibar {
+  border-right-color: var(--indent11) !important;
+  box-shadow: var(--box-shadow-values) var(--indent11) inset;
+}
+
+/* Level 12 */
+.rm-level-12 > .rm-multibar,
+.rm-level-30 > .rm-multibar,
+.rm-level-48 > .rm-multibar {
+  border-right-color: var(--indent12) !important;
+  box-shadow: var(--box-shadow-values) var(--indent12) inset;
+}
+
+/* Level 13 */
+.rm-level-13 > .rm-multibar,
+.rm-level-31 > .rm-multibar,
+.rm-level-49 > .rm-multibar {
+  border-right-color: var(--indent13) !important;
+  box-shadow: var(--box-shadow-values) var(--indent13) inset;
+}
+
+/* Level 14 */
+.rm-level-14 > .rm-multibar,
+.rm-level-32 > .rm-multibar,
+.rm-level-50 > .rm-multibar {
+  border-right-color: var(--indent14) !important;
+  box-shadow: var(--box-shadow-values) var(--indent14) inset;
+}
+
+/* Level 15 */
+.rm-level-15 > .rm-multibar,
+.rm-level-33 > .rm-multibar,
+.rm-level-51 > .rm-multibar {
+  border-right-color: var(--indent15) !important;
+  box-shadow: var(--box-shadow-values) var(--indent15) inset;
+}
+
+/* Level 16 */
+.rm-level-16 > .rm-multibar,
+.rm-level-34 > .rm-multibar,
+.rm-level-52 > .rm-multibar {
+  border-right-color: var(--indent16) !important;
+  box-shadow: var(--box-shadow-values) var(--indent16) inset;
+}
+
+/* Level 17 */
+.rm-level-17 > .rm-multibar,
+.rm-level-35 > .rm-multibar,
+.rm-level-53 > .rm-multibar {
+  border-right-color: var(--indent17) !important;
+  box-shadow: var(--box-shadow-values) var(--indent17) inset;
+}
+
+/* Level 18 */
+.rm-level-18 > .rm-multibar,
+.rm-level-36 > .rm-multibar,
+.rm-level-54 > .rm-multibar {
+  border-right-color: var(--indent18) !important;
+  box-shadow: var(--box-shadow-values) var(--indent18) inset;
+}
+
+:root {
+  --box-shadow-values: 25px 0px 20px -30px; /* Set to "none" to remove shadow */
+  --indent1: #5f388bad;
+  --indent2: #4a57baad;
+  --indent3: #48864dad;
+  --indent4: #a7a15aad;
+  --indent5: #ad7e48ad;
+  --indent6: #a5494fad;
+  --indent7: #634071ad;
+  --indent8: #303472ad;
+  --indent9: #395c45ad;
+  --indent10: #7c7948ad;
+  --indent11: #7d5039ad;
+  --indent12: #a5494fad;
+  --indent13: #706597ad;
+  --indent14: #657d91ad;
+  --indent15: #6d8d76ad;
+  --indent16: #a09a84ad;
+  --indent17: #987174ad;
+  --indent18: #8b5f78ad;
+}

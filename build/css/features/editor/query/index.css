@@ -1,0 +1,85 @@
+@charset "UTF-8";
+/* RR change: MINIMIZE QUERIES: add any one of the following tags before the beginning of your query (in the same block):
+
+    #min-title = hides the page reference link / page title
+    #min-con = hides the contextual reference information (breadcrumbs)
+    #minimal = hides both the title and the context
+    #min-q = hides the query string, similar to legacy behavior
+    #min-all = hides everything — title, context, and query string
+    #min-todo = hides everything and makes a compact list
+
+inspired by Matt Goldenberg */
+[data-tag='minimal'] {
+  display: none !important;
+}
+[data-tag='minimal'] + .rm-query .rm-title-arrow-wrapper {
+  display: none !important;
+}
+[data-tag='minimal'] + .rm-query .zoom-mentions-view {
+  display: none !important;
+}
+[data-tag='minimal'] + .rm-query .rm-query-title::after {
+  content: ' #minimal';
+}
+
+[data-tag='min-title'] {
+  display: none !important;
+}
+[data-tag='min-title'] + .rm-query .rm-title-arrow-wrapper {
+  display: none !important;
+}
+[data-tag='min-title'] + .rm-query .rm-query-title::after {
+  content: ' #minimal';
+}
+
+[data-tag='min-con'] {
+  display: none !important;
+}
+[data-tag='min-con'] + .rm-query .zoom-mentions-view {
+  display: none !important;
+}
+[data-tag='min-con'] + .rm-query .rm-query-title::after {
+  content: ' #minimal';
+}
+
+[data-tag='min-q'] {
+  display: none !important;
+}
+[data-tag='min-q'] + .rm-query .rm-query-title {
+  display: none !important;
+}
+
+[data-tag='min-all'] {
+  display: none !important;
+}
+[data-tag='min-all'] + .rm-query .zoom-mentions-view {
+  display: none !important;
+}
+[data-tag='min-all'] + .rm-query .rm-title-arrow-wrapper {
+  display: none !important;
+}
+[data-tag='min-all'] + .rm-query .rm-query-title {
+  display: none !important;
+}
+
+[data-tag='min-todo'] {
+  display: none !important;
+}
+[data-tag='min-todo'] + .rm-query div[style*='margin-left: 12px;'] {
+  margin-left: 0 !important;
+}
+[data-tag='min-todo'] + .rm-query .zoom-mentions-view {
+  display: none !important;
+}
+[data-tag='min-todo'] + .rm-query .rm-title-arrow-wrapper {
+  display: none !important;
+}
+[data-tag='min-todo'] + .rm-query .rm-query-title {
+  display: none !important;
+}
+[data-tag='min-todo'] + .rm-query .rm-reference-item {
+  background: none;
+  margin-left: -12px;
+  margin-top: 3px;
+  padding: 0;
+}

@@ -1,0 +1,55 @@
+/* Dialog window */
+
+.bp3-dialog {
+  background: var(--dialog__background) !important;
+  color: var(--dialog__color);
+
+  textarea {
+    color: var(--dialog__background);
+  }
+}
+
+input {
+  background-color: var(--linked-reference__backgound-color_1);
+  border: 1px solid var(--bullet__background-color);
+  line-height: normal;
+  padding: 5px;
+}
+
+button {
+  background-color: var(--linked-reference__backgound-color_1);
+  border: 1px solid var(--bullet__background-color);
+  line-height: normal;
+  padding: 5px;
+
+  &[style*='border: 0.5px solid rgb(206, 217, 224);'] {
+    background-color: var(--linked-reference__backgound-color_1) !important;
+    border: 1px solid var(--linked-reference__backgound-color_1) !important;
+  }
+
+  &[style*='background-color: rgba(72, 176, 240, 0.5);'] {
+    background-color: var(--linked-reference__backgound-color_1) !important;
+    border: 1px solid var(--icon__color) !important;
+  }
+}
+
+/* Mobile quick synch dialog */
+
+.rm-quick-capture-sync-modal {
+  background-color: #d8e1e8;
+  background-color: var(--dialog__background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 70vw;
+  min-height: 70vh;
+  max-height: 90vh;
+  overflow-y: scroll;
+  padding: 20px;
+
+  #quick-capture-history {
+    margin-top: 20px;
+    width: 70%;
+  }
+}

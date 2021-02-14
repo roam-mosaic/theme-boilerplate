@@ -1,0 +1,47 @@
+/* Blockquote */
+
+.rm-bq {
+  display: inline-block;
+  background-color: var(--blockquote__background-color);
+  border-left: var(--blockquote__border-left) var(--blockquote__border_color);
+  font-size: var(--blockquote__font-size);
+  color: var(--blockquote__color);
+  text-align: var(--blockquote__text-align);
+  text-justify: var(--blockquote__text-justify);
+}
+
+// These styles are for hiccup formated blockquotes e.g., :hiccup [:blockquote [:p "Operational effectiveness is not a strategy"] [:footer [:cite "Michael Porter, p61"]]]
+// blockquote {
+// background-color: var(--blockquote__background-color);
+// border-left: 5px solid var(--blockquote__border_color);
+// box-sizing: border-box;
+// color: var(--blockquote__color);
+// font-size: var(--blockquote__font-size);
+// // margin: 0 0 20px;
+// min-height: 0;
+// min-width: 0;
+// padding: 10px 20px;
+// text-align: justify;
+// text-justify: inter-wor1d;
+//
+//   .small {
+//     color: var(--blockquote-cite);
+//     display: block;
+//     font-size: 80%;
+//     line-height: 1.42857143;
+//   }
+
+//   footer {
+//     color: var(--blockquote-cite);
+//     display: block;
+//     font-size: 80%;
+//     line-height: 1.42857143;
+//   }
+
+//   small {
+//     color: var(--blockquote-cite);
+//     display: block;
+//     font-size: 80%;
+//     line-height: 1.42857143;
+//   }
+// }

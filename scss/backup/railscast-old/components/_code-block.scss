@@ -1,0 +1,113 @@
+/* Code block */
+
+.CodeMirror-matchingbracket {
+  outline: 1px solid #ff9c3a;
+  color: #fff !important;
+}
+.CodeMirror-lines {
+  background: var(--code__background);
+}
+.CodeMirror-activeline {
+  pre {
+    background: #253540;
+  }
+}
+.CodeMirror {
+  background: var(--code__background);
+  border-radius: 8px;
+  color: #839496;
+  font-family: var(--code-font__font-family);
+  font-size: var(--code-font__font-size);
+  height: auto !important;
+  text-shadow: #002b36 0 1px;
+
+  .CodeMirror-code {
+    pre {
+      font-family: var(--code-font__font-family);
+      box-shadow: none;
+      font-size: var(--code-font__font-size);
+    }
+  }
+}
+.CodeMirror-selected {
+  background: #4d516d !important;
+}
+.CodeMirror-gutters {
+  background: #2b2b2b;
+  background: var(--code__background);
+  background: #073642;
+  border-right: 2px solid #2c2c2c;
+}
+.CodeMirror-linenumber {
+  color: #586e75;
+  text-shadow: #021014 0 -1px;
+}
+.CodeMirror-cursor {
+  border-left: 1px solid #d4cfc9 !important;
+}
+
+.cm-def {
+  color: rgb(133, 153, 0);
+}
+
+.cm-s-default {
+  .cm-atom {
+    color: #839496;
+  }
+
+  .cm-attribute {
+    color: #839496;
+  }
+
+  .cm-builtin {
+    color: #268bd2;
+  }
+
+  .cm-comment {
+    color: #586e75;
+  }
+
+  .cm-def {
+    color: rgb(133, 153, 0);
+  }
+
+  .cm-keyword {
+    color: #cb4b16;
+  }
+
+  .cm-number {
+    color: #2aa198;
+  }
+
+  .cm-property {
+    color: #b58900;
+  }
+
+  .cm-qualifier {
+    color: rgb(38, 139, 210);
+  }
+
+  .cm-string {
+    color: rgb(42, 161, 152);
+  }
+
+  .cm-string-2 {
+    color: #2aa198;
+  }
+
+  .cm-tag {
+    color: #859900;
+  }
+
+  .cm-variable-2 {
+    color: #839496;
+  }
+
+  .cm-variable-3 {
+    color: #ccc;
+  }
+}
+
+.cm-variable {
+  color: #dc322f;
+}

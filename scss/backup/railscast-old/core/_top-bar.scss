@@ -1,0 +1,39 @@
+/* Topbar */
+
+.roam-topbar {
+  background-color: var(--topbar__background-color);
+  border-bottom: 0.5px solid var(--topbar__border);
+}
+
+.bp3-input {
+  background: var(--search__background);
+  box-shadow: none;
+  color: var(--menu__color);
+  font-size: 0.85em;
+
+  &::placeholder {
+    color: var(--search__color_page);
+  }
+
+  &:focus {
+    border: var(--search__border);
+    box-shadow: 0 0 0 1px var(--search__border);
+  }
+
+  &[readonly] {
+    background: var(--search__background);
+    box-shadow: none;
+    font-size: 0.85em;
+  }
+
+  .bp3-active {
+    border: var(--search__border);
+    box-shadow: 0 0 0 1px var(--search__border);
+  }
+}
+
+.bp3-input-group {
+  > .bp3-icon {
+    color: var(--search__color_page);
+  }
+}

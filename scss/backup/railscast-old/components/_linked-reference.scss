@@ -1,0 +1,35 @@
+/* Linked reference */
+
+.rm-reference-container {
+  margin-bottom: 2em; // A littled extra space between linked and unlinked reference sections
+
+  span[style*='color: red;'] {
+    /* Embed link */
+    color: var(--main-font__color) !important;
+  }
+}
+
+.rm-reference-item {
+  background-color: var(--linked-reference__backgound-color_1);
+  border-radius: 7px;
+  flex: 1 1 100%;
+  margin-right: 8px;
+  margin-top: 8px;
+  padding: 10px;
+  padding-right: 0;
+  word-break: break-word;
+
+  div {
+    font-family: var(--main-font__font-family);
+  }
+
+  .controls {
+    .block-expand {
+      margin-top: 0;
+    }
+  }
+
+  .rm-block-text {
+    padding-right: 30px;
+  }
+}

@@ -1,0 +1,134 @@
+/* Typography */
+
+textarea {
+  font-family: var(--main-font__font-family);
+  font-size: var(--main-font__font-size);
+}
+
+h1 {
+  textarea {
+    // TODO this is a fix to keep the font size the same when editing page titles
+    font-size: 36px;
+    font-family: var(--h1__font-family);
+  }
+}
+
+.rm-heading-level-1 > .rm-block__self .rm-block__input {
+  color: var(--h1__color);
+  font-family: var(--h1__font-family);
+  font-size: var(--h1__font-size);
+  font-weight: var(--h1__font-weight);
+
+  .check-container {
+    // scale the checkmark with the heading size
+    margin-bottom: 0.1em;
+    height: 0.6em;
+    width: 0.6em;
+    .checkmark:after {
+      left: 0.2em;
+      width: 0.2em;
+      height: 0.5em;
+    }
+  }
+}
+
+.rm-heading-level-2 > .rm-block__self .rm-block__input {
+  color: var(--h2__color);
+  font-family: var(--h2__font-family) !important;
+  font-size: var(--h2__font-size);
+  font-weight: var(--h2__font-weight);
+
+  .check-container {
+    margin-bottom: 0.1em;
+    height: 0.6em;
+    width: 0.6em;
+    .checkmark:after {
+      left: 0.2em;
+      width: 0.2em;
+      height: 0.5em;
+    }
+  }
+}
+
+.rm-heading-level-3 > .rm-block__self .rm-block__input {
+  color: var(--h3__color);
+  font-family: var(--h3__font-family) !important;
+  font-size: var(--h3__font-size);
+  font-weight: var(--h3__font-weight);
+
+  .check-container {
+    margin-bottom: 0.1em;
+    height: 0.6em;
+    width: 0.6em;
+    .checkmark:after {
+      left: 0.2em;
+      width: 0.2em;
+      height: 0.5em;
+    }
+  }
+}
+
+.roam-body {
+  .roam-app {
+    color: var(--main-font__color);
+
+    h1 {
+      color: var(--h1__color);
+    }
+
+    .roam-article {
+      div {
+        font-family: var(--main-font__font-family);
+      }
+    }
+  }
+}
+
+em,
+.rm-italics {
+  color: var(--emphasis__color);
+}
+
+strong,
+.rm-bold {
+  color: var(--strong__color) !important;
+  font-weight: var(--strong__font-weight);
+}
+
+.rm-strikethrough {
+  color: var(--strikethrough__color);
+  font-style: var(--strikethrough__font-style);
+  opacity: var(--strikethrough__opacity);
+}
+
+.rm-highlight {
+  background-color: var(--highlight__background-color);
+  color: var(--highlight__color);
+
+  .rm-page-ref-link-color {
+    color: var(--highlight-link-color);
+  }
+}
+
+/* Calculation Results */
+.rm-calc-val {
+  color: var(--calculation__color) !important;
+}
+
+// TODO this is a fix to support a hiccup hr
+hr {
+  // margin-top: 0.785714286em;
+  border-top: 1px solid var(--hr__border);
+}
+
+.rm-hr {
+  // border: 0;
+  border: 1px solid var(--hr__border);
+  margin-bottom: var(--hr__margin-bottom);
+  margin-top: var(--hr__margin-top);
+}
+
+.level2 {
+  // This is the date title for past dates on the DNP
+  font-family: var(--main-font__font-family);
+}

@@ -1,0 +1,135 @@
+/* All Pages */
+
+.rm-pages-row-highlight {
+  background-color: var(--pages-row__background-color_highlight);
+}
+.rm-pages-row {
+  .rm-pages-title-col {
+    a {
+      strong {
+        color: var(--page-link__color) !important;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.bp3-icon-export {
+  margin-left: 30px; /*RR change: added some much needed space between export and delete buttons!!! */
+}
+
+/* Custom checkboxes */
+.bp3-control {
+  .bp3-control-indicator {
+    background-color: var(--todo-checkmark__background-color);
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(82, 82, 82, 0.8)),
+      to(rgba(0, 0, 0, 0))
+    );
+    border: 0;
+    -webkit-box-shadow: inset 0 0 0 1px rgba(16, 22, 26, 0.2),
+      inset 0 -1px 0 rgba(16, 22, 26, 0.1);
+    box-shadow: inset 0 0 0 1px rgba(16, 22, 26, 0.2),
+      inset 0 -1px 0 rgba(16, 22, 26, 0.1);
+  }
+
+  &:hover {
+    .bp3-control-indicator {
+      background-color: var(--todo-checkmark__color);
+      background-image: none;
+    }
+  }
+}
+
+.rm-all-pages {
+  .table {
+    .rm-pages-row {
+      border-bottom: 1px solid var(--pages-table__border-color);
+
+      .rm-pages-title-col {
+        color: var(--main-font__color);
+      }
+    }
+
+    .rm-pages-row.rm-pages-row-header {
+      background-color: var(--pages-header__background-color);
+      color: var(--pages-header__color);
+    }
+  }
+  div {
+    font-family: var(--main-font__font-family);
+  }
+}
+
+.sorted-header-text {
+  color: var(--pages-header__color_sorted);
+}
+
+.sorting-button-group {
+  .sort-button {
+    &.focused {
+      color: var(--pages-header__color_sorted);
+    }
+  }
+}
+
+.rm-clickable-pill {
+  background-color: var(--pages-mentions__background-color);
+
+  &.empty-pill {
+    background-color: var(--pages-mentions__background-color_empty);
+    color: var(--pages-mentions__background-color-empty);
+  }
+
+  &.level1-pill {
+    background-color: var(--pages-mentions__background-color);
+  }
+
+  &.level2-pill {
+    background-color: var(--pages-mentions__background-color);
+  }
+
+  &.level3-pill {
+    background-color: var(--pages-mentions__background-color);
+  }
+}
+
+.rm-pages-toolbar {
+  .toolbar-search-group {
+    .search-icon {
+      color: var(--search__color_page);
+
+      &.focused {
+        color: var(--search__color_page);
+      }
+    }
+
+    .search-input {
+      background-color: var(--pages-search-field__background-color);
+      border: 1px solid var(--pages-search-field__background-color);
+
+      &.focused {
+        border: 1px solid var(--pages-search-field__border-color);
+      }
+    }
+
+    .bp3-input-group {
+      margin-right: 10px; /*RR change: added margin to move search field way from the other icons*/
+    }
+  }
+}
+
+.delete-all-dialog-items {
+  border-bottom-color: var(--pages-table__border-color);
+}
+
+.confirmation-content-dialog {
+  .confirmation-content {
+    background-color: var(--pages-delete__background-color);
+  }
+}

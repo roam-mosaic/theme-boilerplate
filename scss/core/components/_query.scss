@@ -1,0 +1,11 @@
+/* Query */
+
+.rm-query {
+  border: var(--query__border);
+
+  .rm-query-title {
+    background-color: var(--linked-reference__backgound-color_1);
+    color: var(--query__color_query-string);
+    padding: var(--s1);
+  }
+}

@@ -1,8 +1,0 @@
-/*RR change: Very fragile override for alias styes, will probably break*/
-span[style^='background-color: rgb(235, 241, 245); border-radius: 4px; cursor: alias; color: rgb(245, 86, 86); padding: 4px 6px;'] {
-  background-color: var(--alias-bg) !important;
-  border-radius: 0 !important;
-  color: var(--alias-font-color) !important;
-  cursor: alias;
-  padding: 0 !important;
-}

@@ -1,0 +1,23 @@
+.rm-page-ref-brackets {
+  color: var(--page-brackets__color);
+}
+.rm-page-ref-link-color {
+  color: var(--page-link__color);
+}
+.rm-page-ref-namespace-color {
+  color: var(--page-link-namespace__color);
+}
+
+/* CUSTOM LINKS: Uncomment to use the section below to create custom styles for specific links. Change "Theme" to match some portion of the title of the link you want to customize. Adjust the background-color value ("F00") and color value ("fff") to suite your preferences. Duplicate the section for each new link to be customized */
+
+/* 
+span[data-link-title*="Theme"] .rm-page-ref-link-color,
+span[data-link-title*="Theme"] .rm-page-ref-namespace-color {
+  background-color: #ff6000;
+  color: #fff;
+  padding: 3px 7px;
+  line-height: 2em;
+  font-weight: 500;
+  border-radius: 0.1875em;
+}
+ */

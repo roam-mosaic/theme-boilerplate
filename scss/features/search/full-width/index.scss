@@ -1,0 +1,38 @@
+.roam-body-main {
+  // padding-top: 30px;
+}
+.rm-find-or-create-wrapper {
+  flex: 0 1 100% !important;
+  // position: relative;
+  // transition: all 200ms ease-in;
+
+  .bp3-transition-container {
+    width: 100%;
+  }
+
+  .bp3-menu {
+    max-width: none;
+    max-height: 400px;
+  }
+
+  .rm-menu-item {
+    border-radius: 2px;
+    cursor: pointer;
+    padding: 6px;
+
+    .rm-search-title {
+      font-weight: bold;
+
+      .rm-new-page {
+        color: var(--search__color_new-page);
+      }
+    }
+
+    .rm-search-list-item {
+      color: var(--search__color_body);
+      margin-left: -20px;
+      overflow-wrap: break-spaces;
+      word-break: break-word;
+    }
+  }
+}

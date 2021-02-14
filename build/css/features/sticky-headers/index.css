@@ -1,0 +1,93 @@
+/*  Sticky headers
+    When scrolling, the parent bullet will remain visible
+    
+*/
+.roam-article
+  > div:first-child
+  > div:nth-child(2)
+  > .roam-block-container
+  > .rm-block-main.rm-block__self:first-child {
+  position: sticky !important;
+  background: var(--body__background-color);
+  will-change: transform;
+  z-index: 100;
+  top: 0 !important;
+}
+
+.roam-article
+  > div:first-child
+  > div:nth-child(2)
+  .rm-level-1
+  > .roam-block-container
+  > .rm-block-main.rm-block__self:first-child {
+  position: sticky !important;
+  will-change: transform;
+  background: var(--body__background-color);
+  z-index: 99;
+  top: 2em !important;
+}
+
+.roam-article
+  > div:first-child
+  > div:nth-child(2)
+  .rm-level-2
+  > .roam-block-container
+  > .rm-block-main.rm-block__self:first-child {
+  position: sticky !important;
+  background: var(--body__background-color);
+  will-change: transform;
+  z-index: 98;
+  top: 4em !important;
+}
+
+.roam-article
+  > div:first-child
+  > div:nth-child(2)
+  .rm-level-3
+  > .roam-block-container
+  > .rm-block-main.rm-block__self:first-child {
+  position: sticky !important;
+  background: var(--body__background-color);
+  will-change: transform;
+  z-index: 97;
+  top: 6em !important;
+}
+
+.roam-article
+  > div:first-child
+  > div:nth-child(2)
+  .rm-level-4
+  > .roam-block-container
+  > .rm-block-main.rm-block__self:first-child {
+  position: sticky !important;
+  background: var(--body__background-color);
+  will-change: transform;
+  z-index: 96;
+  top: 8em !important;
+}
+
+.roam-article
+  > div:first-child
+  > div:nth-child(2)
+  .rm-level-5
+  > .roam-block-container
+  > .rm-block-main.rm-block__self:first-child {
+  position: sticky !important;
+  background: var(--body__background-color);
+  will-change: transform;
+  z-index: 95;
+  top: 10em !important;
+}
+
+.roam-article
+  > div:first-child
+  > div:nth-child(2)
+  .rm-level-6
+  > .roam-block-container
+  > .rm-block-main.rm-block__self:first-child {
+  position: sticky !important;
+  background: var(--body__background-color);
+  will-change: transform;
+  z-index: 94;
+  top: 12em !important;
+}

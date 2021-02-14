@@ -1,0 +1,21 @@
+.daily-log div,
+.daily-log .rm-block-input {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.daily-log div div[data-page-links*='Personal'],
+.daily-log .rm-block-input div[data-page-links*='Personal'] {
+  background-color: rgba(45, 166, 8, 0.2);
+}
+
+span[data-tag='Health & Wellness'] {
+  color: #d92b2b;
+}
+
+span[data-tag='Roam Mosaic'] {
+  color: #c7af14;
+}
+
+span[data-tag='Family'] {
+  color: #2da608;
+}

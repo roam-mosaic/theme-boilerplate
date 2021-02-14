@@ -1,0 +1,16 @@
+/* Pomodoro timer */
+
+.rm-pomodoro {
+  background: var(--pomodoro__background) !important;
+  border: 1px solid var(--pomodoro__border-color);
+  border-radius: 2em;
+  color: var(--pomodoro__color) !important;
+  display: inline-block;
+  font-weight: 600;
+  line-height: 1.7em;
+  padding: 2px 12px;
+
+  &::first-letter {
+    margin-right: 4px;
+  }
+}

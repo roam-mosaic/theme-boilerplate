@@ -1,0 +1,28 @@
+.kanban-board {
+  background-color: var(--kanban-board__background-color);
+}
+
+.kanban-column {
+  background-color: var(--kanban-column__background-color);
+  margin: 0px 4px 0px 4px;
+  min-width: 200px;
+}
+
+.kanban-title {
+  color: var(--kanban-column__color);
+}
+
+.kanban-card {
+  background-color: var(--kanban-card__background-color);
+  color: var(--kanban-card__color);
+}
+
+div {
+  .kanban-title {
+    font-family: var(--main-font__font-family);
+  }
+
+  .kanban-card {
+    font-family: var(--main-font__font-family);
+  }
+}

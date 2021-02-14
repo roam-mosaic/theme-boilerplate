@@ -1,0 +1,53 @@
+/* Left sidebar */
+
+.roam-body {
+  .roam-app {
+    .roam-sidebar-container {
+      background-color: var(--left-sidebar__background-color);
+
+      .roam-sidebar-content {
+        .log-button {
+          color: var(--left-sidebar__color);
+          font-size: var(--left-sidebar__font-size);
+
+          &:hover {
+            background-color: var(--left-sidebar__background-color_hover);
+            color: var(--left-sidebar__color_hover);
+          }
+        }
+
+        .starred-pages-wrapper {
+          color: var(--left-sidebar-shortcuts__color_title);
+          padding: 8px 0 !important;
+
+          .flex-h-box {
+            padding: 0 20px;
+          }
+
+          .starred-pages {
+            .page {
+              color: var(--left-sidebar-shortcuts__color);
+              font-size: var(--left-sidebar-shortcuts__font-size);
+              padding: 8px 20px;
+
+              &:hover {
+                background-color: var(--left-sidebar__background-color_hover);
+                color: var(--left-sidebar__color_hover);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#roam-sidebar-logo {
+  img {
+    opacity: 0.4;
+  }
+
+  span {
+    display: none;
+  }
+}

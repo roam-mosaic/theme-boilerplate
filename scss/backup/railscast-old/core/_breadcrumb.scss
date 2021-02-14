@@ -1,0 +1,45 @@
+/* Breadcrumbs */
+
+.zoom-mentions-view {
+  font-size: var(--breadcrumb__font-size);
+
+  span {
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+  }
+}
+
+.rm-zoom {
+  .parent-path-wrapper {
+    max-height: none;
+    // padding-right: 10px;
+    white-space: normal;
+  }
+
+  &.zoom-path-view {
+    .rm-zoom-mask {
+      background-color: var(--breadcrumb__background-color);
+      flex: 1 1 100%;
+      mix-blend-mode: saturation;
+    }
+  }
+}
+
+/* Comment/un-comment to remove checkboxes in breadcrumb navigation */
+
+// .roam-article,
+// .roam-reference-item {
+//   > div {
+//     &:first-child {
+//       &:not(.roam-log-container) {
+//         > div {
+//           &:first-child {
+//             label.check-container {
+//               display: none;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }

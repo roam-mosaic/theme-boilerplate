@@ -1,0 +1,37 @@
+/* Left sidebar */
+
+.roam-body {
+  .roam-app {
+    .roam-sidebar-container {
+      background-color: var(--left-sidebar__background-color);
+
+      .roam-sidebar-content {
+        .log-button {
+          color: var(--left-sidebar__color);
+          font-size: var(--left-sidebar__font-size);
+
+          &:hover {
+            background-color: var(--left-sidebar__background-color_hover);
+            color: var(--left-sidebar__color_hover);
+          }
+        }
+
+        .starred-pages-wrapper {
+          color: var(--left-sidebar-shortcuts__color_title);
+
+          .starred-pages {
+            .page {
+              color: var(--left-sidebar-shortcuts__color);
+              font-size: var(--left-sidebar-shortcuts__font-size);
+
+              &:hover {
+                background-color: var(--left-sidebar__background-color_hover);
+                color: var(--left-sidebar__color_hover);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

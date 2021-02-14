@@ -1,20 +1,6 @@
 /* Todo checkmark */
 
-.checkmark {
-  border: 1px solid var(--checkmark-color);
+[data-page-links*='"DONE"'] > .rm-block__self {
+  opacity: 0.55;
+  /*   text-decoration: line-through; */
 }
-
-.check-container {
-  padding-right: 4px;
-}
-
-[data-page-links*='"DONE"'] {
-  opacity: 0.65;
-  text-decoration: line-through;
-}
-
-// .zoom-mentions-view {
-//   .check-container {
-//     top: -6px;
-//   }
-// }

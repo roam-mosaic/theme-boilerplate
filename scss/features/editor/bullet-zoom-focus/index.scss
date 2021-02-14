@@ -1,0 +1,37 @@
+/* Bullet Zoom Focus
+When zoomed in on a bullet add the tag #.rm-focus to the parent block
+to create a minimal writing environment. This only works when zoomed in
+so there is no need to remove the tag when done.
+*/
+
+.zoom-path-view + div .rm-focus {
+  div,
+  .rm-block-input {
+    font-family: 'Calendas Plus', 'Lora', 'Droid Serif', 'Georgia', serif;
+    font-size: 20px;
+    line-height: 1.5em; /* space between lines */
+  }
+
+  .rm-multibar {
+    display: none;
+  }
+
+  &.roam-block-container {
+    .roam-block-container {
+      margin-top: 0.7em; /* space between blocks */
+    }
+
+    .controls {
+      // .rm-bullet {
+      display: none;
+    }
+  }
+
+  .block-border-left {
+    border: none;
+  }
+
+  .rm-level-1 {
+    margin-left: -4px;
+  }
+}

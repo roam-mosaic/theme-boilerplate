@@ -1,0 +1,163 @@
+.rm-query {
+  border: 0.75px solid var(--query__border);
+  border-radius: 7px;
+  padding-bottom: var(--s1);
+
+  .rm-query-title {
+    background-color: var(--linked-reference__backgound-color_1);
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    color: var(--query__color_query-string);
+    font-size: 0.8em;
+    padding: var(--s1);
+  }
+}
+
+/* Custom message for empty querty results */
+.rm-block-text {
+  .rm-reference-main {
+    .rm-mentions {
+      &:empty {
+        &:after {
+          color: var(--no-query-results-color);
+          content: var(--no-query-results);
+          font-family: var(--main-font__font-family);
+          padding: var(--s1);
+        }
+      }
+    }
+  }
+}
+
+/* RR change: MINIMIZE QUERIES: add any one of the following tags before the beginning of your query (in the same block):
+
+    #min-title = hides the page reference link / page title
+    #min-con = hides the contextual reference information (breadcrumbs)
+    #minimal = hides both the title and the context
+    #min-q = hides the query string, similar to legacy behavior
+    #min-all = hides everything — title, context, and query string
+    #min-todo = hides everything and makes a compact list
+
+inspired by Matt Goldenberg */
+[data-tag='minimal'] {
+  display: none !important;
+
+  + {
+    .rm-query {
+      .rm-title-arrow-wrapper {
+        display: none !important;
+      }
+
+      .zoom-mentions-view {
+        display: none !important;
+      }
+
+      .rm-query-title {
+        &::after {
+          content: ' #minimal';
+        }
+      }
+    }
+  }
+}
+
+[data-tag='min-title'] {
+  display: none !important;
+
+  + {
+    .rm-query {
+      .rm-title-arrow-wrapper {
+        display: none !important;
+      }
+
+      .rm-query-title {
+        &::after {
+          content: ' #minimal';
+        }
+      }
+    }
+  }
+}
+
+[data-tag='min-con'] {
+  display: none !important;
+
+  + {
+    .rm-query {
+      .zoom-mentions-view {
+        display: none !important;
+      }
+
+      .rm-query-title {
+        &::after {
+          content: ' #minimal';
+        }
+      }
+    }
+  }
+}
+
+[data-tag='min-q'] {
+  display: none !important;
+
+  + {
+    .rm-query {
+      .rm-query-title {
+        display: none !important;
+      }
+    }
+  }
+}
+
+[data-tag='min-all'] {
+  display: none !important;
+
+  + {
+    .rm-query {
+      .zoom-mentions-view {
+        display: none !important;
+      }
+
+      .rm-title-arrow-wrapper {
+        display: none !important;
+      }
+
+      .rm-query-title {
+        display: none !important;
+      }
+    }
+  }
+}
+
+[data-tag='min-todo'] {
+  display: none !important;
+
+  + {
+    .rm-query {
+      div {
+        &[style*='margin-left: 12px;'] {
+          margin-left: 0 !important;
+        }
+      }
+
+      .zoom-mentions-view {
+        display: none !important;
+      }
+
+      .rm-title-arrow-wrapper {
+        display: none !important;
+      }
+
+      .rm-query-title {
+        display: none !important;
+      }
+
+      .rm-reference-item {
+        background: none;
+        margin-left: -12px;
+        margin-top: 3px;
+        padding: 0;
+      }
+    }
+  }
+}

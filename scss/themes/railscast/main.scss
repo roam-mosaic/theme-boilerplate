@@ -1,56 +1,42 @@
-@import 'resources';
-@import 'variables';
-@import 'mixins';
-@import 'pages/daily-notes';
-@import 'pages/graph-overview';
-@import 'pages/all-pages';
-@import 'icons';
-@import 'reset';
+/*
+### ROAM Railscast THEME ###
+> Many thanks to the Roam Slack community for all the resources, particularly @Anthony, @Calhistoriaan, @Devon, @Murf, @Malcolm Ocean, @David Cranall @Ahbay and most importantly Daniel van der Merwe @vandermerwed.
+> Edits by Jeff Harris
+> v2.0.12
+*/
 
+// Optional vanilla roam variable import
+// @import '../../core/variables-vanilla-roam';
+
+@import 'variables';
+
+@import '../../core/index';
+// @import '../../features/';
+
+/* components */
 @import 'components/alias';
-@import 'components/attributes';
-@import 'components/block-callout';
-@import 'components/block_reference';
-@import 'components/block-embed';
-@import 'components/blockquote';
-@import 'components/code-block';
+@import 'components/block-reference';
 @import 'components/code-inline';
 @import 'components/database-menu';
-@import 'components/date-picker';
-@import 'components/diagram';
 @import 'components/dialog';
 @import 'components/emoji';
-@import 'components/encrypted-block';
-@import 'components/external-link';
-@import 'components/inline-comments';
-@import 'components/kanban';
+@import 'components/inline-block';
 @import 'components/linked-reference';
-@import 'components/menu';
-@import 'components/mermaid';
-@import 'components/page-link';
-@import 'components/page-link-date';
-@import 'components/pomodoro';
 @import 'components/query';
-@import 'components/rm-g';
-@import 'components/roam42';
-@import 'components/select';
-@import 'components/slider';
-@import 'components/table';
 @import 'components/tag';
-@import 'components/tao-of-roam';
 @import 'components/todo';
 @import 'components/twitter-embed';
-@import 'components/version-bullet';
-@import 'components/youtube-timestamp';
 
-@import 'core/body';
-@import 'core/typography';
-@import 'core/top-bar';
-@import 'core/breadcrumb';
-@import 'core/scrollbars';
-@import 'core/left-sidebar';
-@import 'core/right-sidebar';
+@import 'layout/body';
+@import 'layout/breadcrumb';
+@import 'layout/left-sidebar';
+@import 'layout/right-sidebar';
+@import 'layout/top-bar';
+@import 'layout/typography';
 
-@import '../../global/features/editor/bullet-collapse/main.scss';
-@import '../../global/features/search/full-width/main.scss';
-@import '../../global/features/editor/bullet-zoom-focus/main.scss';
+@import '../../features/search/full-width/index';
+// @import '../../features/editor/bullet-collapse/index';
+@import '../../features/editor/bullet-zoom-focus/index';
+// @import '../../features/scrollbars/simple/index';
+@import '../../features/editor/query/index';
+// @import '../../features/editor/rainbow-indents/index';

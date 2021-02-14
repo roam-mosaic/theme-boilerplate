@@ -1,0 +1,7 @@
+div::-webkit-scrollbar {
+  width: 10px;
+}
+
+#right-sidebar .rm-reference-main {
+  padding-right: 5px;
+}

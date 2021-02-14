@@ -1,0 +1,36 @@
+.rm-page-ref-tag {
+  border-radius: var(--tag__border-radius);
+  color: var(--tag__color);
+  padding: var(--tag__padding);
+
+  &:hover {
+    background-color: var(--tag__background-color_hover);
+    color: var(--tag__color_hover) !important;
+    text-decoration: none;
+  }
+}
+
+span {
+  &.rm-page-ref.rm-page-ref-tag {
+    &:hover {
+      background-color: var(--tag__background-color_hover);
+      color: var(--tag__color_hover) !important;
+      text-decoration: none;
+    }
+  }
+}
+
+// It is probably best to move these out and be used in roam/css code block
+
+/*RR change: CUSTOM TAGS: Uncomment to use the section below to create custom styles for specific tags. Change "Meeting" to match some portion of the title of the tag you want to customize. Adjust the background-color value ("F00") and color value ("fff") to suite your preferences. Duplicate the section for each new tag to be customized */
+
+/*  
+span[data-tag*="Meeting"] {
+  background-color: #1189BD;
+  border-radius: 2em;
+  color: #bbb;
+  font-weight: 500;
+  line-height: 1.2em;
+  padding: 3px 7px;
+}
+ */

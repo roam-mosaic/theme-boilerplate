@@ -1,0 +1,65 @@
+// TODO: Need to get a name for this... Maybe call this Matuschak mode and rename other one to Masonry?
+
+.roam-center {
+  flex: 1 1 100% !important;
+  flex-basis: 10% !important;
+}
+
+#right-sidebar {
+  #roam-right-sidebar-content {
+    align-content: flex-start;
+    display: flex;
+    flex-flow: column wrap;
+    overflow-y: hidden !important;
+    overflow-x: scroll !important;
+    padding-top: 36px;
+    white-space: normal;
+
+    .bp3-icon-minus {
+      display: none;
+    }
+
+    > div {
+      background-color: var(--right-sidebar-masonry__background-color) !important;
+      border: 1px solid var(--right-sidebar-masonry__border) !important;
+      border-radius: 5px;
+      left: 0;
+      padding: 10px;
+      position: sticky;
+      width: 96%;
+      /* Below is for masonry layout */
+      // if(using-masonry-layout) {
+      // margin-bottom: 16px;
+      // min-height: 835px;
+      min-height: 85vh;
+      // width: 600px;
+      // }
+
+      &:before {
+        align-items: center;
+        background: var(--right-sidebar__background-color);
+        content: counter(page);
+        counter-increment: page;
+        display: flex;
+        position: absolute;
+        padding: 4px;
+        top: -36px;
+      }
+      /*&:nth-of-type(2n+1) { order: 1; }
+            &:nth-of-type(2n) { order: 2; }*/
+
+      > div:focus-within {
+        z-index: 100;
+      }
+
+      > div:nth-child(2) {
+        max-height: 100%;
+        overflow-y: auto;
+        overflow-x: hidden;
+        resize: vertical;
+      }
+    }
+
+    counter-reset: page;
+  }
+}

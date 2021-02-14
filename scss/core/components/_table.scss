@@ -1,0 +1,14 @@
+/* Table */
+
+.roam-table {
+  // overflow-x: scroll;
+  padding-bottom: 24px !important; //TODO this is a fix
+
+  th,
+  td,
+  tr {
+    border: var(--table__border);
+    font-family: var(--main-font__font-family);
+    font-size: var(--table__font-size);
+  }
+}

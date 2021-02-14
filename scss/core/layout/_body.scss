@@ -1,0 +1,71 @@
+/* Body styles */
+
+body {
+  background-color: var(--body__background-color);
+  caret-color: var(--caret__color);
+  font-family: var(--main-font__font-family);
+  font-size: var(--main-font__font-size);
+}
+
+.rm-block-input,
+.rm-block__input--active {
+  background-color: var(--block-highlight__background-color_active);
+}
+
+/* Bullets */
+
+.rm-bullet {
+  .rm-bullet__inner {
+    background-color: var(--bullet__background-color);
+  }
+}
+
+.rm-bullet.rm-bullet--closed {
+  .rm-bullet__inner {
+    border: 4px solid var(--bullet__border_closed);
+    margin-top: 2px; //TODO this is a fix - specificaly for query results
+  }
+}
+
+.sidebar-content {
+  .rm-bullet.rm-bullet--closed {
+    .rm-bullet__inner {
+      border: 4px solid var(--bullet__border_closed);
+    }
+  }
+}
+
+/* Outline border */
+.block-border-left {
+  border-left: 1px solid var(--bullet-outline__border);
+}
+
+/*RR change: SECTION border*/
+.roam-log-container {
+  .roam-log-page {
+    border-top: var(--section-divider_border-top);
+  }
+}
+
+.block-highlight-grey {
+  background-color: var(--block-highlight__background-color_selected);
+}
+
+.block-highlight-blue {
+  background-color: var(--block-highlight__background-color_selected);
+}
+
+.block-highlight-yellow {
+  background-color: var(--block-highlight__background-color_mentions);
+}
+
+/*RR change: DEFAULT TEXT - a small addition to the placeholder text to Daily Notes or Pages to help get you started */
+// TODO this is a fix
+
+div#block-input-ghost {
+  span {
+    &:before {
+      content: 'Cmd+enter or ';
+    }
+  }
+}

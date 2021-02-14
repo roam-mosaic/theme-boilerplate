@@ -1,0 +1,61 @@
+.checkmark {
+  border: 1px solid var(--todo-checkmark__color);
+}
+
+.check-container {
+  padding-right: 4px;
+}
+
+// .check-container {
+//   display: inline-block;
+//   position: relative;
+//   padding-left: 12px;
+//   margin-bottom: 10px;
+//   cursor: pointer;
+//   font-size: 22px;
+//   -webkit-user-select: none;
+//   -moz-user-select: none;
+//   -ms-user-select: none;
+//   user-select: none;
+//   vertical-align: bottom;
+//   top: -6px;
+//   .checkmark {
+//     position: absolute;
+//     top: 0px;
+//     left: 0;
+//     height: 12px;
+//     border-radius: 2px;
+//     width: 12px;
+//     border: 1px solid #a7b6c2;
+
+//     &:after {
+//       content: '';
+//       position: absolute;
+//       display: none;
+//       left: 3.5px;
+//       top: 0.25px;
+//       width: 5px;
+//       height: 10px;
+//       border: solid white;
+//       border-width: 0 2px 2px 0;
+//       -webkit-transform: rotate(45deg);
+//       -ms-transform: rotate(45deg);
+//       transform: rotate(40deg) scale(0.8);
+//     }
+//   }
+
+//   input {
+//     position: absolute;
+//     opacity: 0;
+//     cursor: pointer;
+//     height: 0;
+//     width: 0;
+//     &:checked ~ .checkmark {
+//       background-color: #137cbd;
+//       border: none;
+//       &:after {
+//         display: block;
+//       }
+//     }
+//   }
+// }

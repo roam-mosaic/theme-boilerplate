@@ -1,0 +1,150 @@
+/*
+  Normal text
+  Bold text
+  Italicised Text
+  Highlighted Text
+*/
+
+// @import '../fonts/rajdhani';
+// // @import "../fonts/roboto-condensed";
+// @import '../fonts/open-sans';
+// @import '../fonts/nova-mono';
+
+/*
+  Normal text
+  Bold text
+  Italicised Text
+  Highlighted Text
+*/
+
+:root {
+  --h1__font-family: 'Rajdhani';
+  --h2__font-family: 'Rajdhani';
+  --h3__font-family: 'Rajdhani';
+}
+
+.roam-body {
+  .roam-app {
+    color: var(--main-font__color);
+
+    .roam-article {
+      div {
+        font-family: var(--main-font__font-family);
+      }
+    }
+
+    h1 {
+      color: var(--h1__font-family-color);
+
+      .level2 {
+        font-family: var(--main-font__font-family);
+        margin-top: 4px !important;
+
+        a {
+          color: var(--page-link__color);
+        }
+      }
+    }
+  }
+}
+
+.rm-level1 {
+  font-family: var(--h1__font-family);
+  font-size: var(--h1__font-family-size);
+  font-weight: 400;
+
+  span {
+    font-family: var(--h1__font-family);
+  }
+
+  label {
+    .check-container {
+      /*RR change: align checkboxes in zoomed-in headings */
+      margin-bottom: 17px;
+      margin-right: -3px;
+    }
+  }
+}
+
+.rm-level2 {
+  color: var(--h2__font-family-color);
+  font-family: var(--h2__font-family);
+  font-size: var(--h2__font-family-size);
+  font-weight: 400;
+
+  .rm-block-text {
+    font-size: 1.4rem;
+  }
+}
+
+.rm-level3 {
+  color: var(--h3__font-family-color);
+  font-family: var(--h3__font-family);
+  font-size: var(--h3__font-family-size);
+  font-weight: 700;
+}
+
+/* Calculation Results */
+span {
+  &[style*='color: rgb(14, 90, 138);'] {
+    color: var(--calculation__color) !important;
+  }
+}
+
+// /* change font for headings */
+// #right-sidebar .rm-level2,
+// /* page headings in right sidebar */
+// .rm-reference-main .rm-level3,
+// /* page headings in referenced items */
+// .roam-log-preview h1,
+// h1.rm-title-display,
+// h1.rm-title-display textarea,
+// .level1,
+// .level2 {
+//   font-family: 'Rajdhani',
+//     sans-serif;
+//   text-transform: uppercase;
+//   font-weight: 300 !important;
+//   letter-spacing: -0.04em;
+//   color: var(--primary-color);
+// }
+
+// h1,
+// h1 div,
+// h1 textarea,
+// .rm-level1 textarea,
+// .rm-level1 div {
+//   font-family: 'Rajdhani',
+//     sans-serif;
+//   // text-transform: uppercase;
+//   font-weight: 300 !important;
+//   letter-spacing: -0.04em;
+//   color: var(--primary-color) !important;
+// }
+
+// h2,
+// h2 div,
+// h2 textarea {
+//   font-family: 'Rajdhani',
+//     sans-serif;
+//   text-transform: uppercase;
+//   font-weight: 300 !important;
+//   color: color-heading-2 !important;
+//   color: var(--primary-color) !important;
+// }
+
+// h3,
+// h3 div,
+// h3 textarea {
+//   font-family: 'Rajdhani',
+//     sans-serif;
+//   text-transform: uppercase;
+//   font-weight: 300 !important;
+//   color: var(--primary-color) !important;
+// }
+
+// div,
+// textarea {
+//   font-family: 'Open Sans',
+//     sans-serif;
+// }

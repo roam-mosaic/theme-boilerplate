@@ -1,0 +1,14 @@
+/* Block Embed */
+
+.rm-embed-container--block {
+  background-color: var(--block-embed__background-color);
+  border-radius: 6px;
+
+  .rm-embed-container--block {
+    background-color: var(--block-embed__background-color);
+
+    .rm-embed-container--block {
+      background-color: var(--block-embed__background-color);
+    }
+  }
+}

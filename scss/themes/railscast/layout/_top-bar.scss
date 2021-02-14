@@ -1,0 +1,11 @@
+/* Topbar */
+
+.bp3-input {
+  box-shadow: none;
+  font-size: 0.85em;
+
+  &[readonly] {
+    box-shadow: none;
+    font-size: 0.85em;
+  }
+}

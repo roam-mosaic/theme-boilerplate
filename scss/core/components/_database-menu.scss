@@ -1,0 +1,30 @@
+/* Database menu */
+
+.roam-body .roam-app .roam-sidebar-container {
+  .rm-graph-dropdown {
+    box-shadow: 0 0 4px var(--db-menu__box-shadow);
+    max-height: 70vh;
+    overflow: scroll;
+
+    a {
+      color: var(--dialog__color);
+    }
+
+    .setting {
+      background-color: var(--linked-reference__backgound-color_1);
+
+      &:hover {
+        background-color: var(--db-menu__background-color_hover);
+      }
+    }
+  }
+  .rm-db-title-container {
+    &:hover {
+      background-color: var(--db-menu__background-color_hover);
+    }
+
+    .rm-db-title {
+      color: var(--db-menu-title__color);
+    }
+  }
+}

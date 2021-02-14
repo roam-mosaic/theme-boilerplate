@@ -1,0 +1,128 @@
+// TODO: This feature is still highly experimental and has issues: link to github issues
+// TODO: Conflicts with Versions. when there are 2 versions, the first one is not visible.
+
+// :root {
+//   --bullet__background-color-color: rgba(197, 156, 8, 1) !important;
+// }
+
+.block-border-left {
+  border: none !important;
+}
+
+.roam-block-container {
+  position: relative;
+  // margin-bottom: 5px;
+
+  // Wrap uncomment `.block-border-left` wrap to drop the first level vertical lines
+  //.block-border-left {
+  // display: table; // uncommenting this breaks block edit
+
+  .flex-h-box.flex-align-start.flex-justify-start {
+    // display: table;
+    margin-left: 10px;
+
+    .controls {
+      display: table-cell;
+      position: absolute;
+      height: 100%;
+
+      .block-expand {
+        opacity: 1 !important;
+        display: table-cell;
+        position: absolute;
+        top: 5px;
+        bottom: 5px;
+        left: 0px;
+
+        .bp3-icon-caret-down {
+          // background-color: yellow;
+          border-left: 1px solid var(--bullet__background-color-outline);
+          height: 100%;
+          width: 20px;
+
+          &.rm-rotate-90 {
+            transform: none;
+          }
+
+          &:before {
+            content: '';
+          }
+        }
+
+        &.cursor-pointer {
+          .bp3-icon-caret-down {
+            border-color: var(--bullet__background-color-outline-highlight);
+
+            &:hover {
+              // Potential to add better
+              border-width: 4px;
+            }
+          }
+        }
+      }
+
+      .roam-bullet-closed {
+        &.simple-bullet-outer {
+          opacity: 1;
+          margin-top: 7px;
+          border-radius: 50%;
+          width: 5px;
+          height: 5px;
+          background-color: var(--bullet__border_closed);
+          left: 9px;
+
+          .simple-bullet-inner {
+            position: absolute;
+            border-radius: 0px;
+            width: 1px;
+            left: -13px;
+            background-color: var(--bullet__background-color-outline-highlight);
+            padding: 9px 0px;
+          }
+        }
+      }
+
+      .simple-bullet-outer {
+        position: relative;
+        left: 3px;
+      }
+    }
+
+    span[style*='margin-top: 4px;'] {
+      position: absolute;
+      // font-size: 0.9rem;
+      left: 30px;
+      top: -1px;
+      // background-color: red;
+    }
+
+    .roam-block,
+    .rm-block-input {
+      margin-left: 25px;
+    }
+
+    // .simple-bullet-outer {
+    //   opacity: 0;
+
+    //   .simple-bullet-inner {
+    //     background-color: #bfccd6;
+    //   }
+    // }
+
+    // &:hover {
+    //   .simple-bullet-outer {
+    //     opacity: 1;
+    //   }
+    // }
+  }
+
+  //}
+}
+
+#right-sidebar {
+  .roam-block-container {
+    .flex-h-box.flex-align-start.flex-justify-start {
+      margin-left: 25px;
+    }
+  }
+}

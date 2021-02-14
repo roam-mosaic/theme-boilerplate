@@ -1,0 +1,21 @@
+/* Breadcrumbs */
+
+.rm-zoom.zoom-path-view,
+.rm-zoom.zoom-mentions-view {
+  font-size: var(--breadcrumb__font-size);
+}
+
+.rm-zoom {
+  .parent-path-wrapper {
+    //TODO this is a fix for word wrap for long line length  breadcrumb itemes
+    max-height: none;
+    white-space: normal;
+  }
+
+  &.zoom-path-view {
+    .rm-zoom-mask {
+      background-color: var(--breadcrumb__background-color);
+      mix-blend-mode: unset;
+    }
+  }
+}

@@ -13,7 +13,7 @@
 // @import 'global/features/right-sidebar/stacked/main';
 // @import 'global/features/scrollbars/mosaic/main';
 // @import 'global/features/scrollbars/simple/main';
-@import 'global/features/search/full-width/main';
+// @import 'global/features/search/full-width';
 
 // @import 'global/features/sticky-headers/main';
 
@@ -27,3 +27,7 @@
 
 /* Main Theme Include */
 @import 'themes/railscast/main';
+
+// @import 'features/editor/bullet-zoom-focus/index';
+@import 'features/editor/masonry/index';
+// @import 'features/editor/daily-log/index';

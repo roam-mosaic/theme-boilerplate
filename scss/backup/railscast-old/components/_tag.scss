@@ -1,0 +1,93 @@
+/* Tags */
+
+.rm-page-ref--tag {
+  border-radius: var(--tag__border-radius);
+  color: var(--tag__color);
+  padding: var(--tag__padding);
+
+  &:hover {
+    background-color: var(--tag__background-color_hover);
+    color: var(--tag__color_hover) !important;
+    text-decoration: none;
+  }
+}
+
+span {
+  &.rm-page-ref.rm-page-ref--tag {
+    &:hover {
+      background-color: var(--tag__background-color_hover);
+      color: var(--tag__color_hover) !important;
+      text-decoration: none;
+    }
+  }
+}
+
+/* Hashtag color */
+// [data-tag]:before {
+//   content: '#';
+//   color: var(--tag__color_hashtag);
+//   visibility: visible;
+//   position: absolute;
+// }
+
+.rm-page-ref--tag[data-tag='42SmartBlock']:before {
+  content: '#' !important;
+  color: var(--tag__color_hashtag) !important;
+  // margin: 5px 0 0 -7px;
+  position: absolute;
+  visibility: visible;
+  background: none !important;
+}
+
+// .rm-page-ref--tag[data-tag='42SmartBlock']:before {
+//   content: '#';
+//   visibility: hidden;
+// }
+
+/* It is probably best to move these out and be used in roam/css code block */
+
+/* CUSTOM LINKS: Uncomment to use the section below to create custom styles for specific links. Change "Theme" to match some portion of the title of the link you want to customize. Adjust the background-color value ("ff6000") and color value ("fff") to suite your preferences. Duplicate the section for each new link to be customized */
+
+/* 
+span[data-link-title*="Theme"] .rm-page-ref-link-color,
+span[data-link-title*="Theme"] .rm-page-ref-namespace-color {
+  background-color: #ff6000;
+  color: #fff;
+  padding: 3px 7px;
+  line-height: 2em;
+  font-weight: 500;
+  border-radius: 0.1875em;
+}
+ */
+
+/* Template for creating tags in the shape of flags */
+span[data-tag*='Meeting'] {
+  visibility: hidden;
+  padding-right: 28px;
+  padding-left: 0;
+}
+span[data-tag*='Meeting']:before {
+  content: 'Meeting';
+  visibility: visible;
+  background-color: #1189bd;
+  position: absolute;
+  color: #ddd;
+  padding-right: 24px;
+  padding-left: 10px;
+  clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
+  border-radius: 4px 0 0 4px;
+}
+
+[data-tag]::before {
+  content: '#';
+  color: var(--tag__color_hashtag);
+  visibility: visible;
+  position: absolute;
+}
+
+[data-tag]:hover::before {
+  // content: '#';
+  color: var(--tag__color_hover);
+  // visibility: visible;
+  // position: absolute;
+}

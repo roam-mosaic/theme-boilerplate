@@ -1,0 +1,50 @@
+/* Right sidebar */
+
+#right-sidebar {
+  background-color: var(--right-sidebar__background-color);
+
+  .rm-title-textarea {
+    width: 95%; //TODO this is a fix to keep the Page title from moving when editing it
+  }
+}
+
+#roam-right-sidebar-content {
+  div {
+    font-family: var(--main-font__font-family);
+
+    h1 {
+      div {
+        font-family: var(--h1__font-family);
+      }
+    }
+
+    h2 {
+      div {
+        font-family: var(--h1__font-family);
+
+        textarea {
+          font-family: var(--h1__font-family);
+        }
+      }
+    }
+
+    h3 {
+      div {
+        font-family: var(--h1__font-family);
+
+        textarea {
+          font-family: var(--h1__font-family);
+        }
+      }
+    }
+  }
+}
+
+/* Right sidebar SECTION border */
+div[style*='border-bottom: 1px solid rgb(138, 155, 168);'] {
+  border-bottom: 1px solid var(--right-sidebar__border) !important;
+}
+
+.window-headers a {
+  color: var(--right-sidebar__color_title-closed);
+}

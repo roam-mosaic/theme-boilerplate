@@ -1,0 +1,110 @@
+.CodeMirror-activeline-background {
+  // background: transparent !important;
+  // background: #5a5acc;
+  // background: #253540;
+}
+.CodeMirror-focused {
+  .CodeMirror-activeline-background {
+    // background: rgba(100, 100, 100, 0.1) !important;
+  }
+}
+.CodeMirror-matchingbracket {
+  outline: 1px solid #ff9c3a;
+  color: #fff !important;
+}
+.CodeMirror-lines {
+  background: var(--code__background);
+}
+.CodeMirror-activeline {
+  pre {
+    background: #253540;
+  }
+}
+.CodeMirror {
+  height: auto !important;
+  font-family: var(--code-font__font-family);
+  background: var(--code__background);
+  color: #f4f1ed;
+  font-size: var(--code-font__font-size);
+  border-radius: 8px;
+  .CodeMirror-code {
+    pre {
+      font-family: var(--code-font__font-family);
+      box-shadow: none;
+      font-size: var(--code-font__font-size);
+    }
+  }
+}
+.CodeMirror-selected {
+  background: #4d516d !important;
+}
+.CodeMirror-gutters {
+  background: #2b2b2b;
+  background: var(--code__background);
+  border-right: 2px solid #2c2c2c;
+}
+.CodeMirror-linenumber {
+  color: var(--page-link__color);
+}
+.CodeMirror-cursor {
+  border-left: 1px solid #d4cfc9 !important;
+}
+span.cm-comment {
+  color: #bc9458;
+}
+span.cm-atom {
+  color: #b6b3eb;
+}
+span.cm-number {
+  color: #b6b3eb;
+}
+.cm-s-default {
+  .cm-number {
+    color: #b6b3eb;
+  }
+  .cm-keyword {
+    color: #da4939;
+  }
+  .cm-string {
+    color: #ffc66d;
+  }
+  .cm-atom {
+    color: #2983bb;
+  }
+  .cm-builtin {
+    color: #db6bff;
+  }
+}
+span.cm-property {
+  color: #a5c261;
+}
+span.cm-attribute {
+  color: #a5c261;
+}
+span.cm-keyword {
+  color: #da4939;
+}
+span.cm-string {
+  color: #ffc66d;
+}
+span.cm-variable-2 {
+  color: #a5c261;
+}
+span.cm-variable {
+  color: #6d9cbe;
+}
+span.cm-def {
+  color: #cc7833;
+}
+span.cm-error {
+  color: #da4939;
+}
+span.cm-bracket {
+  color: #f4f1ed;
+}
+span.cm-tag {
+  color: #da4939;
+}
+span.cm-link {
+  color: #b6b3eb;
+}

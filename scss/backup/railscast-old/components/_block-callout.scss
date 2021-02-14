@@ -1,0 +1,65 @@
+/*  Block Callouts
+    Use special tags to create colored callout blocks
+    #rm-block:grey will callout the entire block, including children
+    #rm-self:grey will only callout the block the tag is added to
+    #rm-child:grey will callout the children of the block the tag is added to
+
+    available colors
+    :grey
+    :blue
+    :red
+    :orange
+    :yellow
+*/
+
+.roam-block-container[data-page-links*='"rm-block:grey"'],
+.roam-block-container[data-page-links*='"rm-self:grey"'] > div.rm-block-main,
+.roam-block-container[data-page-links*='"rm-child:grey"'] .rm-block-children {
+  background-color: var(--block-callout__background-color_grey);
+  // border: 1px solid var(--block-callout__border--grey);
+  border-radius: 0px 5px 5px 0px !important;
+}
+
+.roam-block-container[data-page-links*='"rm-block:blue"'],
+.roam-block-container[data-page-links*='"rm-self:blue"'] > div.rm-block-main,
+.roam-block-container[data-page-links*='"rm-child:blue"'] .rm-block-children {
+  background-color: var(--block-callout__background-color_blue);
+  border-radius: 0px 5px 5px 0px !important;
+}
+
+.roam-block-container[data-page-links*='"rm-block:red"'],
+.roam-block-container[data-page-links*='"rm-self:red"'] > div.rm-block-main,
+.roam-block-container[data-page-links*='"rm-child:red"'] .rm-block-children {
+  background-color: var(--block-callout__background-color_red);
+  border-radius: 0px 5px 5px 0px !important;
+}
+
+.roam-block-container[data-page-links*='"rm-block:orange"'],
+.roam-block-container[data-page-links*='"rm-self:orange"'] > div.rm-block-main,
+.roam-block-container[data-page-links*='"rm-child:orange"'] .rm-block-children {
+  background-color: var(--block-callout__background-color_orange);
+  border-radius: 0px 5px 5px 0px !important;
+}
+
+.roam-block-container[data-page-links*='"rm-block:yellow"'],
+.roam-block-container[data-page-links*='"rm-self:yellow"'] > div.rm-block-main,
+.roam-block-container[data-page-links*='"rm-child:yellow"'] .rm-block-children {
+  background-color: var(--block-callout__background-color_yellow);
+  border-radius: 0px 5px 5px 0px !important;
+}
+
+.rm-page-ref[data-tag*=':grey'],
+.rm-page-ref[data-tag*=':blue'],
+.rm-page-ref[data-tag*=':orange'],
+.rm-page-ref[data-tag*=':yellow'],
+.rm-page-ref[data-tag*=':red'] {
+  display: none;
+}
+
+.rm-block__self:hover .rm-page-ref[data-tag*=':grey'],
+.rm-block__self:hover .rm-page-ref[data-tag*=':blue'],
+.rm-block__self:hover .rm-page-ref[data-tag*=':orange'],
+.rm-block__self:hover .rm-page-ref[data-tag*=':yellow'],
+.rm-block__self:hover .rm-page-ref[data-tag*=':red'] {
+  display: inline;
+}

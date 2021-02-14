@@ -1,0 +1,31 @@
+/* Table */
+
+.roam-table {
+  overflow-x: scroll;
+  padding-bottom: 24px;
+
+  th {
+    border: 1px solid var(--table__border);
+    font-family: var(--main-font__font-family);
+    font-size: var(--table__font-size);
+    margin: 0;
+  }
+
+  td {
+    border: 1px solid var(--table__border);
+    font-family: var(--main-font__font-family);
+    font-size: var(--table__font-size);
+    margin: 0;
+  }
+
+  tr {
+    border: 1px solid var(--table__border);
+    font-family: var(--main-font__font-family);
+    font-size: var(--table__font-size);
+    margin: 0;
+  }
+
+  div {
+    font-family: var(--main-font__font-family);
+  }
+}

@@ -1,0 +1,216 @@
+@import '../../global/variables';
+
+// TODO Add variables for #mobile-capture
+// the inherit and initial values are used when there isn't a value defined by Roam CSS, not sure if these will work
+
+:root {
+  /* Roam default variables */
+
+  --primary-color: #137cbd;
+  --s1: 8px;
+  --background-color: #e1e8ed;
+
+  /* Primary fonts */
+
+  --main-font__font-family: 'Inter', sans-serif;
+  --main-font__color: #999;
+  --main-font__font-size: 14px;
+  --code-font__font-family: 'Source Code Pro', 'Courier New', Courier, monospace;
+  --code-font__color: #6d9cbe;
+  --code-font__font-size: 0.9rem;
+  --caret__color: #0080ff;
+
+  /* Fonts */
+
+  --alias__background-color: transparent; /* Legacy alias */
+  --alias__color: #fecf2b; /* Legacy alias */
+  --attr__color: rgba(17, 137, 189, 0.65);
+  --block-ref__background-color: none;
+  --block-ref__border-bottom: rgba(254, 207, 43, 0.6);
+  --block-ref__font-size: 1em;
+  --block-ref__color_hover: #eb9854;
+  --block-ref__background-color_hover: #111;
+  --breadcrumb__background-color: transparent;
+  --query__color_query-string: #5c7080;
+  --breadcrumb__font-size: 13px;
+  --breadcrumb-line-height: 0.85em;
+  --calculation__color: #ff6000;
+  --db-menu__background-color: #333;
+  --db-menu-border: #3d3d3d;
+  --db-menu-header: #5c7080;
+  --db-menu-item: #eb9854;
+  --db-menu-title__color: #eb9854;
+  --db-menu__background-color_hover: rgba(167, 182, 194, 0.3);
+  --dialog__background: #333;
+  --dialog__color: #eee;
+  --emphasis__color: #fc5963;
+  --external-link__color: #8dbb40;
+  --h1__font-family: var(--main-font__font-family);
+  --h1__font-family-color: #1189bd;
+  --h1__font-family-size: 2.25em;
+  --h1__color_link: var(--page-link__color);
+  --h2__font-family: var(--h1__font-family);
+  --h2__font-family-color: #1189bd;
+  --h2__font-family-size: 1.625em;
+  --h2__color_link: var(--page-link__color);
+  --h3__font-family: var(--h1__font-family);
+  --h3__font-family-color: #1189bd;
+  --h3__font-family-size: 1.2rem;
+  --h3__color_link: var(--page-link__color);
+  --highlight__background-color: #008aff5e;
+  --highlight__color: #bbb;
+  --highlight-link-color: #ff6000;
+  --left-sidebar__color: #1189bd;
+  --left-sidebar__color_hover: #e98924;
+  --left-sidebar__font-size: 1rem;
+  --left-sidebar-shortcuts__color: var(--left-sidebar__color);
+  --left-sidebar-shortcuts__font-size: 1rem;
+  --left-sidebar-shortcuts__color_title: var(--left-sidebar__color);
+  --page-brackets__color: rgba(228, 124, 67, 0.25);
+  --page-link__color: #eb9854;
+  --page-link-namespace__color: #ebd454;
+  --page-link-namespace__color: #f57030;
+  --menu__color: #e98924;
+  --menu__background: #333;
+  --ref-count-font-size: 0.8em;
+  --right-sidebar__color_title-closed: var(--main-font__color);
+  --right-sidebar__color_title-closed: #eb9854;
+  --right-sidebar__background-color: #323232;
+  --right-sidebar-masonry__background-color: var(--body__background-color);
+  --right-sidebar-masonry__border: #3d3d3d;
+  --right-sidebar__border: #e9892475;
+  --search__background: #252525;
+  --search__color_body: #8a9ba8;
+  --search__color_page: #af671c;
+  --search__color_new-page: #8dbb40;
+  --search__border: #e9892475;
+  --search__background-color_selected-row: #4c4c4c;
+  --strong__color: #508bb5;
+  --tag__color: #777;
+  --tag__color_hover: #fff;
+  --tag__color_hashtag: #ab6634;
+  --tag__background-color_hover: #e98924;
+  --tag__padding: 0.071428571em 0.428571429em 0.214285714em;
+  --tag__border-radius: 2em;
+
+  /* Backgrounds and objects */
+
+  --block-highlight__background-color_selected: #00588e;
+  --block-highlight__background-color_active: rgba(255, 255, 255, 0.05);
+  --block-highlight__background-color_mentions: #312c28; // This is the Mentions background highlight color
+  // --body__background-color: #232323;
+  --body__background-color: #2c2c2c;
+  --bullet__background-color: rgba(225, 117, 28, 0.3);
+  --bullet__border_closed: rgba(225, 117, 28, 1);
+  --bullet__border_closed-right-sidebar: var(--bullet__border_closed);
+  --bullet__background-color-outline: #404040;
+  --bullet__background-color-outline-highlight: #ff9500;
+  --bullet__background-color-outline-hover: #ff9500b3; //recommend this be 70% of --bullet__background-color-outline-highlight
+  --bullet__background-color-position: 4px;
+  --version-bullet__background-color: #137cbd;
+  --checkmark-border: #137cbd;
+  --todo-checkmark__background-color: #555;
+  --todo-checkmark__color: #137cbd;
+  --code__background: #002b36;
+  --datepicker__background-color: transparent;
+  --datepicker-today__border: #d9822b7a;
+  --datepicker__color: var(--menu__color);
+  --datepicker-select-bg: #444;
+  --hr__border: rgba(225, 117, 28, 0.5);
+  --icon__background-color_hover: rgba(167, 182, 194, 0.3);
+  --icon__color: #e78924;
+  --icon__color_hover: #e78924;
+  --inline-search__background-color: #333;
+  --inline-block__background-color: transparent;
+  --inline-block__background-color_hover: var(--linked-reference__backgound-color_1);
+  // --left-sidebar__background-color: #2b2b2b;
+  --left-sidebar__background-color: #323232;
+  --left-sidebar__background-color_hover: #1f1f1f;
+  --linked-reference__backgound-color_1: #d8ac6e1a; // JH: Railscast uses 1 semi-transparent color for all three bg values
+  --linked-reference__backgound-color_2: #d8ac6e1a;
+  --linked-reference__backgound-color_3: #d8ac6e1a;
+  --section-divider_border-top: #e9892475;
+  --select-menu__background-color: #232323;
+  --topbar__background-color: var(--body__background-color);
+  --topbar__border: #333;
+
+  /* YouTube Timestamp js extension */
+  --yt-play-button__color: rgba(225, 117, 28, 1);
+  --yt-play-button__background-color: rgba(108, 109, 36, 0.1);
+  --yt-play-button__background-color_hover: rgba(109, 77, 36, 0.25);
+
+  /* Misc */
+
+  --pages-delete__background-color: #222; // modal variable
+  --pages-delete__border-color: #d8e1e8; // JH: modal variable, New variable TODO add to body .delete-all-dialog-items
+  --pages-header__background-color: #262626;
+  --pages-header__color: #bfccd6;
+  --pages-mentions__background-color_empty: #3a3a3a;
+  --pages-mentions__background-color: #ff6000;
+  --pages-mentions__background-color-empty: #737373;
+  --pages-row__background-color_highlight: #292929;
+  --pages-search-field__background-color: #3a3a3a;
+  --pages-search-field__border-color: #e9892475;
+  // --pages-search-field__border-color: var(--search__border); //no longer exists in Roam, add if needed for Theme or replace with inherit or initial?
+  --pages-table__border-color: #2f373d;
+  --pages-header__color_sorted: #508bb5;
+
+  --table__border: #444;
+  --table__font-size: 0.85rem;
+
+  --kanban-board__background-color: #333333;
+  --kanban-card__background-color: #555555;
+  --kanban-card__color: #6d9cbe;
+  --kanban-column__background-color: #454545;
+  --kanban-column__color: #e98924;
+
+  --encrypted__color: #ff6000;
+  --encrypted__background-color: #222;
+
+  --pomodoro__background: transparent;
+  --pomodoro__color: #fc5963;
+  --pomodoro__border-color: #fc596370;
+
+  --block-callout__background-color_grey: #333;
+  --block-callout__background-color_blue: rgba(0, 170, 255, 0.1);
+  --block-callout__background-color_red: rgba(249, 87, 56, 0.25);
+  --block-callout__background-color_orange: rgba(238, 150, 75, 0.25);
+  --block-callout__background-color_yellow: rgba(244, 211, 94, 0.2);
+  // --block-callout__border--grey: #222;  // TODO considering adding a border option. Doesn't work so well on child
+
+  --blockquote__color: rgba(109, 156, 190, 0.89);
+  --blockquote__font-size: 14px;
+  --blockquote__border_color: #30404d;
+  --blockquote__background-color: none;
+  --blockquote-cite: #777;
+
+  --emoji__background-color: #2d2d2d;
+  --emoji__border: rgba(225, 117, 28, 0.4);
+  --emoji__color: #aaa;
+
+  --no-query-results: 'Query returned no results';
+  --no-query-results-color: #fc5963;
+  --query__border: #f2c98f1a;
+
+  /* Seasonal colors for date links */
+  --page-link-date__color_q1: #50b2c0;
+  --page-link-date__color_q2: #c5d86d;
+  --page-link-date__color_q3: #ff6b6b;
+  --page-link-date__color_q4: #ca7d4a;
+
+  /* Scrollbar settings - to disable set values to none */
+
+  --scrollbar-thumb: #323232;
+  --scrollbar-track: rgba(153, 153, 153, 0.1);
+
+  /* Saving icon colors */
+
+  --status-icon__background-color_saving-local: #99280f;
+  --status-icon__background-color_saving-remote: #d9822b;
+  --status-icon__background-color_synched: #0f9960;
+
+  /* JH overrides */
+  /*   --main-font__font-family: 'Calendas Plus', serif;
+  --main-font__font-size: 16px;
+  --code-font__font-size: 0.9em;  */
+}

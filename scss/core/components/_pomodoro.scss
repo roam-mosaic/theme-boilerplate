@@ -1,0 +1,27 @@
+/* Pomodoro timer */
+
+.rm-pomodoro {
+  background: var(--pomodoro__background) !important;
+  border: 1px solid var(--pomodoro__border-color);
+  // border-radius: 2em;
+  color: var(--pomodoro__color) !important;
+  line-height: 1.7em;
+  padding: 2px 12px;
+  min-width: 90px;
+
+  &::first-letter {
+    margin-right: 4px;
+  }
+  &.running {
+    color: var(--pomodoro__color_running) !important;
+    border: 1px solid var(--pomodoro__border-color_running);
+    background: var(--pomodoro__background_running) !important;
+    padding: 2px 12px;
+  }
+  &.break {
+    background: var(--pomodoro__background_break) !important;
+    padding: 2px 12px;
+    border: 1px solid var(--pomodoro__border-color_break);
+    color: var(--pomodoro__color_break) !important;
+  }
+}

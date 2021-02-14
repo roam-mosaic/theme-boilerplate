@@ -1,0 +1,61 @@
+/* Block Reference */
+
+.rm-block-ref {
+  background-color: var(--block-ref__background-color);
+  border-bottom: 1px solid var(--block-ref__border-bottom);
+  font-family: var(--main-font__font-family);
+  font-size: var(--block-ref__font-size);
+  margin: 0;
+  padding: 0 2px;
+
+  &:hover {
+    background-color: var(--block-ref__background-color_hover);
+    color: var(--block-ref__color_hover);
+  }
+}
+
+.rm-inline-references {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  background-color: var(--block-ref__background-color);
+  border-left: 2px solid var(--blockquote__border_color);
+  margin-left: 25px;
+  padding-left: 20px;
+}
+
+//TODO move this to it's own file _page-embed.scss
+.rm-embed-margin-action {
+  // position: absolute;
+  // opacity: 1;
+  transition: all 200ms ease-in;
+  // z-index: 9;
+  top: 20px;
+  width: 7px;
+  bottom: 0;
+  left: -7px;
+  border-left: 1px solid var(--blockquote__border_color);
+  background-color: var(--blockquote__border_color);
+  // opacity: 0;
+}
+
+.rm-embed--page > .rm-embed-margin-action {
+  // transition: all 300ms ease-in-out;
+  // opacity: 1;
+  background-color: var(--blockquote__border_color);
+  // left: -12px;
+  // top: 24px;
+  // width: 3px;
+  // cursor: pointer;
+  border: 0 solid var(--blockquote__border_color);
+  // opacity: 0.5;
+  // z-index: 9;
+}
+
+//TODO move this to a new file _fixes.scss
+.rm-block__self {
+  .rm-embed-margin-action {
+    &.rm-closed {
+      top: 20px;
+    }
+  }
+}

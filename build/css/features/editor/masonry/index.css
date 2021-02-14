@@ -1,0 +1,68 @@
+.roam-body-main > div {
+  padding: 0 !important;
+}
+.roam-body-main > div .roam-article {
+  width: 800px;
+  margin: 0px auto;
+}
+.roam-body-main > div .roam-article > div .zoom-path-view .rm-zoom-item-content span {
+  color: black;
+}
+.roam-body-main > div .roam-article > div .zoom-path-view + div > div.masonry {
+  max-width: 100%;
+}
+.roam-body-main
+  > div
+  .roam-article
+  > div
+  .zoom-path-view
+  + div
+  > div.masonry
+  .rm-block__self
+  .rm-embed-margin-action.rm-closed {
+  top: 20px;
+}
+.roam-body-main
+  > div
+  .roam-article
+  > div
+  .zoom-path-view
+  + div
+  > div.masonry
+  > div.rm-block__children.rm-level-1 {
+  overflow: scroll !important;
+  white-space: normal;
+  align-content: flex-start;
+  flex-flow: column wrap;
+  max-height: 2000px;
+}
+.roam-body-main
+  > div
+  .roam-article
+  > div
+  .zoom-path-view
+  + div
+  > div.masonry
+  > div.rm-block__children.rm-level-1
+  div[data-path-page-links*='.masonry'].block-border-left {
+  margin-left: 10px;
+  min-width: 500px;
+  width: 100%;
+  position: relative;
+  flex: 0 1 auto;
+  flex-direction: column;
+  align-self: flex-start;
+  min-height: 38px;
+  max-height: 1000px;
+}
+.roam-body-main
+  > div
+  .roam-article
+  > div
+  .zoom-path-view
+  + div
+  > div.masonry
+  > div.rm-block__children.rm-level-1
+  div[data-path-page-links*='.masonry'].block-border-left:last-child {
+  margin-right: 10px;
+}

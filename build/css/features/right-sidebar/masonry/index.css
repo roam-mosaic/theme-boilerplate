@@ -1,0 +1,67 @@
+#app .roam-main .roam-body-main .roam-center {
+  flex: 1 1 100% !important;
+  flex-basis: 10% !important;
+}
+
+#right-sidebar {
+  /* container */
+}
+#right-sidebar #roam-right-sidebar-content {
+  overflow: scroll !important;
+  white-space: normal;
+  display: flex;
+  flex-flow: column wrap;
+}
+#right-sidebar #roam-right-sidebar-content .sidebar-content {
+  overflow: scroll !important;
+  white-space: normal;
+  display: flex;
+  align-content: flex-start;
+  flex-flow: column wrap;
+  /* item */
+}
+#right-sidebar #roam-right-sidebar-content .sidebar-content > div {
+  position: relative;
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: column;
+  align-self: flex-start;
+  margin-right: 0px !important;
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 16px;
+  min-height: fit-content;
+  width: 600px;
+  background-color: var(--right-sidebar-masonry__background-color) !important;
+  border: 1px solid var(--right-sidebar-masonry__border) !important;
+  /* item header */
+  /* item content */
+}
+#right-sidebar #roam-right-sidebar-content .sidebar-content > div:nth-child(1) {
+  margin-left: 0px;
+}
+#right-sidebar #roam-right-sidebar-content .sidebar-content > div:before {
+  background: var(--right-sidebar__background-color);
+}
+#right-sidebar
+  #roam-right-sidebar-content
+  .sidebar-content
+  > div
+  > div
+  > div:nth-child(2) {
+  resize: vertical;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 770px;
+}
+#right-sidebar
+  #roam-right-sidebar-content
+  .sidebar-content
+  > div
+  > div
+  > div:nth-child(2)
+  > div
+  > div.flex-v-box {
+  margin-left: 0px !important;
+}

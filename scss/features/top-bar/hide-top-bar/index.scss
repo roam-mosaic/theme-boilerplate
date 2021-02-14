@@ -1,0 +1,33 @@
+/*RR change: SEARCH/TOOLBAR - The following section will hide the tool bar when not in use. A great idea from @Devon. Source: https://gist.github.com/devonzuegel/f54de76cbf0c0355d93e721c89f45787;
+ */
+
+// JH NOTE: this conflicts with improved-left-navigation
+
+#roam-right-sidebar-content > div {
+  border-bottom: none !important;
+}
+.check-container {
+  padding-right: 4px;
+}
+.roam-body-main {
+  height: 100% !important;
+  top: 0 !important;
+}
+.roam-topbar {
+  opacity: 0;
+  transition: opacity 200ms;
+  z-index: 1;
+  background: none;
+  width: calc(100% - 10px);
+  padding: 0;
+  border-bottom: none;
+}
+.roam-topbar:hover,
+.roam-topbar:focus-within {
+  opacity: 1;
+  transition: opacity 200ms;
+  background-color: var(--body__background-color) !important;
+}
+#right-sidebar button {
+  z-index: 100;
+}

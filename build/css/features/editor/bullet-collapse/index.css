@@ -1,0 +1,110 @@
+/* Bullet Collapse
+  Provides a larger target for collapsing a block
+  Provides better location tracking of which block is currently under the mouse
+ */
+.roam-block-container {
+  position: relative;
+}
+.roam-block-container .block-border-left {
+  border-left: none;
+}
+.roam-block-container .rm-block-main {
+  margin-left: 10px;
+}
+.roam-block-container .rm-block-main .controls {
+  display: table-cell;
+  position: absolute;
+  height: 100%;
+}
+.roam-block-container .rm-block-main .controls .block-expand {
+  opacity: 1;
+  display: table-cell;
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: -3px;
+  border-left: 1px solid var(--bullet__background-color-outline);
+}
+.roam-block-container .rm-block-main .controls .block-expand .bp3-icon-caret-down {
+  border-left: 1px solid var(--bullet__background-color-outline);
+  height: 100%;
+  width: 20px;
+}
+.roam-block-container
+  .rm-block-main
+  .controls
+  .block-expand
+  .bp3-icon-caret-down.rm-caret-closed {
+  transform: none;
+}
+.roam-block-container .rm-block-main .controls .block-expand .bp3-icon-caret-down:before {
+  content: '';
+}
+.roam-block-container .rm-block-main .controls .block-expand .bp3-icon-caret-down:hover {
+  border-color: var(--bullet__background-color-outline-highlight);
+  border-width: 4px;
+}
+.roam-block-container .rm-block-main .controls .roam-bullet-closed.simple-bullet-outer {
+  opacity: 1;
+  margin-top: 7px;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  background-color: var(--bullet__border_closed);
+  left: 9px;
+}
+.roam-block-container
+  .rm-block-main
+  .controls
+  .roam-bullet-closed.simple-bullet-outer
+  .simple-bullet-inner {
+  position: absolute;
+  border-radius: 0px;
+  width: 1px;
+  left: -13px;
+  background-color: var(--bullet__background-color-outline-highlight);
+  padding: 9px 0px;
+}
+.roam-block-container .rm-block-main .controls .simple-bullet-outer {
+  position: relative;
+  left: 3px;
+}
+.roam-block-container .rm-block-main span[style*='margin-top: 4px;'] {
+  position: absolute;
+  left: 30px;
+  top: -1px;
+}
+.roam-block-container .rm-block-main .roam-block,
+.roam-block-container .rm-block-main .rm-block-input {
+  margin-left: 25px;
+}
+.roam-block-container:hover > .rm-block__self .controls .block-expand {
+  border-left-style: solid;
+  border-left-color: var(--bullet__background-color-outline-highlight);
+}
+.roam-block-container:focus-within > .rm-block__self .controls .block-expand {
+  border-left: 1px solid var(--bullet__background-color-outline-hover);
+}
+.roam-block-container > .rm-block-main > div:nth-child(1) .rm-bullet .rm-bullet__inner {
+  background-color: default;
+  width: default;
+  height: default;
+  border-radius: default;
+  transition: width 200ms linear, height 200ms linear, border-radius 200ms linear;
+}
+
+.roam-block-container:focus-within
+  > .rm-block-main
+  > div:nth-child(1)
+  .rm-bullet
+  .rm-bullet__inner {
+  background-color: var(--bullet__background-color-outline-highlight);
+  width: 8px;
+  height: 3px;
+  border-radius: 0;
+  transition: width 200ms linear, height 200ms linear, border-radius 200ms linear;
+}
+
+.rm-block__self {
+  position: static;
+}

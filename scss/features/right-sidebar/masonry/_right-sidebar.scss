@@ -1,0 +1,74 @@
+#right-sidebar {
+  /* container */
+  #roam-right-sidebar-content {
+    overflow: scroll !important;
+    white-space: normal;
+    display: flex;
+    flex-flow: column wrap;
+
+    .sidebar-content {
+      overflow: scroll !important;
+      white-space: normal;
+      display: flex;
+      align-content: flex-start;
+      flex-flow: column wrap;
+      /* item */
+      > div {
+        position: relative;
+        display: flex;
+        flex: 0 1 auto;
+        flex-direction: column;
+        align-self: flex-start;
+        margin-right: 0px !important;
+        margin-left: 10px;
+
+        // TODO: Move to variable - or figure out a way to make this work in all themes
+        padding: 10px;
+        border-radius: 5px;
+
+        margin-bottom: 16px;
+        min-height: fit-content;
+
+        // TODO: Make this a configurable
+        width: 600px;
+        background-color: var(--right-sidebar-masonry__background-color) !important;
+        border: 1px solid var(--right-sidebar-masonry__border) !important;
+
+        &:nth-child(1) {
+          margin-left: 0px;
+        }
+
+        &:before {
+          background: var(--right-sidebar__background-color);
+        }
+
+        /* item header */
+        // > div:nth-child(2) {
+        //   /* item collapse button */
+        //   // > .bp3-button {
+        //   // }
+
+        //   /* item title */
+        //   // > h1.level2 {
+        //   // }
+        // }
+
+        /* item content */
+        > div > div:nth-child(2) {
+          resize: vertical;
+          overflow-y: auto;
+          overflow-x: hidden;
+
+          // TODO: Make this a configurable
+          max-height: 770px;
+
+          > div {
+            > div.flex-v-box {
+              margin-left: 0px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

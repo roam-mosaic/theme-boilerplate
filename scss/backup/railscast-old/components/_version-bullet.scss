@@ -1,0 +1,16 @@
+/* Version bullet */
+
+.version-bullet {
+  background-color: var(--version-bullet__background-color) !important;
+}
+
+/* Version controls */
+
+.rm-version-choice {
+  border-bottom: 0.5px solid var(--version-bullet__background-color) !important;
+  padding-left: 25px;
+}
+
+.rm-button-selected {
+  border-bottom: 2px solid var(--version-bullet__background-color);
+}

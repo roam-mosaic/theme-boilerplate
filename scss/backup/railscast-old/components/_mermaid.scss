@@ -1,0 +1,51 @@
+.bp3-card {
+  background-color: var(--linked-reference__backgound-color_1);
+}
+
+.rm-mermaid svg {
+  .node rect,
+  .node circle,
+  .node ellipse,
+  .node polygon,
+  .node path,
+  .actor {
+    fill: var(--page-brackets__color) !important;
+    stroke: var(--search__border) !important;
+    stroke-width: 1px;
+  }
+
+  .arrowheadPath {
+    fill: var(--hr__border) !important;
+  }
+
+  text {
+    font-family: var(--main-font__font-family) !important;
+
+    &.actor > tspan {
+      fill: var(--main-font__color) !important;
+      stroke: none;
+    }
+  }
+
+  .messageText {
+    fill: var(--main-font__color) !important;
+    stroke: none !important;
+  }
+
+  line {
+    stroke: var(--hr__border) !important;
+    fill: currentColor;
+  }
+}
+
+.roam-body .roam-app svg div {
+  color: var(--main-font__color);
+}
+
+#arrowhead {
+  stroke: var(--hr__border) !important;
+}
+
+.rm-mermaid svg .edgePath .path {
+  stroke: red;
+}

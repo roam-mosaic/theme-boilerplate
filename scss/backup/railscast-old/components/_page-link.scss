@@ -1,0 +1,33 @@
+/* Page link */
+
+.rm-page-ref-brackets, // legacy selector
+.rm-page-ref__brackets {
+  color: var(--page-brackets__color);
+}
+
+.rm-page-ref--link {
+  color: var(--page-link__color);
+}
+
+.rm-page-ref-namespace-color, // legacy selector
+.rm-page-ref--namespace {
+  color: var(--page-link-namespace__color);
+}
+
+.rm-heading-level-1 {
+  .rm-page-ref--link {
+    color: var(--h1__color_link);
+  }
+}
+
+.rm-heading-level-2 {
+  .rm-page-ref--link {
+    color: var(--h2__color_link);
+  }
+}
+
+.rm-heading-level-3 {
+  .rm-page-ref--link {
+    color: var(--h3__color_link);
+  }
+}

@@ -1,0 +1,15 @@
+/* External link */
+
+a {
+  color: var(--external-link__color);
+
+  &:focus {
+    color: var(--external-link__color);
+    text-decoration: var(--external-link__text-decoration);
+  }
+
+  &:hover {
+    color: var(--external-link__color);
+    text-decoration: var(--external-link__text-decoration);
+  }
+}

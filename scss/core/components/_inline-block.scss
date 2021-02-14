@@ -1,0 +1,42 @@
+/* Inline block */
+
+.rm-paren {
+  background-color: var(--inline-block__background-color);
+  border: var(--inline-block__border);
+}
+
+.rm-spacer {
+  svg {
+    path {
+      fill: var(--icon__color);
+    }
+  }
+}
+
+.rm-paren__paren {
+  color: var(--icon__color);
+
+  &:hover {
+    color: var(--icon__color);
+    background-color: var(--icon__background-color_hover);
+  }
+}
+
+.rm-paren__paren--left {
+  border-radius: 4px;
+  margin-right: 2px;
+  padding: 3px;
+}
+
+.rm-paren__paren--right {
+  border-radius: 4px;
+  margin-left: 2px;
+  padding: 3px;
+}
+
+.rm-paren--closed {
+  &:hover {
+    background-color: var(--icon__background-color_hover);
+    color: var(--icon__color_hover);
+  }
+}

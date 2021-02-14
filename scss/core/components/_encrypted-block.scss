@@ -1,0 +1,22 @@
+/* Encrypted block */
+
+.rm-encrypted-block {
+  background-color: var(--encrypted__background-color);
+  color: var(--encrypted__color);
+  font-size: var(--encrypted__font-size);
+}
+
+.rm-encrypted-block .rm-encrypted-passphrase form {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  input {
+    margin-right: 200px;
+
+    &.bp3-button {
+      padding: 5px 15px !important;
+    }
+  }
+}

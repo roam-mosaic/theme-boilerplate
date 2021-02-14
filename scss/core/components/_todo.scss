@@ -1,0 +1,12 @@
+/* Todo checkmark */
+
+.checkmark {
+  border: 1px solid var(--todo-checkmark__color);
+}
+
+//TODO this is a fix
+.zoom-mentions-view {
+  .check-container {
+    top: 2px !important;
+  }
+}

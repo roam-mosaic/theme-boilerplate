@@ -1,0 +1,127 @@
+/* All Pages */
+
+.rm-pages-row-highlight {
+  // Don't think this exists any more
+  background-color: var(--pages-row__background-color_highlight);
+}
+
+.rm-pages-row {
+  .rm-pages-title-col {
+    a {
+      strong {
+        color: var(--page-link__color) !important;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.bp3-icon-export {
+  margin-left: 30px; /* TODO this is a fix to added some much needed space between export and delete buttons!!! */
+}
+
+/* Custom checkboxes */
+.bp3-control {
+  .bp3-control-indicator {
+    background-color: var(--todo-checkmark__background-color);
+    background-image: var(--pages-checkmark__background-image);
+  }
+
+  &:hover {
+    .bp3-control-indicator {
+      background-color: var(--todo-checkmark__color);
+      background-image: none;
+    }
+  }
+}
+
+.rm-all-pages {
+  .table {
+    .rm-pages-row {
+      border-bottom: 1px solid var(--pages-table__border-color);
+
+      .rm-pages-title-col {
+        color: var(--main-font__color);
+      }
+    }
+
+    .rm-pages-row.rm-pages-row-header {
+      background-color: var(--pages-header__background-color);
+      color: var(--pages-header__color);
+    }
+  }
+  div {
+    font-family: var(--main-font__font-family);
+  }
+}
+
+.sorted-header-text {
+  color: var(--pages-header__color_sorted);
+}
+
+.sorting-button-group {
+  .sort-button {
+    &.focused {
+      color: var(--pages-header__color_sorted);
+    }
+  }
+}
+
+.rm-clickable-pill {
+  background-color: var(--pages-mentions__background-color);
+
+  &.empty-pill {
+    background-color: var(--pages-mentions__background-color_empty);
+    color: var(--pages-mentions__color_empty);
+  }
+
+  &.level1-pill {
+    background-color: var(--pages-mentions__background-color);
+  }
+
+  &.level2-pill {
+    background-color: var(--pages-mentions__background-color);
+  }
+
+  &.level3-pill {
+    background-color: var(--pages-mentions__background-color);
+  }
+}
+
+.rm-pages-toolbar {
+  .toolbar-search-group {
+    .search-icon {
+      color: var(--search__color_page);
+
+      &.focused {
+        color: var(--search__color_page);
+      }
+    }
+
+    .search-input {
+      background-color: var(--pages-search-field__background-color);
+      border: 1px solid var(--pages-search-field__background-color);
+
+      &.focused {
+        border: 1px solid var(--pages-search-field__border-color);
+      }
+    }
+
+    .bp3-input-group {
+      margin-right: 10px; // TODO this is a fix to add margin to move search field way from the other icons*/
+    }
+  }
+}
+
+.delete-all-dialog-items {
+  border-bottom-color: var(--pages-delete__border-color);
+}
+
+.confirmation-content-dialog {
+  border: 10px solid var(--pages-delete__border-color);
+  .confirmation-content {
+    background-color: var(--pages-delete__background-color);
+  }
+}

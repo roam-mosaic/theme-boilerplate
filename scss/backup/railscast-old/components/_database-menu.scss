@@ -1,0 +1,49 @@
+/* Database menu */
+
+.roam-sidebar-container {
+  .rm-db-title-container {
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    width: 100%;
+    max-width: 80%;
+
+    &:hover {
+      cursor: pointer;
+      background-color: var(--db-menu__background-color_hover);
+    }
+
+    .rm-db-title {
+      margin-top: 4px;
+      padding: 4px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-weight: bold;
+      color: var(--db-menu-title__color);
+    }
+  }
+
+  .rm-graph-dropdown {
+    max-height: 70vh;
+    overflow: scroll;
+    font-size: 14px;
+    font-family: var(--main-font__font-family);
+
+    a {
+      color: var(--db-men-item);
+    }
+  }
+}
+
+.bp3-menu-header {
+  border-top: 1px solid var(--db-menu-header);
+
+  > h6 {
+    color: var(--db-menu-header);
+  }
+}
+
+ul.bp3-menu.rm-graph-dropdown {
+  background-color: var(--db-menu__background-color);
+  border: 1px solid var(--db-menu-border);
+}
