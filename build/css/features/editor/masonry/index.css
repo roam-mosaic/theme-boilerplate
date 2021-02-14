@@ -5,13 +5,7 @@
   width: 800px;
   margin: 0px auto;
 }
-.roam-body-main
-  > div
-  .roam-article
-  > div
-  .zoom-path-view
-  .rm-zoom-item-content
-  span {
+.roam-body-main > div .roam-article > div .zoom-path-view .rm-zoom-item-content span {
   color: black;
 }
 .roam-body-main > div .roam-article > div .zoom-path-view + div > div.masonry {

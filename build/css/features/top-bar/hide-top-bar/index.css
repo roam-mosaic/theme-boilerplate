@@ -27,7 +27,7 @@
 .roam-topbar:focus-within {
   opacity: 1;
   transition: opacity 200ms;
-  background-color: var(--body-bg) !important;
+  background-color: var(--body__background-color) !important;
 }
 
 #right-sidebar button {

@@ -33,8 +33,8 @@
   margin-bottom: 16px;
   min-height: fit-content;
   width: 600px;
-  background-color: var(--right-sidebar-masonry-bg) !important;
-  border: 1px solid var(--right-sidebar-masonry-outline) !important;
+  background-color: var(--right-sidebar-masonry__background-color) !important;
+  border: 1px solid var(--right-sidebar-masonry__border) !important;
   /* item header */
   /* item content */
 }
@@ -42,7 +42,7 @@
   margin-left: 0px;
 }
 #right-sidebar #roam-right-sidebar-content .sidebar-content > div:before {
-  background: var(--right-sidebar-bg);
+  background: var(--right-sidebar__background-color);
 }
 #right-sidebar
   #roam-right-sidebar-content

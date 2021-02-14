@@ -1,14 +1,13 @@
 @charset "UTF-8";
 /* TODO: This needs cleanup - does not play nice with `roam-sidedbar-modifier.scss` */
-.roam-topbar {
+.rm-topbar {
   /* Need to remove this because the lock menu button is on the topbar
      and we need to move it in front of the side menu to make it clickable */
-  border-bottom: none;
 }
 
 .roam-center {
   /* Move the border here to resolve the above issue */
-  border-top: 1px solid var(--topbar-border-color);
+  border-top: 1px solid var(--topbar__border);
 }
 
 .roam-body .roam-app .roam-sidebar-container[style*='left: 0px;'] {
@@ -52,7 +51,7 @@
   bottom: 0px;
 }
 
-#app > div > div > div.roam-main > div.roam-topbar {
+#app > div > div > div.roam-main > div.rm-topbar {
   /* z-index: -1;    */
   background-color: transparent;
 }
@@ -64,13 +63,7 @@
 #app > div > div > div.roam-sidebar-container.noselect > div > div.flex-h-box {
   z-index: 10;
 }
-#app
-  > div
-  > div
-  > div.roam-sidebar-container.noselect
-  > div
-  > div.flex-h-box
-  > span {
+#app > div > div > div.roam-sidebar-container.noselect > div > div.flex-h-box > span {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -83,7 +76,7 @@
   > div
   > div
   > div.roam-main
-  > div.roam-topbar
+  > div.rm-topbar
   > div
   > span.bp3-button.bp3-minimal.bp3-small {
   /* background-color: blue !important;*/
@@ -95,7 +88,7 @@
   > div
   > div
   > div.roam-main
-  > div.roam-topbar
+  > div.rm-topbar
   > div
   > span.bp3-button.bp3-minimal.bp3-icon-menu-open.bp3-small {
   position: relative;
@@ -104,12 +97,12 @@
   opacity: 1;
 }
 
-/* #app > div > div > div.roam-main > div.roam-topbar > div > span.bp3-button.bp3-minimal.bp3-icon-menu-open.bp3-small,*/
+/* #app > div > div > div.roam-main > div.rm-topbar > div > span.bp3-button.bp3-minimal.bp3-icon-menu-open.bp3-small,*/
 #app
   > div
   > div
   > div.roam-main
-  > div.roam-topbar
+  > div.rm-topbar
   > div
   > span.bp3-button.bp3-minimal.bp3-icon-menu.pointer.bp3-small {
   left: 0;
@@ -124,7 +117,7 @@
   > div
   > div
   > div.roam-main
-  > div.roam-topbar
+  > div.rm-topbar
   > div
   > span.bp3-button.bp3-minimal.bp3-icon-menu.pointer.bp3-small:hover {
   min-width: 25px;
@@ -133,7 +126,7 @@
   > div
   > div
   > div.roam-main
-  > div.roam-topbar
+  > div.rm-topbar
   > div
   > span.bp3-button.bp3-minimal.bp3-icon-menu.pointer.bp3-small:before {
   content: '';
