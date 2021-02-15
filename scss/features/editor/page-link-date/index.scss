@@ -1,5 +1,13 @@
 /* Page date link - organized by quarter */
 
+:root {
+  /* Seasonal colors for date links */
+  --page-link-date__color_q1: #50b2c0;
+  --page-link-date__color_q2: #c5d86d;
+  --page-link-date__color_q3: #ff6b6b;
+  --page-link-date__color_q4: #ca7d4a;
+}
+
 span[data-link-title^='January '] .rm-page-ref--link,
 span[data-link-title^='February '] .rm-page-ref--link,
 span[data-link-title^='March '] .rm-page-ref--link {

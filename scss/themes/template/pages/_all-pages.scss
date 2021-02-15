@@ -1,0 +1,16 @@
+/* All Pages */
+
+/* Custom checkboxes */
+.bp3-control {
+  .bp3-control-indicator {
+    // background-color: var(--todo-checkmark__background-color);
+    // background-image: var(--pages-checkmark__background-image);
+  }
+
+  &:hover {
+    .bp3-control-indicator {
+      // background-color: var(--todo-checkmark__color);
+      // background-image: none;
+    }
+  }
+}

@@ -27,13 +27,6 @@
   --block-ref__background-color_inline: rgba(33, 33, 33, 0.5);
   --block-ref__border-left_inline: var(--blockquote__border_color);
 
-  --block-callout__background-color_grey: #333;
-  --block-callout__background-color_blue: rgba(0, 170, 255, 0.1);
-  --block-callout__background-color_red: rgba(249, 87, 56, 0.25);
-  --block-callout__background-color_orange: rgba(238, 150, 75, 0.25);
-  --block-callout__background-color_yellow: rgba(244, 211, 94, 0.2);
-  // --block-callout__border_grey: #222;  // TODO considering adding a border option. Doesn't work so well on child
-
   --block-embed__background-color: #d8ac6e0e;
   --block-embed__background-color_margin-action: var(--blockquote__border_color);
   --block-embed__border-left_margin-action: var(--bullet-outline__border_hover);
@@ -101,12 +94,6 @@
   --mermaid-path__stroke: #555;
   --mermaid-element__fill: #594032;
   --mermaid-element__stroke: var(--accent__color);
-
-  /* Seasonal colors for date links */
-  --page-link-date__color_q1: #50b2c0;
-  --page-link-date__color_q2: #c5d86d;
-  --page-link-date__color_q3: #ff6b6b;
-  --page-link-date__color_q4: #ca7d4a;
 
   --page-brackets__color: rgba(228, 124, 67, 0.25);
   --page-link__color: #eb9854;

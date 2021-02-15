@@ -17,7 +17,7 @@ A framework for developing all of your Roam Research CSS themes and UX enhanceme
 
 - Setup [Chrome DevTools Local Override](https://developers.google.com/web/updates/2018/01/devtools#overrides)
 
-  Click "Select folder for overrides" and point to the `roam-nexus\dev\` folder
+  Click "Select folder for overrides" and point to the `theme-boilerplate\dev\` folder
 
   ![Screenshot of code tab](/screenshots/1_roam_nexus_chrome_overrides.png?raw=true)
 
@@ -33,8 +33,8 @@ A framework for developing all of your Roam Research CSS themes and UX enhanceme
 
   ![Screenshot of organization page](/screenshots/4_roam_nexus_chrome_overrides_folder_not_linked.png?raw=true)
 
-- Clone this repository
-- Run `cd roam-mosaic` to navigate into your cloned repository
+- Fork this repository (clone from your repository)
+- Run `cd roam-mosaic` to navigate into your forked repository
 - Run `yarn` to install all dependencies
 - Run `yarn dev` to build automatically when source files change.
 - You are now ready to start building your own theme!
@@ -49,32 +49,41 @@ Below is an overview of the important folders in this project you will need to b
 ├── build                       // built themes and features will be output here
 ├── dev                         // chrome devtools override location
 ├── scss                        // all scss goes here
-│   ├── global                  // global styling that can apply to all themes
-│   │   ├── features            // non theme specific UX improvements
+│   ├── core                    // global selectors that apply to all themes 
+│   │   ├── components          // scss files for core UI components 
 │   │   │   ├── ...
-│   │   │   ├── right-sidebar   // UI Area used for grouping features together
-│   │   │   │   ├── masonry     // all styles required for this feature
-│   │   │   │   └── ...
+│   │   │   ├── _block-embed.scss
+│   │   │   ├── _block-reference.scss
+│   │   │   └── ...    
+│   │   ├── layout              // scss files for the main layout elements of Roam
+│   │   │   ├── ...
+│   │   │   ├── _left-sidebar.scss
+│   │   │   ├── _right-sidebar.scss
 │   │   │   └── ...
+│   │   ├── pages               // scss files for predefined pages in Roam
 │   │   ├── _mixins.scss        // useful mixins that can be used accross all themes
 │   │   ├── _reset.scss         // global reset css for all themes
 │   │   └── _variables.scss     // global variabls for all themes
+│   ├── features                // non theme specific UX improvements
+│   │   ├── ...
+│   │   ├── right-sidebar       // UI Area used for grouping features together
+│   │   │   ├── masonry         // all styles required for this feature
+│   │   │   ├── ...
+│   │   │   └── ...
 │   ├── themes                  // folder containing all themes
 │   │   ├── railscast           // a theme by Jeff Harris (https://github.com/jmharris903)
 │   │   └── template            // a template to use as a base for new themes
 │   │       ├── components      // scss files for UI components
-│   │       ├── core            // scss files for core UI areas
+│   │       ├── layout          // scss files for the main layout elements of Roam
 │   │       ├── pages           // scss files for pages
-│   │       ├── _icons.scss     // scss for icons (not implemented)
-│   │       ├── _mixins.scss    // mixins created specifically for this theme (imports global/mixins)
-│   │       ├── _reset.scss     // reset css for this theme only (imports global/reset)
-│   │       ├── _resources.scss // resource variables (not implemented)
 │   │       ├── _variables.scss // variable overrides for this theme
 │   │       └── main.scss       // main entry point for this theme and `yarn build`
 │   ├── dev.scss                // entry point for development css `yarn dev`
 │   └── roam.css                // latest css from Roam Research needed for override
 └── updates                     // Roam Research css and scss used for change tracking
 ```
+
+
 
 ### Creating your own theme
 

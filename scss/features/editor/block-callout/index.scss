@@ -12,6 +12,15 @@
     --yellow
 */
 
+:root {
+  --block-callout__background-color_grey: #333;
+  --block-callout__background-color_blue: rgba(0, 170, 255, 0.1);
+  --block-callout__background-color_red: rgba(249, 87, 56, 0.25);
+  --block-callout__background-color_orange: rgba(238, 150, 75, 0.25);
+  --block-callout__background-color_yellow: rgba(244, 211, 94, 0.2);
+  // --block-callout__border_grey: #222;  // TODO considering adding a border option. Doesn't work so well on child
+}
+
 .rm-block--grey,
 .rm-self--grey > div.rm-block-main,
 .rm-child--grey .rm-block-children {
