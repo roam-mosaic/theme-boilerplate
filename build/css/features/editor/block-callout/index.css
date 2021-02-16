@@ -1,0 +1,55 @@
+/*  Block Callouts
+    Use special tags to create colored callout blocks
+    #.rm-block--grey will callout the entire block, including children
+    #.rm-self--grey will only callout the block the tag is added to
+    #.rm-child--grey will callout the children of the block the tag is added to
+
+    Available colors
+    --grey
+    --blue
+    --red
+    --orange
+    --yellow
+*/
+:root {
+  --block-callout__background-color_grey: #333;
+  --block-callout__background-color_blue: rgba(0, 170, 255, 0.1);
+  --block-callout__background-color_red: rgba(249, 87, 56, 0.25);
+  --block-callout__background-color_orange: rgba(238, 150, 75, 0.25);
+  --block-callout__background-color_yellow: rgba(244, 211, 94, 0.2);
+}
+
+.rm-block--grey,
+.rm-self--grey > div.rm-block-main,
+.rm-child--grey .rm-block-children {
+  background-color: var(--block-callout__background-color_grey);
+  border-radius: 0px 5px 5px 0px !important;
+}
+
+.rm-block--blue,
+.rm-self--blue > div.rm-block-main,
+.rm-child--blue .rm-block-children {
+  background-color: var(--block-callout__background-color_blue);
+  border-radius: 0px 5px 5px 0px !important;
+}
+
+.rm-block--red,
+.rm-self--red > div.rm-block-main,
+.rm-child--red .rm-block-children {
+  background-color: var(--block-callout__background-color_red);
+  border-radius: 0px 5px 5px 0px !important;
+}
+
+.rm-block--orange,
+.rm-self--orange > div.rm-block-main,
+.rm-child--orange .rm-block-children {
+  background-color: var(--block-callout__background-color_orange);
+  border-radius: 0px 5px 5px 0px !important;
+}
+
+.rm-block--yellow,
+.rm-self--yellow > div.rm-block-main,
+.rm-child--yellow .rm-block-children {
+  background-color: var(--block-callout__background-color_yellow);
+  border-radius: 0px 5px 5px 0px !important;
+}

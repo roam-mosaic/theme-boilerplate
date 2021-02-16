@@ -1,0 +1,32 @@
+/* Page date link - organized by quarter */
+:root {
+  /* Seasonal colors for date links */
+  --page-link-date__color_q1: #50b2c0;
+  --page-link-date__color_q2: #c5d86d;
+  --page-link-date__color_q3: #ff6b6b;
+  --page-link-date__color_q4: #ca7d4a;
+}
+
+span[data-link-title^='January '] .rm-page-ref--link,
+span[data-link-title^='February '] .rm-page-ref--link,
+span[data-link-title^='March '] .rm-page-ref--link {
+  color: var(--page-link-date__color_q1);
+}
+
+span[data-link-title^='April '] .rm-page-ref--link,
+span[data-link-title^='May '] .rm-page-ref--link,
+span[data-link-title^='June '] .rm-page-ref--link {
+  color: var(--page-link-date__color_q2);
+}
+
+span[data-link-title^='July '] .rm-page-ref--link,
+span[data-link-title^='August '] .rm-page-ref--link,
+span[data-link-title^='September '] .rm-page-ref--link {
+  color: var(--page-link-date__color_q3);
+}
+
+span[data-link-title^='October '] .rm-page-ref--link,
+span[data-link-title^='November '] .rm-page-ref--link,
+span[data-link-title^='December '] .rm-page-ref--link {
+  color: var(--page-link-date__color_q4);
+}

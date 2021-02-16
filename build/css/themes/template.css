@@ -1,9 +1,8 @@
-@charset "UTF-8";
 /*
-### ROAM Railscast THEME ###
-> Many thanks to the Roam Slack community for all the resources, particularly @Anthony, @Calhistoriaan, @Devon, @Murf, @Malcolm Ocean, @David Cranall @Ahbay and most importantly Daniel van der Merwe @vandermerwed.
-> Edits by Jeff Harris
-> v2.0.12
+### YOUR THEME ###
+> Notes
+> Created by Your Name
+> v1.0.0
 */
 :root {
   /* Roam default variables */
@@ -11,214 +10,201 @@
   --s1: 8px;
   --background-color: #e1e8ed;
   /* Components */
-  --alias__background-color: transparent;
+  --alias__background-color: rgb(235, 241, 245);
   /* Legacy alias */
-  --alias__color: #d8ac11;
-  --attr__color: rgba(17, 137, 189, 0.65);
-  --attr__font-weight: 700;
-  --block-embed__background-color: #d8ac6e0e;
-  --block-embed__background-color_margin-action: var(--blockquote__border_color);
-  --block-embed__border-left_margin-action: var(--bullet-outline__border_hover);
+  --alias__color: rgb(245, 86, 86);
+  --attr__color: var(--main-font__color);
+  --attr__font-weight: bold;
   --block-ref__background-color: none;
-  --block-ref__background-color_hover: #111;
-  --block-ref__border-bottom: rgba(254, 207, 43, 0.4);
-  --block-ref__color_hover: #eb9854;
+  --block-ref__background-color_hover: #f5f8fa;
+  --block-ref__border-bottom: #d8e1e8;
+  --block-ref__color_hover: inherit;
   --block-ref__font-size: 1em;
-  --block-ref__background-color_inline: rgba(33, 33, 33, 0.5);
-  --block-ref__border-left_inline: var(--blockquote__border_color);
-  --blockquote__background-color: none;
+  --block-ref__background-color_inline: #f5f8fa;
+  --block-ref__border-left_inline: #8a9ba8;
+  --block-embed__background-color: #ebf1f5;
+  --block-embed__background-color_margin-action: #738694;
+  --block-embed__border-left_margin-action: #182026;
+  --blockquote__background-color: #f5f8fa;
   --blockquote__border_color: #30404d;
   --blockquote__border-left: 5px solid;
-  --blockquote__color: rgba(109, 156, 190, 0.89);
+  --blockquote__color: inherit;
   --blockquote__font-size: 14px;
-  --blockquote__text-align: justify;
-  --blockquote__text-justify: inter-word;
+  --blockquote__text-align: inherit;
+  --blockquote__text-justify: inherit;
   --code-font__color: #6d9cbe;
-  --code-font__font-family: 'Source Code Pro', monospace;
-  --code-font__font-size: 0.9rem;
-  --code__background: #002b36;
-  --code__background_gutter: #073642;
-  --code-inline__border: none;
-  --db-menu__background-color: #333;
-  --db-menu__background-color_hover: var(--icon__background-color_hover);
-  --db-menu__box-shadow: #000;
-  --db-menu-title__color: #eb9854;
-  --datepicker__background-color: var(--menu__background);
-  --datepicker__color: var(--menu__color);
+  --code-font__font-family: monospace;
+  --code-font__font-size: 1em;
+  --code__background: #eee;
+  --code__background_gutter: #f7f7f7;
+  --code-inline__border: 1px solid #ddd;
+  --db-menu__background-color: inherit;
+  --db-menu__background-color_hover: #5c7080;
+  --db-menu__box-shadow: #bfccd6;
+  --db-menu-title__color: #ced9e0;
+  --datepicker__background-color: #fff;
+  --datepicker__color: inherit;
   --datepicker__color_other-month: rgba(92, 112, 128, 0.6);
-  --datepicker-day__background_hover: var(--accent__color);
-  --datepicker-day__color_hover: #333;
-  --datepicker-today__border: #d9822b7a;
-  --dialog__background: #333;
-  --dialog__color: #999;
-  --dialog-input__background: #444;
-  --emoji__background-color: #2d2d2d;
-  --emoji__border: rgba(225, 117, 28, 0.4);
-  --emoji__color: #aaa;
-  --encrypted__background-color: transparent;
-  --encrypted__color: #ff6000;
-  --encrypted__font-size: 0.857142857em;
-  --external-link__color: #8dbb40;
+  --datepicker-day__background_hover: #d8e1e8;
+  --datepicker-day__color_hover: #182026;
+  --datepicker-today__border: rgba(16, 22, 26, 0.15);
+  --dialog__background: #ebf1f5;
+  --dialog__color: #eee;
+  --dialog-input__background: #f5f8fa;
+  --emoji__background-color: rgba(226, 236, 243, 0.6);
+  --emoji__border: rgb(19, 124, 189);
+  --emoji__color: rgb(14, 90, 138);
+  --encrypted__background-color: #f5f8fa;
+  --encrypted__color: #8a9ba8;
+  --encrypted__font-size: 12px;
+  --external-link__color: #337ab7;
   --external-link__text-decoration: underline;
-  --inline-block__background-color: transparent;
-  --inline-block__border: none;
-  --inline-search__background-color: #333;
-  --kanban-board__background-color: #333333;
-  --kanban-card__background-color: #555555;
+  --inline-block__background-color: #f5f8fa;
+  --inline-block__border: #ebf1f5;
+  --inline-search__background-color: white;
+  --kanban-board__background-color: #a7b6c2;
+  --kanban-card__background-color: white;
   --kanban-card__color: #6d9cbe;
-  --kanban-column__background-color: #454545;
-  --kanban-column__color: var(--accent__color);
-  --linked-reference__backgound-color_1: #d8ac6e1a;
-  --linked-reference__backgound-color_2: #d8ac6e1a;
-  --linked-reference__backgound-color_3: #d8ac6e1a;
-  --menu__color: var(--accent__color);
-  --menu__background: #333;
-  --mermaid-path__stroke: #555;
-  --mermaid-element__fill: #594032;
-  --mermaid-element__stroke: var(--accent__color);
-  --page-brackets__color: rgba(228, 124, 67, 0.25);
-  --page-link__color: #eb9854;
-  --page-link-namespace__color: #f57030;
+  --kanban-column__background-color: #ededed;
+  --kanban-column__color: #5c7080;
+  --linked-reference__backgound-color_1: #ebf1f5;
+  --linked-reference__backgound-color_2: #f5f8fa;
+  --linked-reference__backgound-color_3: #ced9e0;
+  --menu__color: inherit;
+  --menu__background: #fff;
+  --page-brackets__color: #a7b6c2;
+  --page-link__color: #106ba3;
+  --page-link-namespace__color: green;
   --pomodoro__background: transparent;
-  --pomodoro__background_break: transparent;
-  --pomodoro__background_running: transparent;
-  --pomodoro__border-color: #fc596370;
-  --pomodoro__border-color_break: #8dbb40;
-  --pomodoro__border-color_running: var(--pomodoro__border-color);
-  --pomodoro__color: #fc5963;
-  --pomodoro__color_break: #8dbb40;
-  --pomodoro__color_running: var(--pomodoro__color);
-  --query__border: 0.75px solid #f2c98f1a;
+  --pomodoro__color: #182026;
+  --pomodoro__border-color: #ced9e0;
+  --query__border: 0.5px solid #bfccd6;
   --query__color_query-string: #5c7080;
-  --rm-g__background-color_block: var(--inline-search__background-color);
-  --rm-g__background-color_left-border: #ab6634;
-  --select-menu__background-color: #232323;
-  --table__border: 1px solid #444;
-  --table__font-size: 0.85em;
-  --tag__background-color_hover: var(--accent__color);
-  --tag__border-radius: 2em;
-  --tag__color: #777;
-  --tag__color_hover: #fff;
-  --tag__color_hashtag: #ab6634;
-  --tag__padding: 0.071428571em 0.428571429em 0.214285714em;
-  --todo-checkmark__background-color: #555;
+  --rm-g__background-color_block: #f5f8fa;
+  --rm-g__background-color_left-border: #394b59;
+  --select-menu__background-color: inherit;
+  --table__border: 1px solid grey;
+  --table__font-size: 12px;
+  --tag__background-color_hover: inherit;
+  --tag__border-radius: inherit;
+  --tag__color: #a7b6c2;
+  --tag__color_hover: inherit;
+  --tag__color_hashtag: var(--tag__color);
+  --tag__padding: inherit;
+  --todo-checkmark__background-color: #fff;
   --todo-checkmark__color: #137cbd;
-  --version-bullet__background-color: #137cbd;
-  --version-bullet__border: #137cbd;
-  /* YouTube Timestamp js extension */
-  --yt-play-button__color: rgba(225, 117, 28, 1);
-  --yt-play-button__background-color: rgba(108, 109, 36, 0.1);
-  --yt-play-button__background-color_hover: rgba(109, 77, 36, 0.25);
+  --version-bullet__background-color: rgb(16, 107, 163);
+  --version-bullet__border: rgb(16, 107, 163);
   /* layout */
   /* body */
-  --body__background-color: #2c2c2c;
-  --main-font__color: #999;
+  --body__background-color: #fff;
+  --main-font__color: #202b33;
   --main-font__font-family: 'Inter', sans-serif;
   --main-font__font-size: 14px;
   --caret__color: #0080ff;
   --accent__color: #e98924;
   --accent__color_alert: #ff6000;
   --accent__color-font: #1189bd;
-  --block-highlight__background-color_selected: #00588e;
-  --block-highlight__background-color_active: rgba(255, 255, 255, 0.05);
-  --block-highlight__background-color_mentions: #312c28;
-  --bullet__background-color: rgba(225, 117, 28, 0.3);
-  --bullet__border_closed: rgba(225, 117, 28, 1);
-  --bullet-outline__border: #404040;
-  --bullet-outline__border_hover: rgba(255, 149, 0, 0.4);
-  --section-divider_border-top: 1px solid #e9892475;
+  --block-highlight__background-color_selected: #7cccff;
+  --block-highlight__background-color_active: transparent;
+  --block-highlight__background-color_mentions: yellow;
+  --bullet__background-color: #394b59;
+  --bullet__border_closed: #ced9e0;
+  --bullet-outline__border: #bfccd6;
+  --bullet-outline__border_hover: #5c7080;
+  --section-divider_border-top: #738694;
   /* breadcrumb */
-  --breadcrumb__background-color: transparent;
-  --breadcrumb__font-size: 13px;
+  --breadcrumb__background-color: white;
+  --breadcrumb__font-size: 14px;
   /* help */
-  --help__background-color: #333;
-  --help__border: var(--hr__border);
-  --help__color: var(--main-font__color);
+  --help__background-color: inherit;
+  --help__border: #e8eaeb;
+  --help__color: inherit;
   /* left sidebar */
-  --left-sidebar__background-color: #323232;
-  --left-sidebar__background-color_hover: #1f1f1f;
-  --left-sidebar__color: #1189bd;
-  --left-sidebar__color_hover: var(--accent__color);
-  --left-sidebar__font-size: 0.9em;
+  --left-sidebar__background-color: #182026;
+  --left-sidebar__background-color_hover: #10161a;
+  --left-sidebar__color: #5c7080;
+  --left-sidebar__color_hover: #f5f8fa;
+  --left-sidebar__font-size: 14px;
   --left-sidebar-shortcuts__color: var(--left-sidebar__color);
   --left-sidebar-shortcuts__color_title: var(--left-sidebar__color);
-  --left-sidebar-shortcuts__font-size: 1rem;
+  --left-sidebar-shortcuts__font-size: 14px;
   /* right sidebar */
-  --right-sidebar__color_title-closed: var(--accent__color-font);
-  --right-sidebar__background-color: #323232;
-  --right-sidebar__border: #e9892475;
-  --right-sidebar-masonry__background-color: var(--body__background-color);
-  --right-sidebar-masonry__border: #3d3d3d;
+  --right-sidebar__color_title-closed: inherit;
+  --right-sidebar__background-color: rgba(92, 112, 128, 0.05);
+  --right-sidebar-masonry__background-color: inherit;
+  --right-sidebar-masonry__border: inherit;
+  --right-sidebar__border: rgb(138, 155, 168);
   /* scrollbar */
-  --scrollbar-thumb: #ffffff10;
-  --scrollbar-track: rgba(153, 153, 153, 0.1);
+  --scrollbar-track: #ffffff10;
+  --scrollbar-thumb: rgba(153, 153, 153, 0.1);
   /* topbar */
   --status-icon__background-color_saving-local: #99280f;
   --status-icon__background-color_saving-remote: #d9822b;
   --status-icon__background-color_synched: #0f9960;
-  --search__background: #252525;
-  --search__background-color_selected-row: #4c4c4c;
+  --search__background: inherit;
+  --search__background-color_selected-row: rgb(213, 218, 223);
   --search__color_body: #8a9ba8;
-  --search__color_new-page: #8dbb40;
-  --search__color_page: #af671c;
-  --search__border: #e9892475;
-  --topbar__background-color: var(--body__background-color);
-  --topbar__border: #333;
+  --search__color_new-page: #0d8050;
+  --search__color_page: #bfccd6;
+  --search__border: 0 0 0 1px #137cbd, 0 0 0 3px rgba(19, 124, 189, 0.3),
+    inset 0 1px 1px rgba(16, 22, 26, 0.2);
+  --topbar__background-color: white;
+  --topbar__border: #eee;
   /* typography */
-  --calculation__color: #ff6000;
-  --emphasis__color: #fc5963;
-  --h1__color: #1189bd;
+  --calculation__color: #0a6640;
+  --emphasis__color: inherit;
+  --h1__color: #202b33;
   --h1__color_link: var(--page-link__color);
   --h1__font-family: var(--main-font__font-family);
-  --h1__font-size: 2.25em;
+  --h1__font-size: 1.8rem;
   --h1__font-weight: 400;
-  --h2__color: #1189bd;
+  --h2__color: #202b33;
   --h2__color_link: var(--page-link__color);
   --h2__font-family: var(--h1__font-family);
-  --h2__font-size: 1.625em;
+  --h2__font-size: 1.4rem;
   --h2__font-weight: 400;
-  --h3__color: #1189bd;
+  --h3__color: #5c7080;
   --h3__color_link: var(--page-link__color);
   --h3__font-family: var(--h1__font-family);
-  --h3__font-size: 1.3em;
-  --h3__font-weight: 700;
-  --highlight__background-color: #008aff5e;
-  --highlight__color: #bbb;
-  --highlight-link-color: #ff6000;
-  --hr__border: rgba(225, 117, 28, 0.5);
-  --hr__margin-bottom: 2.5em;
-  --hr__margin-top: 11px;
+  --h3__font-size: 1.2rem;
+  --h2__font-weight: 500;
+  --highlight__background-color: #fef09f;
+  --highlight__color: inherit;
+  --highlight-link-color: inherit;
+  --hr__border: #8a9ba8;
+  --hr__margin-bottom: inherit;
+  --hr__margin-top: 10px;
   --strikethrough__color: inherit;
-  --strikethrough__font-style: italic;
-  --strikethrough__opacity: 0.6;
-  --strong__color: #508bb5;
-  --strong__font-weight: 700;
+  --strikethrough__font-style: normal;
+  --strikethrough__opacity: 1;
+  --strong__color: inherit;
+  --strong__font-weight: bold;
   /* pages */
   /* all pages */
   --pages-checkmark__background-image: -webkit-gradient(
     linear,
     left top,
     left bottom,
-    from(rgba(82, 82, 82, 0.8)),
-    to(rgba(0, 0, 0, 0))
+    from(rgba(255, 255, 255, 0.8)),
+    to(rgba(255, 255, 255, 0))
   );
-  --pages-delete__background-color: #222;
-  --pages-delete__border-color: #ff6000;
-  --pages-header__background-color: #262626;
+  --pages-delete__background-color: #f5f8fa;
+  --pages-delete__border-color: #d8e1e8;
+  --pages-header__background-color: #e1e8ed;
   --pages-header__color: #bfccd6;
-  --pages-header__color_sorted: #508bb5;
-  --pages-mentions__background-color: #ff6000;
-  --pages-mentions__background-color_empty: #3a3a3a;
-  --pages-mentions__color_empty: #737373;
-  --pages-row__background-color_highlight: #292929;
-  --pages-search-field__background-color: #3a3a3a;
-  --pages-search-field__border-color: #e9892475;
-  --pages-table__border-color: #2f373d;
+  --pages-mentions__background-color_empty: white;
+  --pages-mentions__background-color: #2b95d6;
+  --pages-mentions__color_empty: #0e5a8a;
+  --pages-search-field__background-color: #f5f8fa;
+  --pages-search-field__border-color: #8a9ba8;
+  --pages-table__border-color: #e1e8ed;
+  --pages-header__color_sorted: #5c7080;
   /* icons */
   --icon__background-color_hover: rgba(167, 182, 194, 0.3);
-  --icon__color: #e78924;
-  --icon__color_hover: #e78924;
-  --filter__color_subscript: #5c7080;
+  --icon__color: #5c7080;
+  --icon__color_hover: #182026;
+  --filter__color_subscript: #182026;
 }
 
 /* Icons */
@@ -1658,501 +1644,6 @@ div[style*='border-bottom: 1px solid rgb(138, 155, 168);'] {
 }
 
 /* components */
-/* Theme Alias */
-/* Legacy Alias */
-span[style*='background-color: rgb(235, 241, 245); border-radius: 4px;'] {
-  border-radius: 0 !important;
-  cursor: alias;
-  padding: 0 !important;
-}
-
-/* Theme block references */
-.rm-block-ref {
-  padding: 2px 2px 0;
-}
-
-/* Code - inline */
-code {
-  border-radius: 4px;
-  padding: 3px 4px;
-}
-
-/* Database menu */
-span.bp3-icon:empty::before {
-  padding-right: 0px;
-}
-
-/* Dialog window */
-.bp3-toast.bp3-intent-warning strong {
-  color: #fff !important;
-}
-
-/* Inline block */
-.rm-paren {
-  border-radius: 4px;
-}
-
-.rm-spacer {
-  font-size: 1.1em;
-  position: relative;
-  top: 3px;
-}
-.rm-spacer svg {
-  height: 16px;
-  width: 16px;
-}
-
-/* Linked reference */
-.rm-reference-container {
-  margin-bottom: 2em;
-}
-
-.rm-reference-item {
-  border-radius: 7px;
-  padding: 10px;
-  padding-right: 0;
-}
-.rm-reference-item .controls .block-expand {
-  margin-top: 0;
-}
-.rm-reference-item .rm-block-text {
-  padding-right: 30px;
-}
-
-/* Query */
-.rm-query {
-  border-radius: 7px;
-}
-.rm-query .rm-query-title {
-  border-top-left-radius: 7px;
-  border-top-right-radius: 7px;
-  font-size: 0.8em;
-  display: flex;
-}
-
-/* Tags */
-/* Hashtag color */
-.rm-page-ref--tag[data-tag='42SmartBlock']:before {
-  content: '#' !important;
-  color: var(--tag__color_hashtag) !important;
-  position: absolute;
-  visibility: visible;
-  background: none !important;
-}
-
-/* It is probably best to move these out and be used in roam/css code block */
-/* CUSTOM LINKS: Uncomment to use the section below to create custom styles for specific links. Change "Theme" to match some portion of the title of the link you want to customize. Adjust the background-color value ("ff6000") and color value ("fff") to suite your preferences. Duplicate the section for each new link to be customized */
-/* 
-span[data-link-title*="Theme"] .rm-page-ref-link-color,
-span[data-link-title*="Theme"] .rm-page-ref-namespace-color {
-  background-color: #ff6000;
-  color: #fff;
-  padding: 3px 7px;
-  line-height: 2em;
-  font-weight: 500;
-  border-radius: 0.1875em;
-}
- */
-/* Template for creating tags in the shape of flags */
-span[data-tag*='Meeting'] {
-  visibility: hidden;
-  padding-right: 28px;
-  padding-left: 0;
-}
-
-span[data-tag*='Meeting']:before {
-  content: 'Meeting';
-  visibility: visible;
-  background-color: #1189bd;
-  position: absolute;
-  color: #ddd;
-  padding-right: 24px;
-  padding-left: 10px;
-  clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
-  border-radius: 4px 0 0 4px;
-}
-
-/* special meeting tag for #.meeting */
-.rm-page-ref[data-tag*='meeting'] {
-  display: inline-flex;
-}
-
-span.rm-page-ref.rm-page-ref--tag[data-tag*='meeting']:hover {
-  background: none !important;
-}
-
-span[data-tag*='meeting'] {
-  padding-right: 24px;
-  padding-left: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-span[data-tag*='meeting']:before {
-  content: 'Meeting';
-  visibility: visible;
-  background-color: #1189bd;
-  position: absolute;
-  color: #ddd;
-  padding-right: 24px;
-  padding-left: 10px;
-  clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
-  border-radius: 4px 0 0 4px;
-}
-
-.meeting > div.rm-block-main {
-  color: var(--strong__color);
-}
-
-[data-tag]::before {
-  content: '#';
-  color: var(--tag__color_hashtag);
-  visibility: visible;
-  position: absolute;
-}
-
-[data-tag]:hover::before {
-  color: var(--tag__color_hover);
-}
-
-/* Todo checkmark */
-[data-page-links*='"DONE"'] > .rm-block__self {
-  opacity: 0.55;
-  /*   text-decoration: line-through; */
-}
-
-/* Twitter embeds */
-.twitter-tweet.twitter-tweet-rendered {
-  opacity: 0.6;
-  transition: opacity 0.25s ease-in-out;
-}
-
-.twitter-tweet:hover {
-  opacity: 0.9;
-}
-
-/* Body styles */
-.roam-block-container {
-  border-radius: 0px;
-  max-width: 100%;
-}
-
-.rm-block-text {
-  max-width: 100%;
-}
-
-.roam-center {
-  flex-basis: 50% !important;
-}
-
-/* Bullets */
-/* Scroll past the bottom */
-.roam-article {
-  position: relative;
-  height: auto !important;
-  padding-bottom: 40vh !important;
-}
-
-/* Breadcrumbs */
-.rm-zoom .rm-zoom-item .rm-zoom-item-content {
-  padding-bottom: 2px;
-  padding-top: 2px;
-}
-
-/* Left sidebar */
-.roam-body
-  .roam-app
-  .roam-sidebar-container
-  .roam-sidebar-content
-  .starred-pages-wrapper {
-  padding: 8px 0 !important;
-}
-.roam-body
-  .roam-app
-  .roam-sidebar-container
-  .roam-sidebar-content
-  .starred-pages-wrapper
-  .flex-h-box {
-  padding: 0 20px;
-}
-.roam-body
-  .roam-app
-  .roam-sidebar-container
-  .roam-sidebar-content
-  .starred-pages-wrapper
-  .starred-pages
-  .page {
-  padding: 8px 20px;
-}
-
-#roam-sidebar-logo img {
-  opacity: 0.4;
-}
-
-#roam-sidebar-logo span {
-  display: none;
-}
-
-/* Right sidebar */
-#right-sidebar .rm-block-text {
-  padding-right: 30px;
-}
-
-/* Topbar */
-.bp3-input {
-  box-shadow: none;
-  font-size: 0.85em;
-}
-.bp3-input[readonly] {
-  box-shadow: none;
-  font-size: 0.85em;
-}
-
-/* Typography */
-.rm-heading-level-2 > .rm-block__self .rm-block__input {
-  letter-spacing: 0.001em;
-}
-
-.rm-heading-level-3 > .rm-block__self .rm-block__input {
-  letter-spacing: 0.002em;
-}
-
-.roam-body .roam-app {
-  color: var(--main-font__color);
-}
-
-.rm-find-or-create-wrapper {
-  flex: 0 1 100% !important;
-}
-.rm-find-or-create-wrapper .bp3-transition-container {
-  width: 100%;
-}
-.rm-find-or-create-wrapper .bp3-menu {
-  max-width: none;
-  max-height: 400px;
-}
-.rm-find-or-create-wrapper .rm-menu-item {
-  border-radius: 2px;
-  cursor: pointer;
-  padding: 6px;
-}
-.rm-find-or-create-wrapper .rm-menu-item .rm-search-title {
-  font-weight: bold;
-}
-.rm-find-or-create-wrapper .rm-menu-item .rm-search-title .rm-new-page {
-  color: var(--search__color_new-page);
-}
-.rm-find-or-create-wrapper .rm-menu-item .rm-search-list-item {
-  color: var(--search__color_body);
-  margin-left: -20px;
-  overflow-wrap: break-spaces;
-  word-break: break-word;
-}
-
-/*  Block Callouts
-    Use special tags to create colored callout blocks
-    #.rm-block--grey will callout the entire block, including children
-    #.rm-self--grey will only callout the block the tag is added to
-    #.rm-child--grey will callout the children of the block the tag is added to
-
-    Available colors
-    --grey
-    --blue
-    --red
-    --orange
-    --yellow
-*/
-:root {
-  --block-callout__background-color_grey: #333;
-  --block-callout__background-color_blue: rgba(0, 170, 255, 0.1);
-  --block-callout__background-color_red: rgba(249, 87, 56, 0.25);
-  --block-callout__background-color_orange: rgba(238, 150, 75, 0.25);
-  --block-callout__background-color_yellow: rgba(244, 211, 94, 0.2);
-}
-
-.rm-block--grey,
-.rm-self--grey > div.rm-block-main,
-.rm-child--grey .rm-block-children {
-  background-color: var(--block-callout__background-color_grey);
-  border-radius: 0px 5px 5px 0px !important;
-}
-
-.rm-block--blue,
-.rm-self--blue > div.rm-block-main,
-.rm-child--blue .rm-block-children {
-  background-color: var(--block-callout__background-color_blue);
-  border-radius: 0px 5px 5px 0px !important;
-}
-
-.rm-block--red,
-.rm-self--red > div.rm-block-main,
-.rm-child--red .rm-block-children {
-  background-color: var(--block-callout__background-color_red);
-  border-radius: 0px 5px 5px 0px !important;
-}
-
-.rm-block--orange,
-.rm-self--orange > div.rm-block-main,
-.rm-child--orange .rm-block-children {
-  background-color: var(--block-callout__background-color_orange);
-  border-radius: 0px 5px 5px 0px !important;
-}
-
-.rm-block--yellow,
-.rm-self--yellow > div.rm-block-main,
-.rm-child--yellow .rm-block-children {
-  background-color: var(--block-callout__background-color_yellow);
-  border-radius: 0px 5px 5px 0px !important;
-}
-
-/* Bullet Zoom Focus
-When zoomed in on a bullet add the tag #.rm-focus to the parent block
-to create a minimal writing environment. This only works when zoomed in
-so there is no need to remove the tag when done.
-*/
-.zoom-path-view + div .rm-focus div,
-.zoom-path-view + div .rm-focus .rm-block-input {
-  font-family: 'Calendas Plus', 'Lora', 'Droid Serif', 'Georgia', serif;
-  font-size: 20px;
-  line-height: 1.5em;
-  /* space between lines */
-}
-
-.zoom-path-view + div .rm-focus .rm-multibar {
-  display: none;
-}
-
-.zoom-path-view + div .rm-focus.roam-block-container .roam-block-container {
-  margin-top: 0.7em;
-  /* space between blocks */
-}
-
-.zoom-path-view + div .rm-focus.roam-block-container .controls {
-  display: none;
-}
-
-.zoom-path-view + div .rm-focus .block-border-left {
-  border: none;
-}
-
-.zoom-path-view + div .rm-focus .rm-level-1 {
-  margin-left: -4px;
-}
-
-/* Page date link - organized by quarter */
-:root {
-  /* Seasonal colors for date links */
-  --page-link-date__color_q1: #50b2c0;
-  --page-link-date__color_q2: #c5d86d;
-  --page-link-date__color_q3: #ff6b6b;
-  --page-link-date__color_q4: #ca7d4a;
-}
-
-span[data-link-title^='January '] .rm-page-ref--link,
-span[data-link-title^='February '] .rm-page-ref--link,
-span[data-link-title^='March '] .rm-page-ref--link {
-  color: var(--page-link-date__color_q1);
-}
-
-span[data-link-title^='April '] .rm-page-ref--link,
-span[data-link-title^='May '] .rm-page-ref--link,
-span[data-link-title^='June '] .rm-page-ref--link {
-  color: var(--page-link-date__color_q2);
-}
-
-span[data-link-title^='July '] .rm-page-ref--link,
-span[data-link-title^='August '] .rm-page-ref--link,
-span[data-link-title^='September '] .rm-page-ref--link {
-  color: var(--page-link-date__color_q3);
-}
-
-span[data-link-title^='October '] .rm-page-ref--link,
-span[data-link-title^='November '] .rm-page-ref--link,
-span[data-link-title^='December '] .rm-page-ref--link {
-  color: var(--page-link-date__color_q4);
-}
-
-/* RR change: MINIMIZE QUERIES: add any one of the following tags before the beginning of your query (in the same block):
-
-    #min-title = hides the page reference link / page title
-    #min-con = hides the contextual reference information (breadcrumbs)
-    #minimal = hides both the title and the context
-    #min-q = hides the query string, similar to legacy behavior
-    #min-all = hides everything — title, context, and query string
-    #min-todo = hides everything and makes a compact list
-
-inspired by Matt Goldenberg */
-[data-tag='minimal'] {
-  display: none !important;
-}
-[data-tag='minimal'] + .rm-query .rm-title-arrow-wrapper {
-  display: none !important;
-}
-[data-tag='minimal'] + .rm-query .zoom-mentions-view {
-  display: none !important;
-}
-[data-tag='minimal'] + .rm-query .rm-query-title::after {
-  content: ' #minimal';
-}
-
-[data-tag='min-title'] {
-  display: none !important;
-}
-[data-tag='min-title'] + .rm-query .rm-title-arrow-wrapper {
-  display: none !important;
-}
-[data-tag='min-title'] + .rm-query .rm-query-title::after {
-  content: ' #minimal';
-}
-
-[data-tag='min-con'] {
-  display: none !important;
-}
-[data-tag='min-con'] + .rm-query .zoom-mentions-view {
-  display: none !important;
-}
-[data-tag='min-con'] + .rm-query .rm-query-title::after {
-  content: ' #minimal';
-}
-
-[data-tag='min-q'] {
-  display: none !important;
-}
-[data-tag='min-q'] + .rm-query .rm-query-title {
-  display: none !important;
-}
-
-[data-tag='min-all'] {
-  display: none !important;
-}
-[data-tag='min-all'] + .rm-query .zoom-mentions-view {
-  display: none !important;
-}
-[data-tag='min-all'] + .rm-query .rm-title-arrow-wrapper {
-  display: none !important;
-}
-[data-tag='min-all'] + .rm-query .rm-query-title {
-  display: none !important;
-}
-
-[data-tag='min-todo'] {
-  display: none !important;
-}
-[data-tag='min-todo'] + .rm-query div[style*='margin-left: 12px;'] {
-  margin-left: 0 !important;
-}
-[data-tag='min-todo'] + .rm-query .zoom-mentions-view {
-  display: none !important;
-}
-[data-tag='min-todo'] + .rm-query .rm-title-arrow-wrapper {
-  display: none !important;
-}
-[data-tag='min-todo'] + .rm-query .rm-query-title {
-  display: none !important;
-}
-[data-tag='min-todo'] + .rm-query .rm-reference-item {
-  background: none;
-  margin-left: -12px;
-  margin-top: 3px;
-  padding: 0;
-}
+/* layout */
+/* pages */
+/* features */

@@ -19,6 +19,10 @@
   --attr__color: rgba(17, 137, 189, 0.65);
   --attr__font-weight: 700;
 
+  --block-embed__background-color: #d8ac6e0e;
+  --block-embed__background-color_margin-action: var(--blockquote__border_color);
+  --block-embed__border-left_margin-action: var(--bullet-outline__border_hover);
+
   --block-ref__background-color: none;
   --block-ref__background-color_hover: #111;
   --block-ref__border-bottom: rgba(254, 207, 43, 0.4);
@@ -26,10 +30,6 @@
   --block-ref__font-size: 1em;
   --block-ref__background-color_inline: rgba(33, 33, 33, 0.5);
   --block-ref__border-left_inline: var(--blockquote__border_color);
-
-  --block-embed__background-color: #d8ac6e0e;
-  --block-embed__background-color_margin-action: var(--blockquote__border_color);
-  --block-embed__border-left_margin-action: var(--bullet-outline__border_hover);
 
   --blockquote__background-color: none;
   --blockquote__border_color: #30404d;

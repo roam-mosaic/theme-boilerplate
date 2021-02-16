@@ -1666,6 +1666,32 @@ html {
   padding-top: 4px
 }
 
+#right-sidebar .rm-sidebar-window {
+  margin-right: 8px;
+  margin-left: 8px
+}
+
+#right-sidebar .rm-sidebar-window__controls {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: -8px;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex: 0 0 auto
+}
+
+#right-sidebar .rm-sidebar-outline-wrapper {
+  margin-left: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between
+}
+
+#right-sidebar .rm-sidebar-outline {
+  flex: 1 1 auto
+}
+
 #right-sidebar .rm-sidebar-outline .zoom-path-view {
   margin: 0
 }
@@ -1705,6 +1731,7 @@ html {
 #right-sidebar .rm-reference-main {
   border: none;
   padding: none;
+  flex: 1 1 auto
 }
 
 #right-sidebar .rm-sidebar-card {
@@ -2105,6 +2132,11 @@ body {
   height: 100vh;
   overflow: hidden;
   position: relative
+}
+
+.roam-body.touch-device .hoveronly,
+.roam-body.mobile .hoveronly {
+  opacity: 1
 }
 
 .roam-body .roam-app {
@@ -3268,6 +3300,16 @@ body {
   right: 0;
   z-index: 10;
   opacity: 0
+}
+
+.rm-inline-img-mobile-wrapper {
+  position: relative
+}
+
+.rm-inline-img-mobile-wrapper__edit-button {
+  position: absolute;
+  right: 0;
+  z-index: 10
 }
 
 .rm-modal-img {
