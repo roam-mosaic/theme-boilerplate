@@ -1,13 +1,15 @@
-/* Bullet Zoom Focus
+/* Bullet Zoom Focus v2.3 by Jeff Harris
 When zoomed in on a bullet add the tag #.rm-focus to the parent block
 to create a minimal writing environment. This only works when zoomed in
 so there is no need to remove the tag when done.
 */
 
+@import '../../../core/fonts/calendas-plus.scss';
+
 .zoom-path-view + div .rm-focus {
   div,
   .rm-block-input {
-    font-family: 'Calendas Plus', 'Lora', 'Droid Serif', 'Georgia', serif;
+    font-family: 'Calendas Plus', 'Lora', 'Droid Serif', 'Georgia', serif !important;
     font-size: 20px;
     line-height: 1.5em; /* space between lines */
   }
@@ -16,22 +18,28 @@ so there is no need to remove the tag when done.
     display: none;
   }
 
+  .rm-bq {
+    font-size: 18px;
+  }
+
+  .rm-hide-bullet > .rm-embed-inner-block-hide {
+    margin-left: -30px;
+  }
+  .rm-embed-show-bullet .rm-embed-inner-block-hide {
+    margin-left: -2px;
+  }
+
   &.roam-block-container {
     .roam-block-container {
       margin-top: 0.7em; /* space between blocks */
     }
-
-    .controls {
-      // .rm-bullet {
-      display: none;
-    }
   }
 
-  .block-border-left {
-    border: none;
+  .rm-block__controls {
+    visibility: hidden;
   }
 
-  .rm-level-1 {
-    margin-left: -4px;
+  .rm-block__self:hover .rm-block__controls {
+    visibility: visible;
   }
 }

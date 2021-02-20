@@ -6,9 +6,9 @@
 */
 
 // Optional vanilla roam variable import
-// @import '../../core/variables-vanilla-roam';
+@import '../../core/variables-vanilla-roam';
 
-@import 'variables';
+// @import 'variables';
 
 @import '../../core/index';
 // @import '../../features/';
@@ -43,5 +43,5 @@
 @import '../../features/editor/query/index';
 // @import '../../features/editor/rainbow-indents/index';
 // @import '../../features/right-sidebar/masonry/index.scss';
-@import '../../features/right-sidebar/masonry-v2/index.scss';
+// @import '../../features/right-sidebar/masonry-v2/index.scss';
 // @import '../../features/right-sidebar/stacked/index.scss';

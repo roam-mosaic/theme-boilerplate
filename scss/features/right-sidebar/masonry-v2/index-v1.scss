@@ -25,8 +25,13 @@ div.roam-app > div.flex-h-box {
   // background-color: var(--right-sidebar-bg);
 }
 
+#right-sidebar {
+  border-left: var(--masonry-border);
+}
+
 #roam-right-sidebar-content {
   overflow: auto !important;
+  margin-top: 13px;
 }
 
 .sidebar-content {
@@ -36,41 +41,35 @@ div.roam-app > div.flex-h-box {
   flex-wrap: wrap;
   height: 99%;
   align-content: flex-start;
-}
 
-.sidebar-content > div:not(.rm-dnd-separator) {
-  margin-bottom: 10px !important;
-  display: flex;
-  background-color: var(--masonry-bg);
-  max-height: 100%;
-  margin-left: 15px;
-  align-self: flex-start;
-  /* So pages can be diff widths in a single column */
-  border-radius: 12px;
-  border: var(--masonry-border);
-}
+  > div:not(.rm-dnd-separator) {
+    margin-bottom: 10px !important;
+    display: flex;
+    background-color: var(--masonry-bg);
+    max-height: 100%;
+    margin-left: 15px;
+    align-self: flex-start;
+    /* So pages can be diff widths in a single column */
+    border-radius: 6px;
+    border: var(--masonry-border);
 
-.sidebar-content > div:not(.rm-dnd-separator) > div:not(.rm-dnd-separator) {
-  border-bottom: unset !important;
-  height: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
+    > div:not(.rm-dnd-separator) {
+      border-bottom: unset !important;
+      height: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
 
-.sidebar-content
-  > div:not(.rm-dnd-separator)
-  > div:not(.rm-dnd-separator)
-  > div:first-child {
-  height: 40px;
-  min-width: calc(var(--masonry-minWidth) + 40px);
-  align-items: center !important;
-}
+      > div:first-child {
+        height: 40px;
+        min-width: calc(var(--masonry-minWidth) + 40px);
+        align-items: center !important;
+      }
 
-.sidebar-content
-  > div:not(.rm-dnd-separator)
-  > div:not(.rm-dnd-separator)
-  > div:nth-child(2) {
-  height: calc(100% - 40px);
+      > div:nth-child(2) {
+        height: calc(100% - 40px);
+      }
+    }
+  }
 }
 
 /*NOTE: .rm-sidebar-outline and .rm-reference-main are at same level and so need to be addressed with div > div... as opposed to direct .classnames */
@@ -79,7 +78,7 @@ div.roam-app > div.flex-h-box {
   > div:not(.rm-dnd-separator)
   > div:not(.rm-dnd-separator)
   > div:nth-child(2)
-  > div:nth-child(1) {
+  > div:nth-child(2) {
   resize: both;
   overflow-y: auto;
   width: var(--masonry-startWidth);
@@ -95,7 +94,7 @@ div.roam-app > div.flex-h-box {
   > div:not(.rm-dnd-separator)
   > div:not(.rm-dnd-separator)
   > div:nth-child(2)
-  > div:nth-child(1)
+  > div:nth-child(2)
   > div:nth-child(2) {
   padding-bottom: 40px;
   margin-left: -8px !important;
@@ -113,7 +112,7 @@ div.roam-app > div.flex-h-box {
   > div:not(.rm-dnd-separator)
   > div:not(.rm-dnd-separator)
   > div:nth-child(2)
-  > div:nth-child(1)::-webkit-scrollbar {
+  > div:nth-child(2)::-webkit-scrollbar {
   width: unset;
 }
 
@@ -121,7 +120,7 @@ div.roam-app > div.flex-h-box {
   > div:not(.rm-dnd-separator)
   > div:not(.rm-dnd-separator)
   > div:nth-child(2)
-  > div:nth-child(1)::-webkit-scrollbar:hover {
+  > div:nth-child(2)::-webkit-scrollbar:hover {
   background-color: var(--masonry-bg);
 }
 
@@ -129,7 +128,7 @@ div.roam-app > div.flex-h-box {
   > div:not(.rm-dnd-separator)
   > div:not(.rm-dnd-separator)
   > div:nth-child(2)
-  > div:nth-child(1)::-webkit-resizer {
+  > div:nth-child(2)::-webkit-resizer {
   border-style: solid;
   border-color: transparent var(--masonry-resizer-color) var(--masonry-resizer-color)
     transparent;
@@ -141,27 +140,27 @@ div.roam-app > div.flex-h-box {
   > div:not(.rm-dnd-separator)
   > div:not(.rm-dnd-separator)
   > div:nth-child(2)
-  > div:nth-child(1)::-webkit-scrollbar-button,
+  > div:nth-child(2)::-webkit-scrollbar-button,
 .sidebar-content
   > div:not(.rm-dnd-separator)
   > div:not(.rm-dnd-separator)
   > div:nth-child(2)
-  > div:nth-child(1)::-webkit-scrollbar-thumb,
+  > div:nth-child(2)::-webkit-scrollbar-thumb,
 .sidebar-content
   > div:not(.rm-dnd-separator)
   > div:not(.rm-dnd-separator)
   > div:nth-child(2)
-  > div:nth-child(1)::-webkit-scrollbar-track,
+  > div:nth-child(2)::-webkit-scrollbar-track,
 .sidebar-content
   > div:not(.rm-dnd-separator)
   > div:not(.rm-dnd-separator)
   > div:nth-child(2)
-  > div:nth-child(1)::-webkit-scrollbar-track-piece,
+  > div:nth-child(2)::-webkit-scrollbar-track-piece,
 .sidebar-content
   > div:not(.rm-dnd-separator)
   > div:not(.rm-dnd-separator)
   > div:nth-child(2)
-  > div:nth-child(1)::-webkit-scrollbar-corner {
+  > div:nth-child(2)::-webkit-scrollbar-corner {
   display: none;
 }
 
@@ -171,7 +170,7 @@ div.roam-app > div.flex-h-box {
   > div:not(.rm-dnd-separator)
   > div:not(.rm-dnd-separator)
   > div:nth-child(2)
-  > div:nth-child(1):hover::-webkit-scrollbar-thumb {
+  > div:nth-child(2):hover::-webkit-scrollbar-thumb {
   display: block;
   border-radius: 12px;
   background-color: var(--masonry-scrollbar-bg);
