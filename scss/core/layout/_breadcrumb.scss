@@ -7,7 +7,7 @@
 
 .rm-zoom {
   .parent-path-wrapper {
-    //TODO this is a fix for word wrap for long line length  breadcrumb itemes
+    //TODO this is a fix for word wrap for long line length  breadcrumb items
     max-height: none;
     white-space: normal;
   }
@@ -15,7 +15,7 @@
   &.zoom-path-view {
     .rm-zoom-mask {
       background-color: var(--breadcrumb__background-color);
-      mix-blend-mode: unset;
+      // mix-blend-mode: unset;
     }
   }
 }
