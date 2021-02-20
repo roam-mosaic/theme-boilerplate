@@ -1,0 +1,42 @@
+/* Outline Highlight
+Highlights where the curser is currently in the outline and higlights the currently active block using the rm-multibar
+*/
+
+// .rm-multibar { // This is an option to completely high the multibar until hovered
+//    visibility: hidden;
+// }
+
+.roam-block-container div.roam-block-container:focus-within {
+  box-shadow: -1px 0px var(--bullet-outline__border_hover);
+  //transition:  box-shadow 0.2s;
+}
+
+.roam-block-container div.roam-block-container:hover {
+  box-shadow: -1px 0px var(--bullet__border_closed);
+  //transition:  box-shadow 0.2s;
+}
+
+.rm-block__self:focus-within {
+  box-shadow: -3px 0px var(--bullet__border_closed);
+  transition: box-shadow 0.2s;
+}
+
+.roam-block-container > .rm-block-main > div:nth-child(1) .rm-bullet .rm-bullet__inner {
+  background-color: default;
+  width: default;
+  height: default;
+  border-radius: default;
+  transition: width 200ms linear, height 200ms linear, border-radius 200ms linear;
+}
+
+.roam-block-container:focus-within
+  > .rm-block-main
+  > div:nth-child(1)
+  .rm-bullet
+  .rm-bullet__inner {
+  background-color: var(--bullet__border_closed);
+  width: 8px;
+  height: 3px;
+  border-radius: 0;
+  transition: width 200ms linear, height 200ms linear, border-radius 200ms linear;
+}

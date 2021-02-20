@@ -6,9 +6,9 @@
 */
 
 // Optional vanilla roam variable import
-@import '../../core/variables-vanilla-roam';
+// @import '../../core/variables-vanilla-roam';
 
-// @import 'variables';
+@import 'variables';
 
 @import '../../core/index';
 // @import '../../features/';
@@ -38,9 +38,10 @@
 @import '../../features/editor/block-callout/index';
 // @import '../../features/editor/bullet-collapse/index';
 @import '../../features/editor/bullet-zoom-focus/index';
+@import '../../features/editor/outline-highlight/index.scss';
 @import '../../features/editor/page-link-date/index.scss';
-// @import '../../features/scrollbars/simple/index';
 @import '../../features/editor/query/index';
+// @import '../../features/scrollbars/simple/index';
 // @import '../../features/editor/rainbow-indents/index';
 // @import '../../features/right-sidebar/masonry/index.scss';
 // @import '../../features/right-sidebar/masonry-v2/index.scss';
