@@ -84,6 +84,8 @@
   --kanban-column__background-color: #454545;
   --kanban-column__color: var(--accent__color);
 
+  --latex__font-family: var(--main-font__font-family);
+
   --linked-reference__backgound-color_1: #d8ac6e1a; // JH: Railscast uses 1 semi-transparent color for all three bg values
   --linked-reference__backgound-color_2: #d8ac6e1a;
   --linked-reference__backgound-color_3: #d8ac6e1a;
@@ -176,6 +178,11 @@
   --help__background-color: #333;
   --help__border: var(--hr__border);
   --help__color: var(--main-font__color);
+  --help-category__color: var(--h1__color);
+  --help-resource__color: var(--accent__color-font);
+  --help-resource__background-color_hover: var(--search__background-color_selected-row);
+  --help-resource-icon__background-color: var(--left-sidebar__background-color_hover);
+  --help-resource-icon__color: var(--accent__color-font);
 
   /* left sidebar */
 

@@ -1,0 +1,9 @@
+/* Latex */
+
+.katex {
+  font: normal 1.21em var(--latex__font-family, KaTeX_Main, 'Times New Roman', serif);
+
+  .mathdefault {
+    font-family: var(--latex__font-family, KaTeX_Main, 'Times New Roman', serif);
+  }
+}

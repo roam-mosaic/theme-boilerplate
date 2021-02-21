@@ -3,17 +3,58 @@
 .rm-help-popup__drag-handle.bp3-card {
   background-color: var(--help__background-color);
 }
-.rm-help-popup,
-.rm-help-results .rm-help-functions .rm-help-function__name,
-.rm-help-results .rm-help-functions .rm-help-function__shortcut {
+.rm-help-popup {
   color: var(--help__color);
 }
 
-.rm-help-results .rm-help-categories {
-  border-right: 1px solid var(--help__border);
+.rm-help-results {
+  .rm-help-functions {
+    .rm-help-function__name,
+    .rm-help-function__shortcut,
+    .rm-help-markdown-function__markdown,
+    .rm-help-markdown-function__style {
+      color: var(--help__color, #202b33);
+    }
+
+    .rm-help-category__name {
+      color: var(--help-category__color, #8a9ba8);
+    }
+  }
+
+  .rm-help-categories {
+    border-right: 1px solid var(--help__border);
+
+    .rm-help-category-menu-item:hover {
+      background-color: var(--help-resource__background-color_hover, #f5f5f5);
+    }
+  }
 }
 
 .intercom-lightweight-app-launcher-icon-open svg path,
 .intercom-dlvlg4 svg path {
   fill: var(--accent__color) !important;
+}
+
+.rm-help-resource:hover {
+  background-color: var(--help-resource__background-color_hover, #f5f5f5);
+}
+
+.rm-help-resource__title,
+.rm-help-resource__description {
+  color: var(--help-resource__color, #202b33);
+}
+
+.rm-help-resource__icon {
+  background-color: var(--help-resource-icon__background-color, #e0eef5);
+  color: var(--help-resource-icon__color, #07659e);
+}
+
+.rm-help-component__title,
+.rm-help-component__description {
+  color: var(--help__color, #202b33);
+}
+
+.rm-help-component__notation {
+  background: var(--help-resource-icon__background-color, #edf0f3);
+  color: var(--help__color, #202b33);
 }
