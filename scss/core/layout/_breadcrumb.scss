@@ -2,7 +2,7 @@
 
 .rm-zoom.zoom-path-view,
 .rm-zoom.zoom-mentions-view {
-  font-size: var(--breadcrumb__font-size);
+  font-size: var(--rm-breadcrumb__font-size);
 }
 
 .rm-zoom {
@@ -14,7 +14,7 @@
 
   &.zoom-path-view {
     .rm-zoom-mask {
-      background-color: var(--breadcrumb__background-color);
+      background-color: var(--rm-breadcrumb__background-color);
       // mix-blend-mode: unset;
     }
   }

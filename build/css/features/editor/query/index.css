@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* RR change: MINIMIZE QUERIES: add any one of the following tags before the beginning of your query (in the same block):
+/* MINIMIZE QUERIES: add any one of the following tags before the beginning of your query (in the same block):
 
     #min-title = hides the page reference link / page title
     #min-con = hides the contextual reference information (breadcrumbs)

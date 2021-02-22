@@ -1,11 +1,11 @@
 /* Select Menu */
 
 .rm-option {
-  border: 1px solid var(--accent__color-font);
-  color: var(--accent__color-font);
+  border: 1px solid var(--rm-accent__color-font);
+  color: var(--rm-accent__color-font);
   margin: 0 4px;
 
   &:after {
-    border-top: 4px solid var(--accent__color-font);
+    border-top: 4px solid var(--rm-accent__color-font);
   }
 }

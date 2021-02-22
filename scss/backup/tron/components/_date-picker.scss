@@ -1,12 +1,12 @@
 .bp3-popover {
   .bp3-popover-content {
     .bp3-datepicker {
-      background-color: var(--datepicker__background-color);
-      color: var(--datepicker__color);
+      background-color: var(--rm-datepicker__background-color);
+      color: var(--rm-datepicker__color);
 
       .DayPicker-Day.DayPicker-Day--isToday {
         .bp3-datepicker-day-wrapper {
-          border: 1px solid var(--datepicker-today__border);
+          border: 1px solid var(--rm-datepicker-today__border);
         }
       }
     }
@@ -17,12 +17,12 @@
 .bp3-html-select {
   .bp3-minimal {
     select {
-      background-color: var(--select-menu__background-color);
-      color: var(--menu__color);
+      background-color: var(--rm-select-menu__background-color);
+      color: var(--rm-menu__color);
 
       &:hover {
         background: rgba(167, 182, 194, 0.3);
-        color: var(--menu__color);
+        color: var(--rm-menu__color);
       }
     }
   }

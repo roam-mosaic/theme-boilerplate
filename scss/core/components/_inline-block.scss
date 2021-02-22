@@ -1,24 +1,24 @@
 /* Inline block */
 
 .rm-paren {
-  background-color: var(--inline-block__background-color);
-  border: var(--inline-block__border);
+  background-color: var(--rm-inline-block__background-color);
+  border: var(--rm-inline-block__border);
 }
 
 .rm-spacer {
   svg {
     path {
-      fill: var(--icon__color);
+      fill: var(--rm-icon__color);
     }
   }
 }
 
 .rm-paren__paren {
-  color: var(--icon__color);
+  color: var(--rm-icon__color);
 
   &:hover {
-    color: var(--icon__color);
-    background-color: var(--icon__background-color_hover);
+    color: var(--rm-icon__color);
+    background-color: var(--rm-icon__background-color_hover);
   }
 }
 
@@ -36,7 +36,7 @@
 
 .rm-paren--closed {
   &:hover {
-    background-color: var(--icon__background-color_hover);
-    color: var(--icon__color_hover);
+    background-color: var(--rm-icon__background-color_hover);
+    color: var(--rm-icon__color_hover);
   }
 }

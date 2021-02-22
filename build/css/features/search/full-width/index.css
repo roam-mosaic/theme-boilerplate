@@ -1,3 +1,6 @@
+/* Full Width Search
+  Changes the search bar to be full screen width all the time, no animations
+*/
 .rm-find-or-create-wrapper {
   flex: 0 1 100% !important;
 }
@@ -17,10 +20,10 @@
   font-weight: bold;
 }
 .rm-find-or-create-wrapper .rm-menu-item .rm-search-title .rm-new-page {
-  color: var(--search__color_new-page);
+  color: var(--rm-search__color_new-page);
 }
 .rm-find-or-create-wrapper .rm-menu-item .rm-search-list-item {
-  color: var(--search__color_body);
+  color: var(--rm-search__color_body);
   margin-left: -20px;
   overflow-wrap: break-spaces;
   word-break: break-word;

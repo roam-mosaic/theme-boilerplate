@@ -1,13 +1,13 @@
 /* Tags */
 
 .rm-page-ref--tag {
-  border-radius: var(--tag__border-radius);
-  color: var(--tag__color);
-  padding: var(--tag__padding);
+  border-radius: var(--rm-tag__border-radius);
+  color: var(--rm-tag__color);
+  padding: var(--rm-tag__padding);
 
   &:hover {
-    background-color: var(--tag__background-color_hover);
-    color: var(--tag__color_hover) !important;
+    background-color: var(--rm-tag__background-color_hover);
+    color: var(--rm-tag__color_hover) !important;
     text-decoration: none;
   }
 }
@@ -15,8 +15,8 @@
 span {
   &.rm-page-ref.rm-page-ref--tag {
     &:hover {
-      background-color: var(--tag__background-color_hover);
-      color: var(--tag__color_hover) !important;
+      background-color: var(--rm-tag__background-color_hover);
+      color: var(--rm-tag__color_hover) !important;
       text-decoration: none;
     }
   }
@@ -25,14 +25,14 @@ span {
 /* Hashtag color */
 // [data-tag]:before {
 //   content: '#';
-//   color: var(--tag__color_hashtag);
+//   color: var(--rm-tag__color_hashtag);
 //   visibility: visible;
 //   position: absolute;
 // }
 
 .rm-page-ref--tag[data-tag='42SmartBlock']:before {
   content: '#' !important;
-  color: var(--tag__color_hashtag) !important;
+  color: var(--rm-tag__color_hashtag) !important;
   // margin: 5px 0 0 -7px;
   position: absolute;
   visibility: visible;
@@ -80,14 +80,14 @@ span[data-tag*='Meeting']:before {
 
 [data-tag]::before {
   content: '#';
-  color: var(--tag__color_hashtag);
+  color: var(--rm-tag__color_hashtag);
   visibility: visible;
   position: absolute;
 }
 
 [data-tag]:hover::before {
   // content: '#';
-  color: var(--tag__color_hover);
+  color: var(--rm-tag__color_hover);
   // visibility: visible;
   // position: absolute;
 }

@@ -19,7 +19,7 @@
 }
 
 .tt-menu {
-  background-color: var(--menu__background) !important;
+  background-color: var(--rm-menu__background) !important;
   color: var(--fg-flatpickr) !important;
 }
 
@@ -95,12 +95,12 @@ span.flatpickr-weekday {
 
 .tribute-container ul {
   // background-color: var(--bg-popover) !important;
-  background-color: var(--pages-search-field__background-color) !important;
-  color: var(--main-font__color);
-  font-family: var(--main-font__font-family);
+  background-color: var(--rm-pages-search-field__background-color) !important;
+  color: var(--rm-main-font__color);
+  font-family: var(--rm-main-font__font-family);
 
   .highlight {
-    background: var(--search__border) !important;
+    background: var(--rm-search__border) !important;
     color: #fff;
   }
 }
@@ -111,8 +111,8 @@ span.flatpickr-weekday {
   vertical-align: baseline;
   font-family: Roboto, 'Open Sans', Lato, 'Helvetica Neue', Arial, sans-serif;
   font-weight: 400;
-  background: var(--dialog__background);
-  color: var(--dialog__color);
+  background: var(--rm-dialog__background);
+  color: var(--rm-dialog__color);
   font-size: 1rem;
   position: relative;
   overflow-x: hidden;
@@ -124,6 +124,6 @@ span.flatpickr-weekday {
   background-clip: padding-box;
   border: 1px solid rgba(0, 8, 16, 0.15);
   box-shadow: 0 4px 14px -2px rgba(0, 8, 16, 0.08);
-  background-color: var(--menu__background) !important;
-  color: var(--menu__color);
+  background-color: var(--rm-menu__background) !important;
+  color: var(--rm-menu__color);
 }

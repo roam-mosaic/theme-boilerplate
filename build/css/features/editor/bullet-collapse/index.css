@@ -23,10 +23,10 @@
   top: 5px;
   bottom: 5px;
   left: -3px;
-  border-left: 1px solid var(--bullet__background-color-outline);
+  border-left: 1px solid var(--rm-bullet__background-color-outline);
 }
 .roam-block-container .rm-block-main .controls .block-expand .bp3-icon-caret-down {
-  border-left: 1px solid var(--bullet__background-color-outline);
+  border-left: 1px solid var(--rm-bullet__background-color-outline);
   height: 100%;
   width: 20px;
 }
@@ -41,7 +41,7 @@
   content: '';
 }
 .roam-block-container .rm-block-main .controls .block-expand .bp3-icon-caret-down:hover {
-  border-color: var(--bullet__background-color-outline-highlight);
+  border-color: var(--rm-bullet__background-color-outline-highlight);
   border-width: 4px;
 }
 .roam-block-container .rm-block-main .controls .roam-bullet-closed.simple-bullet-outer {
@@ -50,7 +50,7 @@
   border-radius: 50%;
   width: 5px;
   height: 5px;
-  background-color: var(--bullet__border_closed);
+  background-color: var(--rm-bullet__border_closed);
   left: 9px;
 }
 .roam-block-container
@@ -62,7 +62,7 @@
   border-radius: 0px;
   width: 1px;
   left: -13px;
-  background-color: var(--bullet__background-color-outline-highlight);
+  background-color: var(--rm-bullet__background-color-outline-highlight);
   padding: 9px 0px;
 }
 .roam-block-container .rm-block-main .controls .simple-bullet-outer {
@@ -80,10 +80,10 @@
 }
 .roam-block-container:hover > .rm-block__self .controls .block-expand {
   border-left-style: solid;
-  border-left-color: var(--bullet__background-color-outline-highlight);
+  border-left-color: var(--rm-bullet__background-color-outline-highlight);
 }
 .roam-block-container:focus-within > .rm-block__self .controls .block-expand {
-  border-left: 1px solid var(--bullet__background-color-outline-hover);
+  border-left: 1px solid var(--rm-bullet__background-color-outline-hover);
 }
 .roam-block-container > .rm-block-main > div:nth-child(1) .rm-bullet .rm-bullet__inner {
   background-color: default;
@@ -98,7 +98,7 @@
   > div:nth-child(1)
   .rm-bullet
   .rm-bullet__inner {
-  background-color: var(--bullet__background-color-outline-highlight);
+  background-color: var(--rm-bullet__background-color-outline-highlight);
   width: 8px;
   height: 3px;
   border-radius: 0;

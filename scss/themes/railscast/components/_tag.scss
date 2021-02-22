@@ -3,14 +3,14 @@
 /* Hashtag color */
 // [data-tag]:before {
 //   content: '#';
-//   color: var(--tag__color_hashtag);
+//   color: var(--rm-tag__color_hashtag);
 //   visibility: visible;
 //   position: absolute;
 // }
 
 .rm-page-ref--tag[data-tag='42SmartBlock']:before {
   content: '#' !important;
-  color: var(--tag__color_hashtag) !important;
+  color: var(--rm-tag__color_hashtag) !important;
   // margin: 5px 0 0 -7px;
   position: absolute;
   visibility: visible;
@@ -82,20 +82,20 @@ span[data-tag*='meeting']:before {
   border-radius: 4px 0 0 4px;
 }
 .meeting > div.rm-block-main {
-  color: var(--strong__color);
+  color: var(--rm-strong__color);
   // font-weight: 700;
 }
 
 [data-tag]::before {
   content: '#';
-  color: var(--tag__color_hashtag);
+  color: var(--rm-tag__color_hashtag);
   visibility: visible;
   position: absolute;
 }
 
 [data-tag]:hover::before {
   // content: '#';
-  color: var(--tag__color_hover);
+  color: var(--rm-tag__color_hover);
   // visibility: visible;
   // position: absolute;
 }

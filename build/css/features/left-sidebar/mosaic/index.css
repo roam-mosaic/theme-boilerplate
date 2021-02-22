@@ -7,7 +7,7 @@
 
 .roam-center {
   /* Move the border here to resolve the above issue */
-  border-top: 1px solid var(--topbar__border);
+  border-top: 1px solid var(--rm-topbar__border);
 }
 
 .roam-body .roam-app .roam-sidebar-container[style*='left: 0px;'] {

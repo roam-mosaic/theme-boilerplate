@@ -3150,11 +3150,11 @@ body {
   height: 10px
 }
 
-.rm-sync--status-icon__background-color_saving-local {
+.rm-sync--rm-status-icon__background-color_saving-local {
   background-color: #99280f
 }
 
-.rm-sync--status-icon__background-color_saving-remote {
+.rm-sync--rm-status-icon__background-color_saving-remote {
   background-color: #d9822b
 }
 

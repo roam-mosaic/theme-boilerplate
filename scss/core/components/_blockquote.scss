@@ -2,21 +2,21 @@
 
 .rm-bq {
   display: inline-block;
-  background-color: var(--blockquote__background-color);
-  border-left: var(--blockquote__border-left) var(--blockquote__border_color);
-  font-size: var(--blockquote__font-size);
-  color: var(--blockquote__color);
-  text-align: var(--blockquote__text-align);
-  text-justify: var(--blockquote__text-justify);
+  background-color: var(--rm-blockquote__background-color);
+  border-left: var(--rm-blockquote__border-left) var(--rm-blockquote__border_color);
+  font-size: var(--rm-blockquote__font-size);
+  color: var(--rm-blockquote__color);
+  text-align: var(--rm-blockquote__text-align);
+  text-justify: var(--rm-blockquote__text-justify);
 }
 
 // These styles are for hiccup formated blockquotes e.g., :hiccup [:blockquote [:p "Operational effectiveness is not a strategy"] [:footer [:cite "Michael Porter, p61"]]]
 // blockquote {
-// background-color: var(--blockquote__background-color);
-// border-left: 5px solid var(--blockquote__border_color);
+// background-color: var(--rm-blockquote__background-color);
+// border-left: 5px solid var(--rm-blockquote__border_color);
 // box-sizing: border-box;
-// color: var(--blockquote__color);
-// font-size: var(--blockquote__font-size);
+// color: var(--rm-blockquote__color);
+// font-size: var(--rm-blockquote__font-size);
 // // margin: 0 0 20px;
 // min-height: 0;
 // min-width: 0;
@@ -25,21 +25,21 @@
 // text-justify: inter-wor1d;
 //
 //   .small {
-//     color: var(--blockquote-cite);
+//     color: var(--rm-blockquote-cite);
 //     display: block;
 //     font-size: 80%;
 //     line-height: 1.42857143;
 //   }
 
 //   footer {
-//     color: var(--blockquote-cite);
+//     color: var(--rm-blockquote-cite);
 //     display: block;
 //     font-size: 80%;
 //     line-height: 1.42857143;
 //   }
 
 //   small {
-//     color: var(--blockquote-cite);
+//     color: var(--rm-blockquote-cite);
 //     display: block;
 //     font-size: 80%;
 //     line-height: 1.42857143;

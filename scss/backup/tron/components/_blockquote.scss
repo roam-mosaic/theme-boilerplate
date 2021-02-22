@@ -1,8 +1,8 @@
 blockquote {
-  background-color: var(--blockquote__background-color);
-  border-left: 5px solid var(--blockquote__border_color);
+  background-color: var(--rm-blockquote__background-color);
+  border-left: 5px solid var(--rm-blockquote__border_color);
   box-sizing: border-box;
-  color: var(--blockquote__color);
+  color: var(--rm-blockquote__color);
   font-size: 1em;
   margin: 0 0 20px;
   min-height: 0;
@@ -12,21 +12,21 @@ blockquote {
   text-justify: inter-word;
 
   .small {
-    color: var(--blockquote-cite);
+    color: var(--rm-blockquote-cite);
     display: block;
     font-size: 80%;
     line-height: 1.42857143;
   }
 
   footer {
-    color: var(--blockquote-cite);
+    color: var(--rm-blockquote-cite);
     display: block;
     font-size: 80%;
     line-height: 1.42857143;
   }
 
   small {
-    color: var(--blockquote-cite);
+    color: var(--rm-blockquote-cite);
     display: block;
     font-size: 80%;
     line-height: 1.42857143;

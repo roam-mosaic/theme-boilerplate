@@ -1,10 +1,10 @@
 /* Scrollbars - NOTE: Requires 'gloabl/features/scrollbars/mosaic/main' or 'gloabl/features/scrollbars/simple/main' to be installed */
 
 div::-webkit-scrollbar-thumb {
-  background-color: var(--scrollbar-thumb) !important;
-  border-color: var(--scrollbar-thumb);
+  background-color: var(--rm-scrollbar-thumb) !important;
+  border-color: var(--rm-scrollbar-thumb);
 }
 
 div::-webkit-scrollbar-track {
-  background-color: var(--scrollbar-track) !important;
+  background-color: var(--rm-scrollbar-track) !important;
 }

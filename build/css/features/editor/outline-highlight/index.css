@@ -1,16 +1,16 @@
 /* Outline Highlight
-Highlights where the curser is currently in the outline and highlights the currently active block using the rm-multibar
+  Highlights where the curser is currently in the outline and highlights the currently active block using the rm-multibar
 */
 .roam-block-container div.roam-block-container:focus-within {
-  box-shadow: -1px 0px var(--bullet-outline__border_hover);
+  box-shadow: -1px 0px var(--rm-bullet-outline__border_hover);
 }
 
 .roam-block-container div.roam-block-container:hover {
-  box-shadow: -1px 0px var(--bullet__border_closed);
+  box-shadow: -1px 0px var(--rm-bullet__border_closed);
 }
 
 .rm-block__self:focus-within {
-  box-shadow: -3px 0px var(--bullet__border_closed);
+  box-shadow: -3px 0px var(--rm-bullet__border_closed);
   transition: box-shadow 0.2s;
 }
 
@@ -27,7 +27,7 @@ Highlights where the curser is currently in the outline and highlights the curre
   > div:nth-child(1)
   .rm-bullet
   .rm-bullet__inner {
-  background-color: var(--bullet__border_closed);
+  background-color: var(--rm-bullet__border_closed);
   width: 8px;
   height: 3px;
   border-radius: 0;

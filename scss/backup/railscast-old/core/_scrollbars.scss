@@ -1,8 +1,8 @@
 /* Scrollbars - NOTE: Requires 'gloabl/features/scrollbars/mosaic/main' or 'gloabl/features/scrollbars/simple/main' to be installed */
 
 // :root {
-//   --scrollbar-track: #2b2b2b;
-//   --scrollbar-thumb: rgba(153, 153, 153, 0.1);
+//   --rm-scrollbar-track: #2b2b2b;
+//   --rm-scrollbar-thumb: rgba(153, 153, 153, 0.1);
 // }
 
 // div::-webkit-scrollbar {
@@ -10,15 +10,15 @@
 // }
 
 div::-webkit-scrollbar-track {
-  background-color: var(--scrollbar-thumb) !important;
+  background-color: var(--rm-scrollbar-thumb) !important;
 }
 
 div::-webkit-scrollbar-thumb {
-  background-color: var(--scrollbar-track) !important;
-  border-color: var(--scrollbar-thumb);
+  background-color: var(--rm-scrollbar-track) !important;
+  border-color: var(--rm-scrollbar-thumb);
 
   &:hover {
     background-color: rgba(0, 0, 0, 0.4);
-    border-color: var(--scrollbar-thumb);
+    border-color: var(--rm-scrollbar-thumb);
   }
 }

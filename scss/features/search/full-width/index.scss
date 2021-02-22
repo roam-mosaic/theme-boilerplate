@@ -1,3 +1,7 @@
+/* Full Width Search
+  Changes the search bar to be full screen width all the time, no animations
+*/
+
 .roam-body-main {
   // padding-top: 30px;
 }
@@ -24,12 +28,12 @@
       font-weight: bold;
 
       .rm-new-page {
-        color: var(--search__color_new-page);
+        color: var(--rm-search__color_new-page);
       }
     }
 
     .rm-search-list-item {
-      color: var(--search__color_body);
+      color: var(--rm-search__color_body);
       margin-left: -20px;
       overflow-wrap: break-spaces;
       word-break: break-word;

@@ -1,29 +1,35 @@
+/* masonry
+  Created by @shawnpmurphy8 and @AbhayPrasanna based on the original version by @vandermerwed
+  
+  Last modified: 20210221
+*/
+
 :root {
   --main-left-bg: white;
-  --right-sidebar-bg: rgb(247 248 249);
-  --right-sidebar-drag-bg: #337ac6;
-  --masonry-bg: var(--body__background-color);
+  --rm-right-sidebar-bg: rgb(247 248 249);
+  --rm-right-sidebar-drag-bg: #337ac6;
+  --masonry-bg: var(--masonry__background-color, white);
   --masonry-scrollbar-bg: lightgrey;
-  --masonry-resizer-color: lightgrey;
+  --masonry-resizer-color: var(--rm-icon__color, lightgrey);
   --masonry-startWidth: 550px; /* DEFAULT: 550px; Use "unset" to prevent loading in grid like format */
   --masonry-minWidth: 440px;
   --masonry-maxWidth: 1200px;
   --masonry-startHeight: 234px; /* DEFAULT: 243px; Use "unset" to prevent loading in grid like format */
   --masonry-minHeight: 200px;
-  --masonry-border: 1px solid var(--page-brackets__color);
+  --masonry-border: 1px solid var(--masonry__border-color, lightgrey);
   --closed-bullet-color: 4px solid #ced9e0;
   --code-color: crimson;
   --block-widths: 800px; /* Roam native: 800px; Murf's favorite: 1500px; Full screen: 3400px; */
 }
 
-div.roam-app > div.flex-h-box > div.roam-main > div.roam-body-main {
-  // background-color: var(--main-left-bg);
-}
+// div.roam-app > div.flex-h-box > div.roam-main > div.roam-body-main {
+//   background-color: var(--main-left-bg);
+// }
 
-#right-sidebar,
-div.roam-app > div.flex-h-box {
-  // background-color: var(--right-sidebar-bg);
-}
+// #right-sidebar,
+// div.roam-app > div.flex-h-box {
+//   background-color: var(--rm-right-sidebar-bg);
+// }
 
 #roam-right-sidebar-content {
   overflow: auto !important;
@@ -221,7 +227,7 @@ div.roam-app > div.flex-h-box {
 .sidebar-content .rm-dnd-separator .rm-dnd-drop-bar {
   top: 3px;
   left: 1px;
-  background-color: var(--right-sidebar-drag-bg);
+  background-color: var(--rm-right-sidebar-drag-bg);
 }
 
 .sidebar-content .rm-dnd-separator {

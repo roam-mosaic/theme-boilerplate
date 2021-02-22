@@ -1,40 +1,40 @@
 /* Dialog window */
 
 .bp3-dialog {
-  background: var(--dialog__background) !important;
-  color: var(--dialog__color);
+  background: var(--rm-dialog__background) !important;
+  color: var(--rm-dialog__color);
 
   .level2,
   h3 {
-    color: var(--h1__font-family-color);
+    color: var(--rm-h1__font-family-color);
     font-weight: bold;
   }
 
   h4,
   p {
-    color: var(--dialog__color);
+    color: var(--rm-dialog__color);
   }
 
   textarea {
-    background-color: var(--dialog-input__background);
-    border: 1px solid var(--dialog-input__background);
-    color: var(--accent__color);
+    background-color: var(--rm-dialog-input__background);
+    border: 1px solid var(--rm-dialog-input__background);
+    color: var(--rm-accent__color);
 
     &:focus {
-      background-color: var(--dialog-input__background);
-      border: 1px solid var(--bullet__background-color);
+      background-color: var(--rm-dialog-input__background);
+      border: 1px solid var(--rm-bullet__background-color);
     }
   }
 }
 
 .rm-user-settings .rm-display-name-settings__input {
-  background: var(--dialog-input__background);
-  border: 1px solid var(--dialog-input__background);
-  color: var(--accent__color);
+  background: var(--rm-dialog-input__background);
+  border: 1px solid var(--rm-dialog-input__background);
+  color: var(--rm-accent__color);
 
   &:focus {
-    background-color: var(--dialog-input__background);
-    border: 1px solid var(--bullet__background-color);
+    background-color: var(--rm-dialog-input__background);
+    border: 1px solid var(--rm-bullet__background-color);
   }
 }
 
@@ -47,42 +47,42 @@
 }
 
 input {
-  background-color: var(--dialog-input__background);
-  border: 1px solid var(--dialog-input__background);
+  background-color: var(--rm-dialog-input__background);
+  border: 1px solid var(--rm-dialog-input__background);
   line-height: normal;
   padding: 5px;
 
   &:focus {
-    background-color: var(--dialog-input__background);
-    border: 1px solid var(--bullet__background-color);
+    background-color: var(--rm-dialog-input__background);
+    border: 1px solid var(--rm-bullet__background-color);
   }
 }
 
 .bp3-control {
-  color: var(--dialog__color);
+  color: var(--rm-dialog__color);
 }
 
 /* Mobile quick synch dialog */
 
 .rm-quick-capture-sync-modal {
   // background-color: #d8e1e8;
-  background-color: var(--dialog__background);
+  background-color: var(--rm-dialog__background);
 }
 
 // TODO Not sure if these are needed
 button {
-  background-color: var(--linked-reference__backgound-color_1);
-  border: 1px solid var(--bullet__background-color);
+  background-color: var(--rm-linked-reference__backgound-color_1);
+  border: 1px solid var(--rm-bullet__background-color);
   line-height: normal;
   padding: 5px;
 
   &[style*='border: 0.5px solid rgb(206, 217, 224);'] {
-    background-color: var(--linked-reference__backgound-color_1) !important;
-    border: 1px solid var(--linked-reference__backgound-color_1) !important;
+    background-color: var(--rm-linked-reference__backgound-color_1) !important;
+    border: 1px solid var(--rm-linked-reference__backgound-color_1) !important;
   }
 
   &[style*='background-color: rgba(72, 176, 240, 0.5);'] {
-    background-color: var(--linked-reference__backgound-color_1) !important;
-    border: 1px solid var(--icon__color) !important;
+    background-color: var(--rm-linked-reference__backgound-color_1) !important;
+    border: 1px solid var(--rm-icon__color) !important;
   }
 }

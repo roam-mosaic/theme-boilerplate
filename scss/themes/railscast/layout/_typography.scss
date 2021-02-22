@@ -10,16 +10,16 @@
 
 .roam-body {
   .roam-app {
-    color: var(--main-font__color);
+    color: var(--rm-main-font__color);
 
     // h1 {
-    //   color: var(--h1__color);
+    //   color: var(--rm-h1__color);
 
     //   .level2 {
     //     margin-top: 4px !important;
 
     //     a {
-    //       color: var(--page-link__color);
+    //       color: var(--rm-page-link__color);
     //     }
     //   }
     // }
@@ -27,37 +27,37 @@
     // .roam-article {
 
     // h1 {
-    //   font-family: var(--h1__font-family);
+    //   font-family: var(--rm-h1__font-family);
 
     //   div {
-    //     font-family: var(--h1__font-family);
+    //     font-family: var(--rm-h1__font-family);
 
     //     textarea {
-    //       font-family: var(--h1__font-family);
+    //       font-family: var(--rm-h1__font-family);
     //     }
     //   }
     // }
 
     // h2 {
-    //   font-family: var(--h1__font-family);
+    //   font-family: var(--rm-h1__font-family);
 
     //   div {
-    //     font-family: var(--h1__font-family);
+    //     font-family: var(--rm-h1__font-family);
 
     //     textarea {
-    //       font-family: var(--h1__font-family);
+    //       font-family: var(--rm-h1__font-family);
     //     }
     //   }
     // }
 
     // h3 {
-    //   font-family: var(--h1__font-family);
+    //   font-family: var(--rm-h1__font-family);
 
     //   div {
-    //     font-family: var(--h1__font-family);
+    //     font-family: var(--rm-h1__font-family);
 
     //     textarea {
-    //       font-family: var(--h1__font-family);
+    //       font-family: var(--rm-h1__font-family);
     //     }
     //   }
     // }
@@ -67,12 +67,12 @@
 
 // em,
 // .rm-italics {
-//   color: var(--emphasis__color);
+//   color: var(--rm-emphasis__color);
 // }
 
 // strong,
 // .rm-bold {
-//   color: var(--strong__color) !important;
+//   color: var(--rm-strong__color) !important;
 //   font-weight: 700;
 // }
 
@@ -81,17 +81,17 @@
 // }
 
 // .rm-highlight {
-//   background-color: var(--highlight__background-color);
-//   color: var(--highlight__color);
+//   background-color: var(--rm-highlight__background-color);
+//   color: var(--rm-highlight__color);
 //   padding: 2px 2px 0;
 //   margin: 0 -2px;
 
 //   .rm-page-ref-link-color {
-//     color: var(--highlight-link-color);
+//     color: var(--rm-highlight-link-color);
 //   }
 // }
 
 // /* Calculation Results */
 // .rm-calc-val {
-//   color: var(--calculation__color) !important;
+//   color: var(--rm-calculation__color) !important;
 // }

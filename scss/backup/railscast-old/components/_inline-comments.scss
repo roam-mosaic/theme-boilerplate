@@ -1,7 +1,7 @@
 /* In-line comments */
 .rm-paren {
   color: var(--body-text);
-  background-color: var(--inline-block__background-color);
+  background-color: var(--rm-inline-block__background-color);
   border: none;
   border-radius: 4px;
   // padding: 3px;
@@ -16,28 +16,28 @@
   font-size: 1.1em;
   position: relative;
   top: 3px;
-  color: var(--icon__color);
-  fill: var(--icon__color);
+  color: var(--rm-icon__color);
+  fill: var(--rm-icon__color);
 
   svg {
     height: 16px;
     width: 16px;
     path {
-      fill: var(--icon__color);
+      fill: var(--rm-icon__color);
     }
   }
 
   &:hover {
-    color: var(--icon__color);
+    color: var(--rm-icon__color);
   }
 }
 
 .rm-paren__paren {
-  color: var(--icon__color);
+  color: var(--rm-icon__color);
 
   &:hover {
-    color: var(--icon__color);
-    background-color: var(--icon__background-color_hover);
+    color: var(--rm-icon__color);
+    background-color: var(--rm-icon__background-color_hover);
   }
 }
 
@@ -55,7 +55,7 @@
 
 .rm-paren--closed {
   &:hover {
-    background-color: var(--icon__background-color_hover);
-    color: var(--icon__color_hover);
+    background-color: var(--rm-icon__background-color_hover);
+    color: var(--rm-icon__color_hover);
   }
 }

@@ -1,11 +1,11 @@
 /* Query */
 
 .rm-query {
-  border: var(--query__border);
+  border: var(--rm-query__border);
 
   .rm-query-title {
-    background-color: var(--linked-reference__backgound-color_1);
-    color: var(--query__color_query-string);
+    background-color: var(--rm-linked-reference__backgound-color_1);
+    color: var(--rm-query__color_query-string);
     padding: var(--s1);
   }
 }
