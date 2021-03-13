@@ -1,0 +1,264 @@
+/*
+Solarized theme for code-mirror
+http://ethanschoonover.com/solarized
+*/
+
+/*
+Solarized color palette
+http://ethanschoonover.com/solarized/img/solarized-palette.png
+*/
+
+.solarized.base03 {
+  color: #002b36;
+}
+.solarized.base02 {
+  color: #073642;
+}
+.solarized.base01 {
+  color: #586e75;
+}
+.solarized.base00 {
+  color: #657b83;
+}
+.solarized.base0 {
+  color: #839496;
+}
+.solarized.base1 {
+  color: #93a1a1;
+}
+.solarized.base2 {
+  color: #eee8d5;
+}
+.solarized.base3 {
+  color: #fdf6e3;
+}
+.solarized.solar-yellow {
+  color: #b58900;
+}
+.solarized.solar-orange {
+  color: #cb4b16;
+}
+.solarized.solar-red {
+  color: #dc322f;
+}
+.solarized.solar-magenta {
+  color: #d33682;
+}
+.solarized.solar-violet {
+  color: #6c71c4;
+}
+.solarized.solar-blue {
+  color: #268bd2;
+}
+.solarized.solar-cyan {
+  color: #2aa198;
+}
+.solarized.solar-green {
+  color: #859900;
+}
+
+/* Color scheme for code-mirror */
+
+.cm-s-default {
+  line-height: 1.45em;
+  color-profile: sRGB;
+  rendering-intent: auto;
+}
+.cm-s-default {
+  color: #839496;
+  background-color: #002b36;
+  text-shadow: #002b36 0 1px;
+}
+
+.cm-s-default .CodeMirror-widget {
+  text-shadow: none;
+}
+
+.cm-s-default .cm-header {
+  color: #586e75;
+}
+.cm-s-default .cm-quote {
+  color: #93a1a1;
+}
+
+.cm-s-default .cm-keyword {
+  color: #cb4b16;
+}
+.cm-s-default .cm-atom {
+  color: #d33682;
+}
+.cm-s-default .cm-number {
+  color: #d33682;
+}
+.cm-s-default .cm-def {
+  color: #2aa198;
+}
+
+.cm-s-default .cm-variable {
+  color: #839496;
+}
+.cm-s-default .cm-variable-2 {
+  color: #b58900;
+}
+.cm-s-default .cm-variable-3,
+.cm-s-default .cm-type {
+  color: #6c71c4;
+}
+
+.cm-s-default .cm-property {
+  color: #2aa198;
+}
+.cm-s-default .cm-operator {
+  color: #6c71c4;
+}
+
+.cm-s-default .cm-comment {
+  color: #586e75;
+  font-style: italic;
+}
+
+.cm-s-default .cm-string {
+  color: #859900;
+}
+.cm-s-default .cm-string-2 {
+  color: #b58900;
+}
+
+.cm-s-default .cm-meta {
+  color: #859900;
+}
+.cm-s-default .cm-qualifier {
+  color: #b58900;
+}
+.cm-s-default .cm-builtin {
+  color: #d33682;
+}
+.cm-s-default .cm-bracket {
+  color: #cb4b16;
+}
+.cm-s-default .CodeMirror-matchingbracket {
+  color: #859900;
+}
+.cm-s-default .CodeMirror-nonmatchingbracket {
+  color: #dc322f;
+}
+.cm-s-default .cm-tag {
+  color: #93a1a1;
+}
+.cm-s-default .cm-attribute {
+  color: #2aa198;
+}
+.cm-s-default .cm-hr {
+  color: transparent;
+  border-top: 1px solid #586e75;
+  display: block;
+}
+.cm-s-default .cm-link {
+  color: #93a1a1;
+  cursor: pointer;
+}
+.cm-s-default .cm-special {
+  color: #6c71c4;
+}
+.cm-s-default .cm-em {
+  color: #999;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+.cm-s-default .cm-error,
+.cm-s-default .cm-invalidchar {
+  color: #586e75;
+  border-bottom: 1px dotted #dc322f;
+}
+
+.cm-s-default div.CodeMirror-selected {
+  background: #073642;
+}
+.cm-s-default.CodeMirror ::selection {
+  background: rgba(7, 54, 66, 0.99);
+}
+.cm-s-default .CodeMirror-line::-moz-selection,
+.CodeMirror-line > span::-moz-selection,
+.CodeMirror-line > span > span::-moz-selection {
+  background: rgba(7, 54, 66, 0.99);
+}
+
+/* Editor styling */
+
+/* Little shadow on the view-port of the buffer view */
+.cm-s-default.CodeMirror {
+  -moz-box-shadow: inset 7px 0 12px -6px #000;
+  -webkit-box-shadow: inset 7px 0 12px -6px #000;
+  box-shadow: inset 7px 0 12px -6px #000;
+}
+
+/* Remove gutter border */
+.cm-s-default .CodeMirror-gutters {
+  border-right: 0;
+}
+
+/* Gutter colors and line number styling based of color scheme (dark / light) */
+
+/* Dark */
+.cm-s-default .CodeMirror-gutters {
+  background-color: #073642;
+}
+
+.cm-s-default .CodeMirror-linenumber {
+  color: #586e75;
+  text-shadow: #021014 0 -1px;
+}
+
+/* Common */
+.cm-s-default .CodeMirror-linenumber {
+  padding: 0 5px;
+}
+.cm-s-default .CodeMirror-guttermarker-subtle {
+  color: #586e75;
+}
+.cm-s-default .CodeMirror-guttermarker {
+  color: #ddd;
+}
+.cm-s-default .CodeMirror-guttermarker {
+  color: #cb4b16;
+}
+
+.cm-s-default .CodeMirror-gutter .CodeMirror-gutter-text {
+  color: #586e75;
+}
+
+/* Cursor */
+.cm-s-default .CodeMirror-cursor {
+  border-left: 1px solid #819090;
+}
+
+/* Fat cursor */
+
+.cm-s-default.cm-fat-cursor .CodeMirror-cursor {
+  background: #586e75;
+}
+.cm-s-default .cm-animate-fat-cursor {
+  background-color: #586e75;
+}
+
+/* Active line */
+.cm-s-default .CodeMirror-activeline-background {
+  background: rgba(255, 255, 255, 0.06);
+}
+.CodeMirror {
+  background: var(--rm-code__background);
+  border-radius: 8px;
+  color: #839496;
+  font-family: var(--rm-code-font__font-family);
+  font-size: var(--rm-code-font__font-size);
+  height: auto !important;
+  text-shadow: #002b36 0 1px;
+
+  .CodeMirror-code {
+    pre {
+      font-family: var(--rm-code-font__font-family);
+      box-shadow: none;
+      font-size: var(--rm-code-font__font-size);
+    }
+  }
+}

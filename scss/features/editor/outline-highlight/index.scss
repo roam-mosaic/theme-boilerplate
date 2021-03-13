@@ -2,10 +2,11 @@
   Highlights where the curser is currently in the outline and highlights the currently active block using the rm-multibar
 */
 
-// .rm-multibar { // This is an option to completely high the multibar until hovered
+// .rm-multibar { // This is an option to completely hide the multibar until hovered
 //    visibility: hidden;
 // }
 
+// .roam-block-container:focus-within,
 .roam-block-container div.roam-block-container:focus-within {
   box-shadow: -1px 0px var(--rm-bullet-outline__border_hover);
   //transition:  box-shadow 0.2s;

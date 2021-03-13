@@ -3,13 +3,14 @@
 ### ROAM Railscast THEME ###
 > Many thanks to the Roam Slack community for all the resources, particularly @Anthony, @Calhistoriaan, @Devon, @Murf, @Malcolm Ocean, @David Cranall @Ahbay and most importantly Daniel van der Merwe @vandermerwed.
 > Edits by Jeff Harris
-> v2.0.14
+> v2.0.15
 */
 :root {
   /* Roam default variables */
   --primary-color: #137cbd;
   --s1: 8px;
   --background-color: #e1e8ed;
+  --active-gray: #d5dadf;
   /* Components */
   --rm-alias__background-color: transparent;
   /* Legacy alias */
@@ -127,6 +128,7 @@
   --rm-bullet__border_closed: rgba(225, 117, 28, 1);
   --rm-bullet-outline__border: #404040;
   --rm-bullet-outline__border_hover: rgba(255, 149, 0, 0.4);
+  --rm-dnd-drop-bar__background-color: var(--rm-bullet__border_closed);
   --rm-section-divider_border-top: 1px solid #e9892475;
   /* breadcrumb */
   --rm-breadcrumb__background-color: transparent;
@@ -229,11 +231,6 @@
   --rm-icon__color: #e78924;
   --rm-icon__color_hover: #e78924;
   --rm-filter__color_subscript: #5c7080;
-  /* ======================================== */
-  /* features */
-  /* masonry */
-  --masonry__background-color: var(--rm-body__background-color);
-  --masonry__border-color: rgba(228, 124, 67, 0.25);
 }
 
 /* Icons */
@@ -499,6 +496,10 @@ span[style*='background-color: rgb(235, 241, 245); border-radius: 4px;'] {
   opacity: 1;
 }
 
+.dnd-separator .dnd-drop-bar {
+  background-color: var(--rm-dnd-drop-bar__background-color, #5c7080);
+}
+
 /* Code block - Solarized Dark */
 .CodeMirror-matchingbracket {
   outline: 1px solid #ff9c3a;
@@ -622,6 +623,14 @@ code {
   color: var(--rm-code-font__color);
   font-family: var(--rm-code-font__font-family);
   font-size: var(--rm-code-font__font-size);
+}
+
+/* command palette */
+.rm-command-palette__scroll-container .bp3-menu .rm-menu-item--active {
+  background-color: var(--rm-search__background-color_selected-row);
+}
+.rm-command-palette__scroll-container .bp3-menu .rm-menu-item--active:hover {
+  background-color: var(--rm-search__background-color_selected-row);
 }
 
 /* Database menu */
@@ -1582,6 +1591,23 @@ hr {
   color: var(--rm-help__color);
 }
 
+.rm-help-search__input {
+  background-color: var(--rm-search__background);
+  border: 1px solid var(--rm-search__border);
+  border-left: 0;
+}
+.rm-help-search__input:focus {
+  background-color: var(--rm-search__background);
+  border: 1px solid var(--rm-search__border);
+  border-left: 0;
+}
+
+.rm-help-search__icon-container {
+  background-color: var(--rm-search__background);
+  border: 1px solid var(--rm-search__border);
+  border-right: 0;
+}
+
 .rm-help-results .rm-help-functions .rm-help-function__name,
 .rm-help-results .rm-help-functions .rm-help-function__shortcut,
 .rm-help-results .rm-help-functions .rm-help-markdown-function__markdown,
@@ -2066,17 +2092,32 @@ span[data-tag*='meeting']:before {
   border-radius: 0px 5px 5px 0px !important;
 }
 
-/* Bullet Zoom Focus v2.4 by Jeff Harris
-When zoomed in on a bullet add the tag #.rm-focus to the parent block
-to create a minimal writing environment. This only works when zoomed in
-so there is no need to remove the tag when done.
+/* Bullet Zoom Focus v2.6 by Jeff Harris
+  When zoomed in on a bullet add the tag #.rm-focus to the parent block to create a minimal writing environment. 
+  This only works when zoomed in so there is no need to remove the tag when done.
 */
-.zoom-path-view + div .rm-focus div,
-.zoom-path-view + div .rm-focus .rm-block-input {
-  font-family: 'Calendas Plus', 'Lora', 'Droid Serif', 'Georgia', serif !important;
-  font-size: 20px;
-  line-height: 1.5em;
+/* @import url('https://jmharris903.github.io/Railscast-for-Roam-Research-Theme/fonts/calendas-plus.css'); */
+.zoom-path-view + div .rm-focus {
   /* space between lines */
+  line-height: 1em;
+}
+
+.zoom-path-view + div .rm-focus div,
+.zoom-path-view + div .rm-focus textarea {
+  font-family: 'Calendas Plus', 'Lora', 'Droid Serif', 'Georgia', serif !important;
+  font-size: 1.43rem;
+}
+
+.zoom-path-view + div .rm-focus.rm-heading-level-1 > .rm-block__self .rm-block__input,
+.zoom-path-view + div .rm-focus .rm-heading-level-1 > .rm-block__self .rm-block__input,
+.zoom-path-view + div .rm-focus.rm-heading-level-2 > .rm-block__self .rm-block__input,
+.zoom-path-view + div .rm-focus .rm-heading-level-2 > .rm-block__self .rm-block__input,
+.zoom-path-view + div .rm-focus.rm-heading-level-3 > .rm-block__self .rm-block__input,
+.zoom-path-view + div .rm-focus .rm-heading-level-3 > .rm-block__self .rm-block__input,
+.zoom-path-view + div .rm-focus .rm-heading-level-1,
+.zoom-path-view + div .rm-focus .rm-heading-level-2,
+.zoom-path-view + div .rm-focus .rm-heading-level-3 {
+  font-family: 'Calendas Plus', 'Lora', 'Droid Serif', 'Georgia', serif !important;
 }
 
 .zoom-path-view + div .rm-focus .rm-multibar {
@@ -2184,6 +2225,7 @@ span[data-link-title^='December '] .rm-page-ref--link {
 
     #min-title = hides the page reference link / page title
     #min-con = hides the contextual reference information (breadcrumbs)
+    #min-qcb = hides query, context, and breadcrumb info
     #minimal = hides both the title and the context
     #min-q = hides the query string, similar to legacy behavior
     #min-all = hides everything — title, context, and query string
@@ -2263,4 +2305,29 @@ inspired by Matt Goldenberg */
   margin-left: -12px;
   margin-top: 3px;
   padding: 0;
+}
+
+[data-tag='min-qcb'] {
+  display: none !important;
+}
+[data-tag='min-qcb'] + .rm-query .rm-query-title {
+  display: none !important;
+}
+[data-tag='min-qcb'] + .rm-query .zoom-mentions-view {
+  display: none !important;
+}
+
+:root {
+  /* ======================================== */
+  /* features */
+  /* masonry */
+  --main-left-bg: var(--rm-body__background-color);
+  --masonry-bg: var(--rm-body__background-color);
+  --right-sidebar-bg: var(--rm-right-sidebar__background-color);
+  --masonry-border: 1px solid rgba(228, 124, 67, 0.25);
+  --masonry-resizer-color: var(--rm-icon__color);
+}
+
+#right-sidebar {
+  border-left: var(--masonry-border);
 }

@@ -470,6 +470,10 @@ span[style*='background-color: rgb(235, 241, 245); border-radius: 4px;'] {
   opacity: 1;
 }
 
+.dnd-separator .dnd-drop-bar {
+  background-color: var(--rm-dnd-drop-bar__background-color, #5c7080);
+}
+
 /* Code block - Solarized Dark */
 .CodeMirror-matchingbracket {
   outline: 1px solid #ff9c3a;
@@ -593,6 +597,14 @@ code {
   color: var(--rm-code-font__color);
   font-family: var(--rm-code-font__font-family);
   font-size: var(--rm-code-font__font-size);
+}
+
+/* command palette */
+.rm-command-palette__scroll-container .bp3-menu .rm-menu-item--active {
+  background-color: var(--rm-search__background-color_selected-row);
+}
+.rm-command-palette__scroll-container .bp3-menu .rm-menu-item--active:hover {
+  background-color: var(--rm-search__background-color_selected-row);
 }
 
 /* Database menu */
@@ -1551,6 +1563,23 @@ hr {
 
 .rm-help-popup {
   color: var(--rm-help__color);
+}
+
+.rm-help-search__input {
+  background-color: var(--rm-search__background);
+  border: 1px solid var(--rm-search__border);
+  border-left: 0;
+}
+.rm-help-search__input:focus {
+  background-color: var(--rm-search__background);
+  border: 1px solid var(--rm-search__border);
+  border-left: 0;
+}
+
+.rm-help-search__icon-container {
+  background-color: var(--rm-search__background);
+  border: 1px solid var(--rm-search__border);
+  border-right: 0;
 }
 
 .rm-help-results .rm-help-functions .rm-help-function__name,

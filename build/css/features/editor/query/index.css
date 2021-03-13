@@ -3,6 +3,7 @@
 
     #min-title = hides the page reference link / page title
     #min-con = hides the contextual reference information (breadcrumbs)
+    #min-qcb = hides query, context, and breadcrumb info
     #minimal = hides both the title and the context
     #min-q = hides the query string, similar to legacy behavior
     #min-all = hides everything — title, context, and query string
@@ -82,4 +83,14 @@ inspired by Matt Goldenberg */
   margin-left: -12px;
   margin-top: 3px;
   padding: 0;
+}
+
+[data-tag='min-qcb'] {
+  display: none !important;
+}
+[data-tag='min-qcb'] + .rm-query .rm-query-title {
+  display: none !important;
+}
+[data-tag='min-qcb'] + .rm-query .zoom-mentions-view {
+  display: none !important;
 }

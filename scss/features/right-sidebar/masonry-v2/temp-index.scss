@@ -1,31 +1,34 @@
+/* masonry
+  Created by @shawnpmurphy8 and @AbhayPrasanna based on the original version by @vandermerwed
+  
+  Last modified: 20210221
+*/
+
 :root {
   --main-left-bg: white;
-  --right-sidebar-bg: rgb(247 248 249);
-  --right-sidebar-drag-bg: #337ac6;
-  --masonry-bg: white;
+  --rm-right-sidebar-bg: rgb(247 248 249);
+  --rm-right-sidebar-drag-bg: #337ac6;
+  --masonry-bg: var(--masonry__background-color, white);
   --masonry-scrollbar-bg: lightgrey;
-  --masonry-resizer-color: lightgrey;
-  --masonry-startWidth: 550px;
-  /* DEFAULT: 550px; Use "unset" to prevent loading in grid like format */
+  --masonry-resizer-color: var(--rm-icon__color, lightgrey);
+  --masonry-startWidth: 550px; /* DEFAULT: 550px; Use "unset" to prevent loading in grid like format */
   --masonry-minWidth: 440px;
   --masonry-maxWidth: 1200px;
-  --masonry-startHeight: 700px;
-  /* DEFAULT: 243px; Use "unset" to prevent loading in grid like format */
+  --masonry-startHeight: 234px; /* DEFAULT: 243px; Use "unset" to prevent loading in grid like format */
   --masonry-minHeight: 200px;
-  --masonry-border: 1px solid lightgrey;
+  --masonry-border: 1px solid var(--masonry__border-color, lightgrey);
   --closed-bullet-color: 4px solid #ced9e0;
   --code-color: crimson;
-  --block-widths: 800px;
-  /* Roam native: 800px; Murf's favorite: 1500px; Full screen: 3400px; */
+  --block-widths: 800px; /* Roam native: 800px; Murf's favorite: 1500px; Full screen: 3400px; */
 }
 
-div.roam-app > div.flex-h-box > div.roam-main > div.roam-body-main {
-  background-color: var(--main-left-bg);
-}
+// div.roam-app > div.flex-h-box > div.roam-main > div.roam-body-main {
+//   background-color: var(--main-left-bg);
+// }
 
 #right-sidebar,
 div.roam-app > div.flex-h-box {
-  background-color: var(--right-sidebar-bg);
+  background-color: var(--rm-right-sidebar-bg);
 }
 
 #roam-right-sidebar-content {
@@ -77,6 +80,7 @@ div.roam-app > div.flex-h-box {
 }
 
 /*NOTE: .rm-sidebar-outline and .rm-reference-main are at same level and so need to be addressed with div > div... as opposed to direct .classnames */
+
 .sidebar-content
   > div:not(.rm-dnd-separator)
   > div:not(.rm-dnd-separator)
@@ -110,6 +114,7 @@ div.roam-app > div.flex-h-box {
 }
 
 /* SCROLLBAR */
+
 .sidebar-content
   > div:not(.rm-dnd-separator)
   > div:not(.rm-dnd-separator)
@@ -167,6 +172,7 @@ div.roam-app > div.flex-h-box {
 }
 
 /*Make the scrollbar smaller but keep the resize button the same*/
+
 .sidebar-content
   > div:not(.rm-dnd-separator)
   > div:not(.rm-dnd-separator)
@@ -181,17 +187,20 @@ div.roam-app > div.flex-h-box {
 }
 
 /* Focus/zoom breadcrumb trail */
+
 .roam-body-main .roam-article .zoom-path-view {
   margin-top: 10px;
 }
 
 /* Don't let images extend outside box */
+
 .rm-inline-img__resize,
 .react-resizable {
   max-width: 100%;
 }
 
 /* When long page titles or block refs are in sidebar they need to be shrunk */
+
 .sidebar-content
   > div:not(.rm-dnd-separator)
   > div:not(.rm-dnd-separator)
@@ -203,6 +212,7 @@ div.roam-app > div.flex-h-box {
 }
 
 /* Drag n Drop */
+
 .sidebar-content > div.rm-dnd-separator {
   left: 16px;
   top: -3px;
@@ -217,7 +227,7 @@ div.roam-app > div.flex-h-box {
 .sidebar-content .rm-dnd-separator .rm-dnd-drop-bar {
   top: 3px;
   left: 1px;
-  background-color: var(--right-sidebar-drag-bg);
+  background-color: var(--rm-right-sidebar-drag-bg);
 }
 
 .sidebar-content .rm-dnd-separator {
@@ -230,25 +240,27 @@ div.roam-app > div.flex-h-box {
 }
 
 /* The new indent lines were showing on top of search bar */
+
 /* Abhay said that him and jeff harris set to 8, but I needed to set to 4 to work */
+
 .rm-multibar {
   z-index: 4;
 }
 
 /* Fix where block ref counter overflows and adds unnecessary horizontal scroll in masonry side pages */
+
 div.rm-block-main {
   width: 99%;
 }
 
 /* Kanban */
+
 div[data-page-links*='kanban'] .dont-focus-block.rm-full-width {
   margin-right: unset;
 }
-
 div.roam-main .kanban-board .kanban-column {
   flex: 1 0 150px;
 }
-
 div#right-sidebar .kanban-board .kanban-column {
   flex: 1 0 75px;
 }

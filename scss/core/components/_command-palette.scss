@@ -1,0 +1,9 @@
+/* command palette */
+
+.rm-command-palette__scroll-container .bp3-menu .rm-menu-item--active {
+  background-color: var(--rm-search__background-color_selected-row);
+
+  &:hover {
+    background-color: var(--rm-search__background-color_selected-row);
+  }
+}

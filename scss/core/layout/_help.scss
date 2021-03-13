@@ -7,6 +7,23 @@
   color: var(--rm-help__color);
 }
 
+.rm-help-search__input {
+  background-color: var(--rm-search__background);
+  border: 1px solid var(--rm-search__border);
+  border-left: 0;
+  &:focus {
+    background-color: var(--rm-search__background);
+    border: 1px solid var(--rm-search__border);
+    border-left: 0;
+  }
+}
+
+.rm-help-search__icon-container {
+  background-color: var(--rm-search__background);
+  border: 1px solid var(--rm-search__border);
+  border-right: 0;
+}
+
 .rm-help-results {
   .rm-help-functions {
     .rm-help-function__name,

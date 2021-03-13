@@ -4,6 +4,14 @@
 
   /* masonry */
 
-  --masonry__background-color: var(--rm-body__background-color);
-  --masonry__border-color: rgba(228, 124, 67, 0.25);
+  // --masonry__background-color: var(--rm-body__background-color);
+  --main-left-bg: var(--rm-body__background-color);
+  --masonry-bg: var(--rm-body__background-color);
+  --right-sidebar-bg: var(--rm-right-sidebar__background-color);
+  --masonry-border: 1px solid rgba(228, 124, 67, 0.25);
+  --masonry-resizer-color: var(--rm-icon__color);
+}
+
+#right-sidebar {
+  border-left: var(--masonry-border);
 }
