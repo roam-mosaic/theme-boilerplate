@@ -36,11 +36,11 @@ export const livereload = () => {
       // .pipe(inject());
       .pipe(
         rename({
-          basename: "site",
+          basename: "theme",
           //suffix: ".user",
         })
       )
-      .pipe(gulp.dest("./dev/roamresearch.com/assets/css/less-compiled"))
+      .pipe(gulp.dest("./dev/roamresearch.com/assets/css"))
   );
 };
 
