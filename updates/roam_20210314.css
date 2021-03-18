@@ -1,4 +1,4 @@
-/* @import "../fonts/Inter/inter.css"; */
+@import "../fonts/Inter/inter.css";
 
 .loading-astrolabe {
   margin: auto;
@@ -1835,10 +1835,11 @@ html {
 
 #right-sidebar .rm-sidebar-card {
   border-radius: 4px;
-  padding: 0 0 14px 14px;
+  padding: 14px;
+  padding-top: 4px;
   margin-top: 4px;
   margin-left: 12px;
-  flex: 1 1 auto
+  margin-right: 12px
 }
 
 #right-sidebar .rm-sidebar-card .rm-sidebar-card-header {

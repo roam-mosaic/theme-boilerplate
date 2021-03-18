@@ -36,8 +36,13 @@
   .rm-bullet
   .rm-bullet__inner {
   background-color: var(--rm-bullet__border_closed);
-  width: 8px;
-  height: 3px;
+  // width: 8px;
+  // height: 3px;
   border-radius: 0;
   transition: width 200ms linear, height 200ms linear, border-radius 200ms linear;
+  width: 10px;
+  height: 10px;
+  // border-radius: 10px;
+  margin-left: -3px;
+  margin-bottom: -1px;
 }
